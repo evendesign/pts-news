@@ -8,8 +8,8 @@ module ViewHelpers
 
   # nav li active link
   def nav_link_to(name, href, options={})
-    if href == request.path.gsub('index.html', '')
-      active = "active"
+    if href == request.path.gsub(/[^\/]+$/, '')
+       active = "active"
     end
     content_tag(:li, link_to(name, href, options), :class => active )
   end

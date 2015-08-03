@@ -1,22 +1,11 @@
 doctype 5
-html lang="zh-TW" class="no-js"
+html lang="zh-TW"
   head
     = render "/layout_head"
+    = render "/layout_siteinfo"
     = render "/layout_og"
-  body.off-canvas
+  body
     .page
-      .menu
-        .main-nav data-set="main-nav"
-          ul
-            - 10.times do
-              li: a href="#" About
-              li: a href="#" Product
-              li: a href="#" Service
-              li: a href="#" Contact
-      .container
-        = render "/partials/header"
-        .content
-          = yield
-        .footer
+      = yield
     = render "/layout_foot"
     = render "/layout_livereload"
