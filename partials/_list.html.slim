@@ -1,0 +1,20 @@
+.block
+  ul.list
+    - 6.times do
+      li= zh_lorem_words( rand(5) + 15 )
+
+  ul.list
+    - 6.times do
+      li
+        .label= zh_lorem_words( rand(3) + 3 )
+        .content= zh_lorem_words( rand(5) + 20 )
+
+  ul.list.has-divider
+    - 6.times do
+      li= zh_lorem_words( rand(5) + 15 )
+
+  ul.list.has-divider
+    - 6.times do
+      li
+        .label= zh_lorem_words( rand(3) + 3 )
+        .content= zh_lorem_words( rand(5) + 20 )
