@@ -134,7 +134,7 @@ code { font-family: "Anonymous Pro", "Inconsolata", "Consolas Regular Font", "Mo
 
 .btn, .form-label { -webkit-font-smoothing: subpixel-antialiased; }
 
-body { -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; color: #444444; }
+body { -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; color: #333333; }
 
 h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; border: 0; font-weight: normal; margin-bottom: 24px; }
 
@@ -152,9 +152,9 @@ h6 { font-size: 13px; line-height: 18px; }
 
 p { margin-top: 0px; margin-bottom: 24px; font-size: 16px; line-height: 24px; }
 
-blockquote { margin: 0; padding: 0; border: 0; margin: 24px 0; border-left: 3px solid #dddddd; padding-left: 21px; color: #8a8a8a; }
+blockquote { margin: 0; padding: 0; border: 0; margin: 24px 0; border-left: 3px solid #dddddd; padding-left: 21px; color: #999999; }
 blockquote p { margin-bottom: 6px; }
-blockquote small { font-size: 16px; line-height: 24px; color: #444444; display: block; }
+blockquote small { font-size: 16px; line-height: 24px; color: #333333; display: block; }
 blockquote small:before { content: '\2014 \00A0'; }
 
 code { font-size: 13px; line-height: 18px; padding: 3px 6px; background-color: #f3f3f3; white-space: nowrap; }

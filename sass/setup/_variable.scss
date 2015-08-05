@@ -21,10 +21,28 @@ $color-red-light: lighten($color-red, 10%);
 
 
 // text-color
-$text-black         : #444;
+$text-black         : #333;
 $text-black-light   : #666;
-$text-gray          : #8a8a8a;
+$text-gray          : #999;
 $text-gray-light    : lighten($text-gray, 15%);
+
+
+// pts-color
+$color-blue-pts         : #04519C;
+$color-blue-pts-light   : lighten($color-blue-pts, 70%);
+$color-yellow-pts       : #FEA850;
+
+
+// backgroud-color
+$background-color-gray        : #FAFAFA;
+$background-color-gray-light  : #E0E0E0;
+$background-color-gray-dark   : #272727;
+
+
+// line-color
+$line-color-gray         : #FAFAFA;
+$line-color-gray-light   : #D8D8D8;
+
 
 // ---- box model
 $global-radius-width: 3px;
