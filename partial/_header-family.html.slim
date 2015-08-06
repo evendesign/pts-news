@@ -1,0 +1,40 @@
+.header-family
+  .pts-logo
+    = image_tag(lorem_image("78x60"))
+  .tv-program
+    = image_tag "/img/ic-tv.svg", :size => "18x17"
+    | 節目表
+  ul.channel-list
+    li.is-active
+      = link_to "公視", "連結"
+    li
+      = link_to "公視2台", "連結"
+    li
+      = link_to "公視HD", "連結"
+  form.search-pts
+    input placeholder="搜尋公視" type="search"
+    input type="button"
+  ul.category-news
+    li.is-active
+      = link_to "公視新聞網", "連結"
+    li
+      = link_to "影音網", "連結"
+    li
+      = link_to "網路商城", "連結"
+    li
+      = link_to "討論區", "連結"
+    li
+      = link_to "最新消息", "連結"
+    li
+      = link_to "關於公視", "連結"
+    li
+      = link_to "贊助公視", "連結"
+    li
+      = link_to "企業贊助", "連結"
+    li
+      = link_to "英文網 English", "連結"
+  .clock
+    .hours-container
+      .hours
+    .minutes-container
+      .minutes

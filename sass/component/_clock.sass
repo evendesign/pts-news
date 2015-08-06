@@ -1,0 +1,28 @@
+.clock
+  +float(right)
+  margin: -36px 0 0 0
+  background: url(/img/clock.svg) no-repeat center
+  background-size: 100%
+  position: relative
+  width: 89px
+  height: 89px
+  %commom-hand
+    position: absolute
+    left: 48.75%
+    height: 0px
+    width: 1px
+    border-left: 1px solid transparent
+    border-right: 1px solid transparent
+    transform-origin: 50% 80%
+  .hours-container
+    +stretch (0px, 0px, 0px, 0px)
+    .hours
+      @extend %commom-hand
+      top: 20px
+      border-bottom: 32px solid red
+  .minutes-container
+    +stretch (0px, 0px, 0px, 0px)
+    .minutes
+      @extend %commom-hand
+      top: 5px
+      border-bottom: 47px solid $color-blue-pts

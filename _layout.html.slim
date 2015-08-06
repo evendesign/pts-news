@@ -5,7 +5,9 @@ html lang="zh-TW"
     = render "/layout_siteinfo"
     = render "/layout_og"
   body
+    .header-bg
     .page
+      = render "/partial/header-family"
       = yield
     = render "/layout_foot"
     = render "/layout_livereload"

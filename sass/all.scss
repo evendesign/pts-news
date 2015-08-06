@@ -7,11 +7,14 @@
 // ==== component ====
 @import "component/button";
 @import "component/form";
+@import "component/clock";
+
 // @import "component/pagination";
 @import "component/component-name";
 
 // ==== partial ====
-@import "partial/partial-name";
+@import "partial/_background";
+@import "partial/_header-family";
 
 // ==== page ====
 
