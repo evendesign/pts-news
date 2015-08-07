@@ -268,16 +268,16 @@ body:after { content: ""; position: absolute; top: 0px; bottom: 0px; left: 0px; 
 .header-family ul.channel-list li.is-active { background-color: #056bce; }
 .header-family ul.category-news { margin: 16px 24px 0px 8px; }
 .header-family ul.category-news li { padding: 0px; }
-.header-family ul.category-news a { display: inline-block; height: 44px; padding-left: 15px; padding-right: 15px; color: inherit; text-decoration: inherit; cursor: inherit; cursor: pointer; color: #333333; }
+.header-family ul.category-news a { display: inline-block; height: 46px; padding: 0 15px 0 15px; color: inherit; text-decoration: inherit; cursor: inherit; cursor: pointer; color: #333333; }
 .header-family ul.category-news a:active, .header-family ul.category-news a:focus { outline: none; }
 .header-family ul.category-news a:hover { color: #999999; }
 .header-family ul.category-news .is-active { position: relative; }
 .header-family ul.category-news .is-active:after { content: ""; position: absolute; bottom: 0px; left: 50%; margin-left: -10px; width: 0px; height: 0px; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid #04519c; }
 .header-family .search-pts { margin-top: -23px; }
 .header-family .search-pts input:focus { outline: none; }
-.header-family .search-pts input[type=search] { display: inline; float: left; font-size: 14px; width: 424px; padding: 3px 0px 3px 10px; }
+.header-family .search-pts input[type=search] { display: inline; float: left; font-size: 14px; width: 424px; padding: 3px 0px 3px 10px; -webkit-appearance: none; border: #d8d8d8 1px solid; -webkit-border-radius: 2px 0 0 2px; -moz-border-radius: 2px 0 0 2px; -ms-border-radius: 2px 0 0 2px; -o-border-radius: 2px 0 0 2px; border-radius: 2px 0 0 2px; }
 .header-family .search-pts input[type=search]::-webkit-input-placeholder { /* WebKit browsers */ color: #999999; -webkit-font-smoothing: antialiased; }
 .header-family .search-pts input[type=search]:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #999999; }
 .header-family .search-pts input[type=search]::-moz-placeholder { /* Mozilla Firefox 19+ */ color: #b3b3b3; }
 .header-family .search-pts input[type=search]:-ms-input-placeholder { /* Internet Explorer 10+ */ color: #999999; }
-.header-family .search-pts input[type=button] { display: inline; float: left; background: #04519c url(/img/ic-search-white-small.svg) no-repeat center; border: none; -webkit-border-radius: 0 2px 2px 0; -moz-border-radius: 0 2px 2px 0; -ms-border-radius: 0 2px 2px 0; -o-border-radius: 0 2px 2px 0; border-radius: 0 2px 2px 0; width: 76px; height: 26px; margin-bottom: -3px; }
+.header-family .search-pts input[type=button] { display: inline; float: left; background: #04519c url(/img/ic-search-white-small.svg) no-repeat center; border: none; -webkit-border-radius: 0 2px 2px 0; -moz-border-radius: 0 2px 2px 0; -ms-border-radius: 0 2px 2px 0; -o-border-radius: 0 2px 2px 0; border-radius: 0 2px 2px 0; width: 76px; height: 24px; margin-bottom: -3px; }

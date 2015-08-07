@@ -47,9 +47,8 @@
         padding: 0px
       a
         display: inline-block
-        height: 44px
-        padding-left: 15px
-        padding-right: 15px
+        height: 46px
+        padding: 0 15px 0 15px
         +unstyled-link
         cursor: pointer
         +link-colors($text-black, $text-gray)
@@ -76,11 +75,14 @@
       font-size: $base-font-size - 2
       width: 424px
       padding: 3px 0px 3px 10px
+      -webkit-appearance: none
+      border: $line-color-gray-light 1px solid
+      +border-radius(2px 0 0 2px)
     input[type=button]
       +float(left)
       background: $color-blue-pts url(/img/ic-search-white-small.svg) no-repeat center
       border: none
       +border-radius(0 2px 2px 0)
       width: 76px
-      height: 26px
+      height: $base-line-height
       margin-bottom: -3px
