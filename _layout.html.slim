@@ -7,6 +7,8 @@ html lang="zh-TW"
   body
     .page
       = render "/partial/header-family"
-      = yield
+      .page-margin
+        = render "/partial/header-news"
+        = yield
     = render "/layout_foot"
     = render "/layout_livereload"

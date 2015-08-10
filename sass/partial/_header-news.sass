@@ -1,0 +1,57 @@
+.header-news
+  height: 49px
+  padding: 24px 36px
+  .news-logo
+    +float(left)
+    margin-right: 36px
+  ul
+    +float(left)
+    +horizontal-list
+    +no-bullets
+    li
+      padding: 0px
+      height: 40px
+      position : relative
+      & + li
+        margin-left: 8px
+      &.is-active:after
+        content: ''
+        position: absolute
+        bottom: 0px
+        left: 0px
+        height: 3px
+        width: 86%
+        background-color: $color-yellow-pts
+    a
+      display: inline-block
+      padding: 8px 8px 0px 0px
+      +unstyled-link
+      cursor: pointer
+      +link-colors($text-black, $text-gray)
+  .search-news
+    position: relative
+    +float(right)
+    margin-top: 2px
+    white-space: nowrap
+    transform: translate(0,0)
+    &:hover input#search-news
+      width: 180px
+      border: 1px solid $line-color-gray-light
+    input#search-news
+      appearance: none
+      width: 140px
+      height: 34px
+      border: none
+      +float(left)
+      padding-left: 20px
+      +border-radius(2px)
+      transition: width .55s ease
+      &:focus, &:active
+        outline: none
+        width: 180px
+    .ic-search-news
+      position: absolute
+      margin: 7px 12px 0px 0px
+      right: 0px
+      img
+        margin: 0px
