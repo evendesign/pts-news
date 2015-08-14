@@ -1,14 +1,17 @@
-body
-  background-color: $background-color-gray
-body:after
-  content: ''
-  +stretch (0px, 0px, 0px, 0px)
-  display: inline-block
-  width: 100%
-  height: 110px
-  background-color: $background-color-gray-light
-  border-bottom: 3px solid $color-blue-pts
-  z-index: -1
-.page-margin
-  margin: 40px 24px
-  background-color: #fff
++at-breakpoint($desktop)
+  body
+    background-color: $background-color-gray
+
+  body:after
+    content: ''
+    display: inline-block
+    +stretch (0px, 0px, 0px, 0px)
+    z-index: -1
+    width: 100%
+    height: 110px
+    border-bottom: 3px solid $color-blue-pts
+    background-color: $background-color-gray-light
+
+  .page-margin
+    margin: 40px 24px
+    background-color: #fff

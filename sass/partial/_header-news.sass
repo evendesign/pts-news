@@ -1,57 +1,67 @@
 .header-news
+  position: relative
   height: 49px
   padding: 24px 36px
+
   .news-logo
-    +float(left)
+    float: left
     margin-right: 36px
+
   ul
-    +float(left)
+    float: left
     +horizontal-list
     +no-bullets
+
     li
-      padding: 0px
-      height: 40px
       position : relative
+      height: 40px
+      padding: 0px
+
       & + li
         margin-left: 8px
+
       &.is-active:after
         content: ''
         position: absolute
         bottom: 0px
-        left: 0px
+        right: 18%
         height: 3px
-        width: 86%
+        width: 82%
         background-color: $color-yellow-pts
-    a
-      display: inline-block
-      padding: 8px 8px 0px 0px
-      +unstyled-link
-      cursor: pointer
-      +link-colors($text-black, $text-gray)
+
+      a
+        display: inline-block
+        padding: 8px 12px 0px 0px
+        cursor: pointer
+        text-decoration: none
+        +link-colors($text-black, $text-gray)
+
   .search-news
-    position: relative
-    +float(right)
-    margin-top: 2px
+    position: absolute
+    right: rhythm(1)
+    margin-top: 1px
     white-space: nowrap
     transform: translate(0,0)
-    &:hover input#search-news
-      width: 180px
-      border: 1px solid $line-color-gray-light
+
     input#search-news
+      float: left
       appearance: none
       width: 140px
       height: 34px
-      border: none
-      +float(left)
       padding-left: 20px
+      border: 1px solid #fff
       +border-radius(2px)
       transition: width .55s ease
-      &:focus, &:active
+
+      &:hover, &:focus, &:active
+        width: 350px
         outline: none
-        width: 180px
+        border: 1px solid $line-color-gray-light
+
     .ic-search-news
       position: absolute
-      margin: 7px 12px 0px 0px
       right: 0px
+      margin: 7px 12px 0px 0px
+
       img
         margin: 0px

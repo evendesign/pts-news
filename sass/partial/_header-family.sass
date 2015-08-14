@@ -1,59 +1,80 @@
 .header-family
   height: 86px
-  padding: $base-line-height $base-line-height 0px $base-line-height
+  padding: rhythm(1) rhythm(1) 0px rhythm(1)
+
   .pts-logo
-    +float(left)
+    float: left
     img
       margin-bottom: 0px
+
   %common-btn-blue
-    margin-left: $base-line-height
+    float: left
+    margin-left: rhythm(1)
+    +border-radius(2px)
+    cursor: pointer
     font-size: $base-font-size - 2
     font-weight: bold
     color: #fff
     background-color: $color-blue-pts
-    +border-radius(2px)
-    +float(left)
-    cursor: pointer
+
   .tv-program
     @extend %common-btn-blue
     padding: 0 10px 0 10px
+
     &:hover
       background-color: darken($color-blue-pts, 10%)
+
     img
       margin: 0px 8px -3px 0
+
   ul
-    +float(left)
+    float: left
     +horizontal-list
     +no-bullets
+
     &.channel-list
       @extend %common-btn-blue
-      margin-right: $base-line-height
+      margin-right: rhythm(1)
+
       li
         +horizontal-list-item(10px, 10px)
+
         a
-          +unstyled-link
-          cursor: pointer
           +link-colors(#fff)
+
+          &:hover
+            cursor: pointer
+            text-decoration: none
+
         &:nth-child(2)
           border-left: #fff 1px solid
           border-right: #fff 1px solid
+
         &:hover
           background-color: darken($color-blue-pts, 10%)
+
         &.is-active
           background-color: $color-blue-pts-light
+
     &.category-news
-      margin: 16px $base-line-height 0px 8px
+      margin: 16px 24px 0px 8px
+
       li
         padding: 0px
+
       a
         display: inline-block
         height: 46px
         padding: 0 15px 0 15px
-        +unstyled-link
-        cursor: pointer
         +link-colors($text-black, $text-gray)
+
+        &:hover
+          cursor: pointer
+          text-decoration: none
+
       .is-active
         position: relative
+
         &:after
           content: ''
           position: absolute
@@ -65,24 +86,28 @@
           border-left: 10px solid transparent
           border-right: 10px solid transparent
           border-bottom: 10px solid $color-blue-pts
+
   .search-pts
     margin-top: -23px
+
     input:focus
       outline: none
+
     input[type=search]
-      +float(left)
-      +input-placeholder-color($text-gray)
-      font-size: $base-font-size - 2
+      float: left
       width: 424px
       padding: 3px 0px 3px 10px
       -webkit-appearance: none
       border: $line-color-gray-light 1px solid
       +border-radius(2px 0 0 2px)
+      font-size: $base-font-size - 2
+      +input-placeholder-color($text-gray)
+
     input[type=button]
-      +float(left)
-      background: $color-blue-pts url(/img/ic-search-white-small.svg) no-repeat center
+      float: left
+      width: 76px
+      height: rhythm(1)
+      margin-bottom: -3px
       border: none
       +border-radius(0 2px 2px 0)
-      width: 76px
-      height: $base-line-height
-      margin-bottom: -3px
+      background: $color-blue-pts url(/img/ic-search-white-small.svg) no-repeat center
