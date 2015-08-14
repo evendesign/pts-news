@@ -16,7 +16,17 @@ $page-container: ".page";
 // debug layout
 // @import "layout-debug";
 
+$container-style: fluid;
+
 // ---- container setting ----
 #{$page-container} {
   @include container($phone, $pad ,$desktop);
+}
+
+@include at-breakpoint($desktop) {
+  #{$page-container} {
+    $grid-padding   : $gutter-width * 2;
+    $container-style: magic;
+    @include container();
+  }
 }
