@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="4px" height="46px" viewBox="0 0 4 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="3px" height="42px" viewBox="0 0 3 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
     <title>long_hand</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="news_page_index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="PTSNews-Index_4_36px_dot" sketch:type="MSArtboardGroup" transform="translate(-1194.000000, -17.000000)" fill="#0C50A0">
+        <g id="PTSNews-Index_4_36px_dot" sketch:type="MSArtboardGroup" transform="translate(-1195.000000, -18.000000)" fill="#04519C">
             <g id="family_header" sketch:type="MSLayerGroup">
-                <path d="M1198.16373,17.1877007 L1198.96269,17.2750647 L1195.3246,61.060175 C1195.26717,61.7513831 1194.68867,62.2535512 1194.02218,62.1806718 L1194.02218,62.1806718 C1193.3603,62.1082971 1192.88933,61.4985904 1192.97213,60.8029384 L1198.16373,17.1877007 L1198.16373,17.1877007 Z" id="long_hand" sketch:type="MSShapeGroup" transform="translate(1196.105520, 39.844256) rotate(-5.000000) translate(-1196.105520, -39.844256) "></path>
+                <path d="M1195.5953,19.4335849 C1195.60642,18.6418378 1196.25413,18 1197.04345,18 L1195.95653,18 C1196.74521,18 1197.39359,18.6429129 1197.40469,19.4335849 L1197.95414,58.5664151 C1197.96526,59.3581622 1197.33448,60 1196.53455,60 L1196.46544,60 C1195.6703,60 1195.03474,59.3570871 1195.04585,58.5664151 L1195.5953,19.4335849 Z" id="long_hand" sketch:type="MSShapeGroup"></path>
             </g>
         </g>
     </g>

@@ -1,28 +1,48 @@
 .clock
-  +float(right)
-  margin: -36px 0 0 0
-  background: url(/img/clock.svg) no-repeat center
-  background-size: 100%
-  position: relative
-  width: 89px
-  height: 89px
-  %commom-hand
-    position: absolute
-    left: 48.75%
-    height: 0px
-    width: 1px
-    border-left: 1px solid transparent
-    border-right: 1px solid transparent
-    transform-origin: 50% 80%
-  .hours-container
-    +stretch (0px, 0px, 0px, 0px)
-    .hours
-      @extend %commom-hand
-      top: 20px
-      border-bottom: 32px solid red
-  .minutes-container
-    +stretch (0px, 0px, 0px, 0px)
-    .minutes
-      @extend %commom-hand
-      top: 5px
-      border-bottom: 47px solid $color-blue-pts
+  +at-breakpoint($desktop)
+    display: block
+    position: relative
+    float: right
+    width: 89px
+    height: 89px
+    margin: -36px 0 0 0
+    background: url(/img/clock.svg) no-repeat center
+    background-size: 100%
+
+    %commom-hand
+      position: absolute
+      +transform-origin (50%, 80%)
+
+    .hours-container
+      +stretch (0px, 0px, 0px, 0px)
+      -webkit-animation: rotate 43200s infinite linear
+      animation: rotate 43200s infinite linear
+
+      .hours
+        @extend %commom-hand
+        top: 18px
+        left: 25px
+        width: 40px
+        height: 32px
+        background: url(/img/short_hand.svg) no-repeat center
+
+    .minutes-container
+      +stretch (0px, 0px, 0px, 0px)
+      -webkit-animation: rotate 3600s infinite steps(60)
+      animation: rotate 3600s infinite steps(60)
+
+      .minutes
+        @extend %commom-hand
+        top: 10px
+        left: 42px
+        width: 6px
+        height: 45px
+        background: url(/img/long_hand.svg) no-repeat center
+
+@-webkit-keyframes rotate
+  100%
+    +transform (rotateZ(360deg))
+
+@keyframes rotate
+  100%
+    +transform (rotateZ(360deg))
