@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-tv</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="news_page_index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="PTSNews-Index_4_36px_dot" sketch:type="MSArtboardGroup" transform="translate(-193.000000, -30.000000)" fill="#FFFFFF">
+            <g id="family_header" sketch:type="MSLayerGroup">
+                <g id="program" transform="translate(178.000000, 27.000000)" sketch:type="MSShapeGroup">
+                    <g id="ic-tv" transform="translate(15.000000, 3.000000)">
+                        <path d="M0,3.23650943 C0,2.98539039 0.202148438,2.78181818 0.463034838,2.78181818 L17.5369652,2.78181818 C17.7926922,2.78181818 18,2.98609688 18,3.23650943 L18,14.6907633 C18,14.9418823 17.7978516,15.1454545 17.5369652,15.1454545 L0.463034838,15.1454545 C0.207307759,15.1454545 0,14.9411758 0,14.6907633 L0,3.23650943 Z M1.22033898,4.46887533 C1.22033898,4.21996418 1.4170663,4.01818182 1.66921923,4.01818182 L16.3307808,4.01818182 C16.5786905,4.01818182 16.779661,4.22476751 16.779661,4.46887533 L16.779661,13.4583974 C16.779661,13.7073086 16.5829337,13.9090909 16.3307808,13.9090909 L1.66921923,13.9090909 C1.42130951,13.9090909 1.22033898,13.7025052 1.22033898,13.4583974 L1.22033898,4.46887533 Z" id="Rectangle-1"></path>
+                        <rect id="Rectangle-3" x="2.59322034" y="15.7636364" width="12.8135593" height="1.23636364" rx="0.456359453"></rect>
+                        <rect id="Rectangle-8" transform="translate(7.703390, 1.468182) rotate(-31.000000) translate(-7.703390, -1.468182) " x="7.3220339" y="0.154545455" width="0.762711864" height="2.62727273" rx="1.06483872"></rect>
+                        <ellipse id="Oval-4" cx="9" cy="2.78181818" rx="2.13559322" ry="0.927272727"></ellipse>
+                        <rect id="Rectangle-8-Copy" transform="translate(10.296610, 1.390909) scale(-1, 1) rotate(-31.000000) translate(-10.296610, -1.390909) " x="9.91525424" y="0.0772727273" width="0.762711864" height="2.62727273" rx="1.06483872"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
