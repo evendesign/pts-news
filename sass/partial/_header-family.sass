@@ -1,9 +1,9 @@
 .header-family
-  height: 86px
-  padding: rhythm(1) rhythm(1) 0px rhythm(1)
 
   .pts-logo
     float: left
+    display: none
+
     img
       margin-bottom: 0px
 
@@ -20,6 +20,7 @@
   .tv-program
     @extend %common-btn-blue
     padding: 0 10px 0 10px
+    display: none
 
     &:hover
       background-color: darken($color-blue-pts, 10%)
@@ -68,6 +69,7 @@
         padding: 0 15px 0 15px
         +link-colors($text-black, $text-gray)
 
+
         &:hover
           cursor: pointer
           text-decoration: none
@@ -88,26 +90,64 @@
           border-bottom: 10px solid $color-blue-pts
 
   .search-pts
-    margin-top: -23px
 
     input:focus
       outline: none
 
     input[type=search]
-      float: left
-      width: 424px
-      padding: 3px 0px 3px 10px
       -webkit-appearance: none
-      border: $line-color-gray-light 1px solid
-      +border-radius(2px 0 0 2px)
       font-size: $base-font-size - 2
-      +input-placeholder-color($text-gray)
 
     input[type=button]
-      float: left
-      width: 76px
-      height: rhythm(1)
-      margin-bottom: -3px
       border: none
-      +border-radius(0 2px 2px 0)
-      background: $color-blue-pts url(/img/ic-search-white-small.svg) no-repeat center
+      background: $color-blue-pts url(/img/ic-search-blue-large.svg) no-repeat center
+
+  +at-breakpoint($phone)
+
+  +at-breakpoint($pad)
+
+  +at-breakpoint($desktop)
+    .pts-logo, .tv-program
+      display: block
+
+    ul.navigation-list
+      margin: 16px 0px 0px 13px
+
+      a
+        padding: 0 8px 0 8px
+
+    .search-pts
+      margin-top: -23px
+
+      input[type=search]
+        float: left
+        width: 315px
+        padding: 3px 0px 3px 10px
+        border: $line-color-gray-light 1px solid
+        +border-radius(2px 0 0 2px)
+        font-size: $base-font-size - 2
+        +input-placeholder-color($text-gray)
+
+      input[type=button]
+        float: left
+        width: 76px
+        height: rhythm(1)
+        margin-bottom: -3px
+        +border-radius(0 2px 2px 0)
+        background: $color-blue-pts url(/img/ic-search-white-small.svg) no-repeat center
+
+  +at-breakpoint($wide-desktop)
+
+    ul.navigation-list
+      margin: 16px 24px 0px 8px
+
+      a
+        padding: 0 15px 0 15px
+
+    .search-pts
+
+      input[type=search]
+        width: 424px
+
+      input[type=button]
+        width: 76px

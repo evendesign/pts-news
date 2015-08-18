@@ -1,20 +1,52 @@
 .header-news
-  position: relative
-  height: 49px
-  padding: 24px 36px
+
+  &:before
+    content: ''
+    display: inline-block
+    position: absolute
+    top: 0px
+    width: 100%
+    height: 3px
+    background-color: $color-blue-pts
+
+  a.menu-btn
+    display: inline-block
+    float: left
+    width: 28px
+    height: 19px
+    margin: 18px 0px 0px 20px
+    cursor: pointer
+    text-decoration: none
+    background: #fff url(/img/ic_menu.svg) no-repeat center
+
+  .news-logo-mobile
+    position: absolute
+    top: 4px
+    left: 50%
+    margin-left: -51px
+    width: 103px
+    height: 41px
+
+    img
+      margin: 0px
 
   .news-logo
+    display: none
     float: left
     margin-right: 36px
 
   ul
-    float: left
+    position: absolute
+    top: 54px
+    width: 100%
     +horizontal-list
     +no-bullets
+    background-color: $color-blue-pts
 
     li
       position : relative
       height: 40px
+      margin: 0 20px 0 20px
       padding: 0px
 
       & + li
@@ -34,29 +66,32 @@
         padding: 8px 12px 0px 0px
         cursor: pointer
         text-decoration: none
-        +link-colors($text-black, $text-gray)
+        +link-colors(#fff, $text-gray)
 
   .search-news
     position: absolute
-    right: rhythm(1)
-    margin-top: 1px
+    right: rhythm(0.5)
+    margin-top: 8px
     white-space: nowrap
     transform: translate(0,0)
 
     input#search-news
       float: left
       appearance: none
-      width: 140px
+      width: 30px
       height: 34px
       padding-left: 20px
       border: 1px solid #fff
       +border-radius(2px)
+      +input-placeholder-color(#fff)
       transition: width .55s ease
 
       &:hover, &:focus, &:active
         width: 350px
+        padding-left: 20px
         outline: none
         border: 1px solid $line-color-gray-light
+        +input-placeholder-color($text-gray)
 
     .ic-search-news
       position: absolute
@@ -65,3 +100,41 @@
 
       img
         margin: 0px
+
+  +at-breakpoint($phone)
+    .search-news
+
+  +at-breakpoint($pad)
+  +at-breakpoint($desktop)
+    &
+      position: relative
+      height: 49px
+      padding: 24px 0px
+
+      .news-logo
+        display: block
+
+      &:before, .news-logo-mobile, a.menu-btn
+        display: none
+
+      ul
+        position: relative
+        top: 0px
+        float: left
+        width: 80%
+        background-color: transparent
+
+        li
+          margin: 0px
+          a
+            +link-colors($text-black, $text-gray)
+
+      .search-news
+        margin-top: 1px
+
+  +at-breakpoint($wide-desktop)
+    .search-news
+
+      input#search-news
+        width: 140px
+        +input-placeholder-color($text-gray)

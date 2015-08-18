@@ -6,9 +6,11 @@ html lang="zh-TW"
     = render "/layout_og"
   body
     .page
-      = render "/partial/header-family"
-      .main
-        = render "/partial/header-news"
-        = yield
+      .container
+        = render "/partial/header-family"
+        .main
+          = render "/partial/header-news"
+          = yield
+      .off-canvas-mask
     = render "/layout_foot"
     = render "/layout_livereload"
