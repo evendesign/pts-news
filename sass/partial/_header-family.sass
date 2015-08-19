@@ -7,20 +7,17 @@
     img
       margin-bottom: 0px
 
-  %common-btn-blue
+  .tv-program
+    display: none
     float: left
     margin-left: rhythm(1)
+    padding: 0 10px 0 10px
     +border-radius(2px)
     cursor: pointer
     font-size: $base-font-size - 2
     font-weight: bold
     color: #fff
     background-color: $color-blue-pts
-
-  .tv-program
-    @extend %common-btn-blue
-    padding: 0 10px 0 10px
-    display: none
 
     &:hover
       background-color: darken($color-blue-pts, 10%)
@@ -29,19 +26,23 @@
       margin: 0px 8px -3px 0
 
   ul
-    float: left
+    left: 0px
+    width: 260px
     +horizontal-list
     +no-bullets
 
     &.channel-list
-      @extend %common-btn-blue
-      margin-right: rhythm(1)
+      position: absolute
+      top: 60px
+      background-color: $color-blue-pts
 
       li
-        +horizontal-list-item(10px, 10px)
+        +horizontal-list-item(18px, 18px)
+        height: 60px
 
         a
           +link-colors(#fff)
+          line-height: 60px
 
           &:hover
             cursor: pointer
@@ -58,49 +59,54 @@
           background-color: $color-blue-pts-light
 
     &.navigation-list
-      margin: 16px 24px 0px 8px
+      position: absolute
+      top: 144px
+      margin: 0px
 
       li
         padding: 0px
+        width: 260px
+        border-bottom: 1px #fff solid
+
+        &.is-active
+          background-color: $color-blue-pts
+
+          a
+            color: #fff
 
       a
         display: inline-block
-        height: 46px
-        padding: 0 15px 0 15px
+        padding: 0 150px 0 15px
+        line-height: 60px
         +link-colors($text-black, $text-gray)
-
 
         &:hover
           cursor: pointer
           text-decoration: none
 
-      .is-active
-        position: relative
-
-        &:after
-          content: ''
-          position: absolute
-          bottom: 0px
-          left: 50%
-          margin-left: -10px
-          width: 0px
-          height: 0px
-          border-left: 10px solid transparent
-          border-right: 10px solid transparent
-          border-bottom: 10px solid $color-blue-pts
-
   .search-pts
+    position: absolute
+    top: 0px
 
     input:focus
       outline: none
 
     input[type=search]
+      width: 184px
+      height: 60px
+      padding-left: rhythm(1)
+      border: none
       -webkit-appearance: none
-      font-size: $base-font-size - 2
+      font-size: $base-font-size
+      background: transparent
+      +input-placeholder-color($text-black)
 
     input[type=button]
+      float: right
+      width: 50px
+      height: 60px
       border: none
-      background: $color-blue-pts url(/img/ic-search-blue-large.svg) no-repeat center
+      background: url(/img/ic-search-blue-large.svg) no-repeat center
 
   +at-breakpoint($phone)
 
@@ -110,18 +116,71 @@
     .pts-logo, .tv-program
       display: block
 
-    ul.navigation-list
-      margin: 16px 0px 0px 13px
+    ul
+      width: auto
 
-      a
-        padding: 0 8px 0 8px
+      &.channel-list
+        position: relative
+        top: 0px
+        float: left
+        margin: 0px rhythm(1)
+        +border-radius(2px)
+        cursor: pointer
+        font-size: $base-font-size - 2
+        font-weight: bold
+        color: #fff
+        background-color: $color-blue-pts
+
+        li
+          height: auto
+          +horizontal-list-item(10px, 10px)
+
+          a
+            line-height: 24px
+
+      &.navigation-list
+        position: relative
+        float: left
+        top: 0px
+        margin: 16px 0px 0px 13px
+
+        li
+          padding: 0px
+          width: auto
+          border-bottom: none
+
+          &.is-active
+            position: relative
+            background-color: transparent
+
+            a
+              color: $text-black
+
+              &:after
+                content: ''
+                position: absolute
+                bottom: 0px
+                left: 50%
+                margin-left: -10px
+                width: 0px
+                height: 0px
+                border-left: 10px solid transparent
+                border-right: 10px solid transparent
+                border-bottom: 10px solid $color-blue-pts
+
+        a
+          height: 46px
+          padding: 0 8px 0 8px
+          line-height: 24px
 
     .search-pts
-      margin-top: -23px
+      position: relative
+      margin-top: 0px
 
       input[type=search]
         float: left
         width: 315px
+        height: 16px
         padding: 3px 0px 3px 10px
         border: $line-color-gray-light 1px solid
         +border-radius(2px 0 0 2px)

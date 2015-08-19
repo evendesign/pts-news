@@ -33,7 +33,7 @@ $off-canvas-header-width: 260px;
   position: fixed;
   top: 0;
   width: $off-canvas-header-width;
-  height: 100%;
+  height: 100vh;
   @include translateX(-100%);
   background-color: $background-color-gray;
 }
