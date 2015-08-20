@@ -1,50 +1,5 @@
-/*
- * Starts any clocks using the user's local time
- * From: cssanimation.rocks/clocks
- */
-function initLocalClocks() {
-  // Get the local time using JS
-  var date = new Date;
-  var seconds = date.getSeconds();
-  var minutes = date.getMinutes();
-  var hours = date.getHours();
-
-  // Create an object with each hand and it's angle in degrees
-  var hands = [
-    {
-      hand: 'hours',
-      angle: (hours * 30) + (minutes / 2)
-    },
-    {
-      hand: 'minutes',
-      angle: (minutes * 6)
-    },
-    {
-      hand: 'seconds',
-      angle: (seconds * 6)
-    }
-  ];
-
-  // Loop through each of these hands to set their angle
-  for (var j = 0; j < hands.length; j++) {
-    var elements = document.querySelectorAll('.' + hands[j].hand);
-    for (var k = 0; k < elements.length; k++) {
-        elements[k].style.webkitTransform = 'rotateZ('+ hands[j].angle +'deg)';
-        elements[k].style.MozTransform = 'rotateZ('+ hands[j].angle +'deg)';
-        elements[k].style.transform = 'rotateZ('+ hands[j].angle +'deg)';
-        // If this is a minute hand, note the seconds position (to calculate minute position later)
-        if (hands[j].hand === 'minutes') {
-          elements[k].parentNode.setAttribute('data-second-angle', hands[j + 1].angle);
-        }
-    }
-  }
-}
-
-initLocalClocks();
-
-
+// off canvas menu //
 var off_canvas = function (){
-
   $(".menu-btn, .off-canvas-mask").on("click", function(event){
     $("body").toggleClass("open-menu");
     event.preventDefault();
@@ -52,3 +7,26 @@ var off_canvas = function (){
 };
 
 off_canvas();
+
+// sly.js //
+if ($(window).width() < 960){
+  var $frame = $('.frame'); window.frr = $frame;
+  var sly = new Sly($frame, {
+    horizontal: 1,
+    itemNav: 'centered',
+    activateMiddle: 1,
+    smart: 1,
+    activateOn: 'mouseenter',
+    mouseDragging: 1,
+    touchDragging: 1,
+    releaseSwing: 1,
+    startAt: 1,
+    // activatePageOn: 'click',
+    speed: 200,
+    moveBy: 600,
+    elasticBounds: 1,
+    dragHandle: 1,
+    dynamicHandle: 1,
+    clickBar: 1,
+  }).init();
+}
