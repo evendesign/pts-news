@@ -1,0 +1,96 @@
+.hero
+  float: left
+
+  video
+    max-width: 100%
+    height: auto
+
+  iframe,embed,object
+    max-width: 100%
+
+  float: left
+  +padding-leader(4)
+  width: 100vw
+
+  .frame
+    float: left
+    width: 100vw
+    height: 45px
+    padding: 0px
+    border-bottom: 3px solid $color-blue-pts
+
+    ul.slidee
+      margin: 0px
+      padding: 0px
+      height: 100%
+      list-style: none
+      background: $background-color-gray-dark
+
+      li
+        float: left
+        margin: 0px 5px 0px 0px
+        padding: 0px
+        width: auto
+
+        a
+          height: 45px
+          padding: 0px 24px
+          color: #fff
+          +adjust-font-size-to(18px)
+          font-weight: bold
+          line-height: 45px
+          text-decoration: none
+          cursor: pointer
+
+        &.is-active
+          background-color: $color-blue-pts
+
+  .select
+    float: left
+    position: relative
+    height: 48px
+    cursor: pointer
+    background: $background-color-gray-dark
+
+    .ic-drop-down
+      position: absolute
+      top: 14px
+      right: 48px
+      width: 16px
+      height: 16px
+      background: url(/img/ic_drop_down.svg) no-repeat center
+
+    ul
+      height: 48px
+      margin: 0px
+      width: 100vw
+      border: 1px #000 solid
+      list-style: none
+
+      li
+        color: #fff
+        +adjust-font-size-to(18px)
+        font-weight: bold
+        line-height: 44px
+        z-index: 2
+
+        &:not(.init)
+          float: left
+          width: 100vw
+          height: 48px
+          margin-left: -24px
+          padding-left: 24px
+          border-bottom: 1px #fff solid
+          background: $color-blue-pts
+          display: none
+
+          &:hover, &.selected:not(.init)
+            background: lighten($color-blue-pts, 10%)
+
+  .video
+    background-color: #000
+
+  +at-breakpoint($desktop)
+
+    li.init
+      display: none

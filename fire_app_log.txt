@@ -1866,3 +1866,181 @@ Load paths:
 2015-08-20 17:51:54 identical stylesheets/all.css 
 2015-08-20 17:58:08 overwrite stylesheets/all.css 
 2015-08-20 17:58:20 overwrite stylesheets/all.css 
+2015-08-21 14:39:01 identical stylesheets/all.css 
+2015-08-21 14:39:01    create stylesheets/partial/hero.css 
+2015-08-21 14:39:54 identical stylesheets/all.css 
+2015-08-21 14:39:54 overwrite stylesheets/partial/hero.css 
+2015-08-21 14:44:13 overwrite stylesheets/all.css 
+2015-08-21 14:46:34 overwrite stylesheets/all.css 
+2015-08-21 14:55:47     error sass/all.scss (Line 7 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 14:55:47 overwrite stylesheets/all.css 
+2015-08-21 14:55:47     error sass/all.scss (Line 7 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 14:55:47 identical stylesheets/all.css 
+2015-08-21 14:56:52     error sass/all.scss (Line 7 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 14:56:52 identical stylesheets/all.css 
+2015-08-21 14:56:52     error sass/all.scss (Line 7 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 14:56:52 identical stylesheets/all.css 
+2015-08-21 15:01:29     error sass/all.scss (Line 7 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:01:29 identical stylesheets/all.css 
+2015-08-21 15:01:29     error sass/all.scss (Line 7 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:01:29 identical stylesheets/all.css 
+2015-08-21 15:01:30     error sass/all.scss (Line 7 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:01:30 identical stylesheets/all.css 
+2015-08-21 15:01:31     error sass/all.scss (Line 7 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:01:31 identical stylesheets/all.css 
+2015-08-21 15:03:37     error sass/all.scss (Line 14 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:03:37 overwrite stylesheets/all.css 
+2015-08-21 15:03:38     error sass/all.scss (Line 14 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:03:38 identical stylesheets/all.css 
+2015-08-21 15:03:47     error sass/all.scss (Line 14 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:03:47 identical stylesheets/all.css 
+2015-08-21 15:03:48     error sass/all.scss (Line 14 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:03:48 identical stylesheets/all.css 
+2015-08-21 15:04:11     error sass/all.scss (Line 13 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:04:11 overwrite stylesheets/all.css 
+2015-08-21 15:04:11     error sass/all.scss (Line 13 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:04:11 identical stylesheets/all.css 
+2015-08-21 15:06:15     error sass/all.scss (Line 13 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:06:15 identical stylesheets/all.css 
+2015-08-21 15:06:16     error sass/all.scss (Line 13 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:06:16 identical stylesheets/all.css 
+2015-08-21 15:06:32     error sass/all.scss (Line 13 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:06:32 identical stylesheets/all.css 
+2015-08-21 15:06:33     error sass/all.scss (Line 13 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:06:33 identical stylesheets/all.css 
+2015-08-21 15:07:51     error sass/all.scss (Line 13 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:07:51 identical stylesheets/all.css 
+2015-08-21 15:07:52     error sass/all.scss (Line 13 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:07:52 identical stylesheets/all.css 
+2015-08-21 15:07:57     error sass/all.scss (Line 13 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:07:57 identical stylesheets/all.css 
+2015-08-21 15:07:57     error sass/all.scss (Line 13 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:07:57 identical stylesheets/all.css 
+2015-08-21 15:09:36     error sass/all.scss (Line 13 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:09:36 identical stylesheets/all.css 
+2015-08-21 15:09:37     error sass/all.scss (Line 13 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:09:37 identical stylesheets/all.css 
+2015-08-21 15:09:42     error sass/all.scss (Line 13 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:09:42 identical stylesheets/all.css 
+2015-08-21 15:09:42     error sass/all.scss (Line 13 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:09:42 identical stylesheets/all.css 
+2015-08-21 15:10:02     error sass/all.scss (Line 13 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:10:02 identical stylesheets/all.css 
+2015-08-21 15:10:02     error sass/all.scss (Line 13 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:10:02 identical stylesheets/all.css 
+2015-08-21 15:10:06     error sass/all.scss (Line 13 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:10:06 identical stylesheets/all.css 
+2015-08-21 15:10:07     error sass/all.scss (Line 13 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-08-21 15:10:07 identical stylesheets/all.css 
+2015-08-21 15:14:18     error sass/all.scss (Line 43 of sass/partial/_hero.sass: Invalid property: "z-index:" (no value).)
+2015-08-21 15:14:18 overwrite stylesheets/all.css 
+2015-08-21 15:14:18     error sass/all.scss (Line 43 of sass/partial/_hero.sass: Invalid property: "z-index:" (no value).)
+2015-08-21 15:14:18 identical stylesheets/all.css 
+2015-08-21 15:14:56 overwrite stylesheets/all.css 
+2015-08-21 15:18:14 overwrite stylesheets/all.css 
+2015-08-21 15:19:04 overwrite stylesheets/all.css 
+2015-08-21 15:19:43 overwrite stylesheets/all.css 
+2015-08-21 15:20:00 overwrite stylesheets/all.css 
+2015-08-21 15:28:45 overwrite stylesheets/all.css 
+2015-08-21 15:29:20 overwrite stylesheets/all.css 
+2015-08-21 15:29:25 overwrite stylesheets/all.css 
+2015-08-21 15:29:43 overwrite stylesheets/all.css 
+2015-08-21 15:30:46 overwrite stylesheets/all.css 
+2015-08-21 15:31:40 overwrite stylesheets/all.css 
+2015-08-21 15:32:11 overwrite stylesheets/all.css 
+2015-08-21 15:32:52 overwrite stylesheets/all.css 
+2015-08-21 15:33:10 overwrite stylesheets/all.css 
+2015-08-21 15:34:20 overwrite stylesheets/all.css 
+2015-08-21 15:34:48 overwrite stylesheets/all.css 
+2015-08-21 15:34:55 overwrite stylesheets/all.css 
+2015-08-21 15:35:03 overwrite stylesheets/all.css 
+2015-08-21 15:36:47 overwrite stylesheets/all.css 
+2015-08-21 15:37:05 overwrite stylesheets/all.css 
+2015-08-21 15:37:42 overwrite stylesheets/all.css 
+2015-08-21 15:38:12 overwrite stylesheets/all.css 
+2015-08-21 15:38:18 overwrite stylesheets/all.css 
+2015-08-21 15:38:45 overwrite stylesheets/all.css 
+2015-08-21 15:38:53 overwrite stylesheets/all.css 
+2015-08-21 15:39:01 overwrite stylesheets/all.css 
+2015-08-21 15:39:44 overwrite stylesheets/all.css 
+2015-08-21 15:40:04 overwrite stylesheets/all.css 
+2015-08-21 15:41:05 overwrite stylesheets/all.css 
+2015-08-21 15:42:06 overwrite stylesheets/all.css 
+2015-08-21 15:42:39 overwrite stylesheets/all.css 
+2015-08-21 15:43:05 overwrite stylesheets/all.css 
+2015-08-21 15:43:28 overwrite stylesheets/all.css 
+2015-08-21 15:43:51 overwrite stylesheets/all.css 
+2015-08-21 15:43:55 overwrite stylesheets/all.css 
+2015-08-21 15:44:00 overwrite stylesheets/all.css 
+2015-08-21 15:44:12 overwrite stylesheets/all.css 
+2015-08-21 15:44:58 overwrite stylesheets/all.css 
+2015-08-21 15:45:09 overwrite stylesheets/all.css 
+2015-08-21 15:45:32 overwrite stylesheets/all.css 
+2015-08-21 15:46:05 overwrite stylesheets/all.css 
+2015-08-21 15:47:03 overwrite stylesheets/all.css 
+2015-08-21 15:47:29 overwrite stylesheets/all.css 
+2015-08-21 15:47:35 overwrite stylesheets/all.css 
+2015-08-21 15:48:13 overwrite stylesheets/all.css 
+2015-08-21 15:48:20 overwrite stylesheets/all.css 
+2015-08-21 15:49:46 overwrite stylesheets/all.css 
+2015-08-21 15:49:53 overwrite stylesheets/all.css 
+2015-08-21 15:49:58 overwrite stylesheets/all.css 
+2015-08-21 15:50:29 overwrite stylesheets/all.css 
+2015-08-21 15:51:15 overwrite stylesheets/all.css 
+2015-08-21 15:52:45 overwrite stylesheets/all.css 
+2015-08-21 15:53:01 overwrite stylesheets/all.css 
+2015-08-21 15:53:04 overwrite stylesheets/all.css 
+2015-08-21 15:53:15 overwrite stylesheets/all.css 
+2015-08-21 15:53:27 overwrite stylesheets/all.css 
+2015-08-21 15:53:31 identical stylesheets/all.css 
+2015-08-21 15:53:36 overwrite stylesheets/all.css 
+2015-08-21 15:53:49 overwrite stylesheets/all.css 
+2015-08-21 15:54:12 overwrite stylesheets/all.css 
+2015-08-21 15:54:38 overwrite stylesheets/all.css 
+2015-08-21 15:54:43 overwrite stylesheets/all.css 
+2015-08-21 15:54:47 overwrite stylesheets/all.css 
+2015-08-21 15:55:21 overwrite stylesheets/all.css 
+2015-08-21 15:59:06 overwrite stylesheets/all.css 
+2015-08-21 15:59:21 overwrite stylesheets/all.css 
+2015-08-21 15:59:38 overwrite stylesheets/all.css 
+2015-08-21 16:01:45 overwrite stylesheets/all.css 
+2015-08-21 16:01:55 overwrite stylesheets/all.css 
+2015-08-21 16:02:06 overwrite stylesheets/all.css 
+2015-08-21 16:03:08 overwrite stylesheets/all.css 
+2015-08-21 16:03:30 overwrite stylesheets/all.css 
+2015-08-21 16:03:50 overwrite stylesheets/all.css 
+2015-08-21 16:04:06 overwrite stylesheets/all.css 
+2015-08-21 16:04:11 overwrite stylesheets/all.css 
+2015-08-21 16:04:48 overwrite stylesheets/all.css 
+2015-08-21 16:05:15 overwrite stylesheets/all.css 
+2015-08-21 16:05:39 overwrite stylesheets/all.css 
+2015-08-21 16:05:59 overwrite stylesheets/all.css 
+2015-08-21 16:06:06 overwrite stylesheets/all.css 
+2015-08-21 16:08:56 overwrite stylesheets/all.css 
+2015-08-21 16:09:26     error sass/all.scss (Line 53 of sass/partial/_hero.sass: Invalid property: "top:" (no value).)
+2015-08-21 16:09:26 overwrite stylesheets/all.css 
+2015-08-21 16:09:27     error sass/all.scss (Line 53 of sass/partial/_hero.sass: Invalid property: "top:" (no value).)
+2015-08-21 16:09:27 identical stylesheets/all.css 
+2015-08-21 16:09:32 overwrite stylesheets/all.css 
+2015-08-21 16:09:59 overwrite stylesheets/all.css 
+2015-08-21 16:10:09 overwrite stylesheets/all.css 
+2015-08-21 16:10:32 overwrite stylesheets/all.css 
+2015-08-21 16:11:07 overwrite stylesheets/all.css 
+2015-08-21 16:11:33 overwrite stylesheets/all.css 
+2015-08-21 16:12:31 overwrite stylesheets/all.css 
+2015-08-21 16:13:38 overwrite stylesheets/all.css 
+2015-08-21 16:13:51 overwrite stylesheets/all.css 
+2015-08-21 16:14:17 overwrite stylesheets/all.css 
+2015-08-21 16:14:40 overwrite stylesheets/all.css 
+2015-08-21 16:16:42 overwrite stylesheets/all.css 
+2015-08-21 16:21:25 overwrite stylesheets/all.css 
+2015-08-21 16:21:50 overwrite stylesheets/all.css 
+2015-08-21 16:22:01 overwrite stylesheets/all.css 
+2015-08-21 16:22:09 overwrite stylesheets/all.css 
+2015-08-21 16:23:33 overwrite stylesheets/all.css 
+2015-08-21 16:23:37 overwrite stylesheets/all.css 
+2015-08-21 16:23:56 overwrite stylesheets/all.css 
+2015-08-21 16:24:08 overwrite stylesheets/all.css 
+2015-08-21 16:24:13 overwrite stylesheets/all.css 
+2015-08-21 16:24:25 overwrite stylesheets/all.css 
+2015-08-21 16:25:18 identical stylesheets/all.css 
