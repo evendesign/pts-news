@@ -16,6 +16,7 @@
     height: 45px
     padding: 0px
     border-bottom: 3px solid $color-blue-pts
+    background: $background-color-gray-dark
 
     ul.slidee
       margin: 0px
@@ -52,6 +53,7 @@
     height: 48px
     cursor: pointer
     background: $background-color-gray-dark
+    z-index: 200
 
     .ic-drop-down
       position: absolute
@@ -92,44 +94,31 @@
 
           &.screen-shot
             display: none
-
   .video
-    background-color: #000
+    margin-top: 96px
 
   +at-breakpoint($desktop)
+    position: relative
     width: 100%
     margin-left: -32px
     padding-right: 64px
     +padding-leader(0)
-    background: $background-color-gray-dark
+    background: #000
 
     .frame
-      float: left
-      width: 110px
-      height: 475px
-      padding: 0px
-      border: none
-      border-right: 3px solid $color-blue-pts
+      position: relative
+      width: 100%
+      padding-right: 64px
 
-      ul.slidee
-        height: 100%
-        list-style: none
-
-        li
-          float: left
-          margin: 0px 5px 0px 0px
-          padding: 0px
-          width: 100%
-          border-bottom: 1px solid lighten($background-color-gray-dark, 10%)
-          text-align: center
-          background: $background-color-gray-dark
-
-          a
-            padding: 0px 12px
-            height: 60px
-            +adjust-font-size-to(16px)
-            line-height: 60px
-
+      &:after
+        content: ''
+        display: inline-block
+        position: absolute
+        top: 0px
+        right: 0px
+        width: 64px
+        height: 45px
+        background: $background-color-gray-dark
 
     .select
       float: left
@@ -182,6 +171,50 @@
               background: lighten($background-color-gray-dark, 10%)
 
     .video
-      float: right
+      position: absolute
+      top: 48px
+      left: 50%
+      width: 640px
       height: 475px
-      margin-right: -64px
+      margin: 0px 0px 0px-150px
+      background-color: #000
+
+  +at-breakpoint($wide-desktop)
+    padding-right: 64px
+
+    .frame
+      float: left
+      width: 110px
+      height: 475px
+      padding: 0px
+      border: none
+      border-right: 3px solid $color-blue-pts
+
+      &:after
+        display: none
+
+      ul.slidee
+        height: 100%
+        list-style: none
+
+        li
+          float: left
+          margin: 0px 5px 0px 0px
+          padding: 0px
+          width: 100%
+          border-bottom: 1px solid lighten($background-color-gray-dark, 10%)
+          text-align: center
+          background: $background-color-gray-dark
+
+          a
+            padding: 0px 12px
+            height: 60px
+            +adjust-font-size-to(16px)
+            line-height: 60px
+
+    .video
+      position: relative
+      top: 0px
+      left: 0px
+      float: right
+      margin: 0px -64px 0 0
