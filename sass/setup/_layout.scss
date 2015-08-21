@@ -52,9 +52,6 @@ $off-canvas-header-width: 260px;
   .container {
     @include translateX($off-canvas-header-width);
   }
-  .header-family {
-    // overflow: auto;
-  }
   .off-canvas-mask {
     bottom: 0;
     opacity: .5;

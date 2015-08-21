@@ -1,5 +1,7 @@
 .hero
   float: left
+  +padding-leader(4)
+  width: 100vw
 
   video
     max-width: 100%
@@ -7,10 +9,6 @@
 
   iframe,embed,object
     max-width: 100%
-
-  float: left
-  +padding-leader(4)
-  width: 100vw
 
   .frame
     float: left
@@ -31,6 +29,10 @@
         margin: 0px 5px 0px 0px
         padding: 0px
         width: auto
+        cursor: pointer
+
+        &:hover
+          background: lighten($background-color-gray-dark, 10%)
 
         a
           height: 45px
@@ -40,7 +42,6 @@
           font-weight: bold
           line-height: 45px
           text-decoration: none
-          cursor: pointer
 
         &.is-active
           background-color: $color-blue-pts
@@ -64,10 +65,10 @@
       height: 48px
       margin: 0px
       width: 100vw
-      border: 1px #000 solid
       list-style: none
 
       li
+        +box-sizing(border-box)
         color: #fff
         +adjust-font-size-to(18px)
         font-weight: bold
@@ -87,10 +88,100 @@
           &:hover, &.selected:not(.init)
             background: lighten($color-blue-pts, 10%)
 
+        span
+
+          &.screen-shot
+            display: none
+
   .video
     background-color: #000
 
   +at-breakpoint($desktop)
+    width: 100%
+    margin-left: -32px
+    padding-right: 64px
+    +padding-leader(0)
+    background: $background-color-gray-dark
 
-    li.init
-      display: none
+    .frame
+      float: left
+      width: 110px
+      height: 475px
+      padding: 0px
+      border: none
+      border-right: 3px solid $color-blue-pts
+
+      ul.slidee
+        height: 100%
+        list-style: none
+
+        li
+          float: left
+          margin: 0px 5px 0px 0px
+          padding: 0px
+          width: 100%
+          border-bottom: 1px solid lighten($background-color-gray-dark, 10%)
+          text-align: center
+          background: $background-color-gray-dark
+
+          a
+            padding: 0px 12px
+            height: 60px
+            +adjust-font-size-to(16px)
+            line-height: 60px
+
+
+    .select
+      float: left
+      width: 335px
+      height: 475px
+      overflow-x: hidden
+      overflow-y: auto
+      background: $background-color-gray-dark
+
+      .ic-drop-down
+        display: none
+
+      ul
+        width: 335px
+
+        li
+
+          span
+            display: inline-block
+            float: left
+
+            img
+              margin: 0px
+
+            &.screen-shot
+              display: block
+
+            &.video-name
+              width: 173px
+              height: 74px
+              margin: 10px 0px
+              padding: 0px 12px
+              +adjust-font-size-to(16px)
+              word-break: normal
+              overflow: hidden
+
+          &.init
+            display: none
+
+          &:not(.init)
+            width: 335px
+            height: 96px
+            padding: 0px
+            border-bottom: 1px solid lighten($background-color-gray-dark, 10%)
+            line-height: 96px
+            display: block
+            background: $background-color-gray-dark
+
+            &:hover, &.selected:not(.init)
+              background: lighten($background-color-gray-dark, 10%)
+
+    .video
+      float: right
+      height: 475px
+      margin-right: -64px
