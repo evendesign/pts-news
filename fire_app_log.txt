@@ -1863,3 +1863,6 @@ Load paths:
 2015-08-20 17:36:45      Copy /vender/backgroundsize.min.htc
 2015-08-20 17:36:45      Copy /vender/clocks.js
 2015-08-20 17:36:45      Copy /vender/sly.min.js
+2015-08-20 17:51:54 identical stylesheets/all.css 
+2015-08-20 17:58:08 overwrite stylesheets/all.css 
+2015-08-20 17:58:20 overwrite stylesheets/all.css 
