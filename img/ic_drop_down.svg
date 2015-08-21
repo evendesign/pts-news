@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_drop_down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="news_page_index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="PTSnews-Index_pad-ver2_menu" sketch:type="MSArtboardGroup" transform="translate(-476.000000, -299.000000)">
+            <g id="Group_video" sketch:type="MSLayerGroup" transform="translate(-1.000000, 237.000000)">
+                <g id="dropdown" transform="translate(21.000000, 62.000000)" sketch:type="MSShapeGroup">
+                    <g id="ic_drop_down" transform="translate(456.000000, 0.000000)">
+                        <rect id="Rectangle-3708" fill="#D8D8D8" x="0" y="0" width="16" height="16" rx="2"></rect>
+                        <path d="M8.34040443,10.5658472 L12.4674313,6.43882036 C12.6802021,6.22604956 12.6800586,5.88791896 12.4714175,5.67927784 C12.2613218,5.46918211 11.9227176,5.4724214 11.711875,5.68326403 L7.80460429,9.59053472 L3.8973336,5.68326403 C3.68649097,5.4724214 3.34788681,5.46918211 3.13779108,5.67927784 C2.92914996,5.88791896 2.92900647,6.22604956 3.14177727,6.43882036 L7.26880416,10.5658472 C7.29464429,10.636161 7.33581637,10.7020456 7.39223308,10.7584623 C7.50567206,10.8719012 7.65657571,10.9231457 7.80460429,10.9130978 C7.95263287,10.9231457 8.10353652,10.8719012 8.21697551,10.7584623 C8.27339221,10.7020456 8.31456429,10.636161 8.34040443,10.5658472 L8.34040443,10.5658472 Z" id="Rectangle-1158" fill="#393333"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

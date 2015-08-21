@@ -21,7 +21,6 @@ if ($(window).width() < 960){
     touchDragging: 1,
     releaseSwing: 1,
     startAt: 1,
-    // activatePageOn: 'click',
     speed: 200,
     moveBy: 600,
     elasticBounds: 1,
