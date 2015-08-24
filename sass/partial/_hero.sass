@@ -75,6 +75,9 @@
         +adjust-font-size-to(18px)
         font-weight: bold
         line-height: 44px
+        text-overflow: ellipsis
+        white-space: nowrap
+        overflow: hidden
         z-index: 2
 
         &:not(.init)
@@ -135,6 +138,7 @@
         width: 335px
 
         li
+          white-space: normal
 
           span
             display: inline-block
