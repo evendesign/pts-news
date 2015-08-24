@@ -342,6 +342,7 @@ html, body, .page, .page { height: 100%; }
 .header-news .frame ul.slidee li.last { padding-right: 0; }
 .header-news .frame ul.slidee li { list-style-image: none; list-style-type: none; margin-left: 0; }
 .header-news .frame ul.slidee li { position: relative; float: left; height: 40px; margin: 0 5px 0 0; padding: 0px; line-height: 36px; }
+.header-news .frame ul.slidee li:first-child { margin-left: 20px; }
 .header-news .frame ul.slidee li + li { margin-left: 8px; }
 .header-news .frame ul.slidee li.is-active:after { content: ""; position: absolute; bottom: -10px; right: 18%; height: 3px; width: 82%; background-color: #fea850; }
 .header-news .frame ul.slidee li a { display: inline-block; padding: 8px 12px 0px 0px; cursor: pointer; text-decoration: none; color: white; }
@@ -365,6 +366,7 @@ html, body, .page, .page { height: 100%; }
   .header-news .frame { position: relative; top: -8px; float: left; width: 80%; height: auto; background-color: transparent; }
   .header-news .frame ul.slidee { width: 100%; background-color: transparent; }
   .header-news .frame ul.slidee li { position: relative; float: left; height: 40px; }
+  .header-news .frame ul.slidee li:first-child { margin-left: 0px; }
   .header-news .frame ul.slidee li a { padding: 10px 5px 0px 0px; color: #333333; }
   .header-news .frame ul.slidee li a:hover { color: #999999; }
   .header-news .frame ul.slidee li.is-active:after { bottom: -8px; }

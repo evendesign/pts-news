@@ -60,6 +60,9 @@
         padding: 0px
         line-height: rhythm(1.5)
 
+        &:first-child
+          margin-left: 20px
+
         & + li
           margin-left: 8px
 
@@ -141,9 +144,14 @@
             position : relative
             float: left
             height: 40px
+
+            &:first-child
+              margin-left: 0px
+
             a
               padding: 10px 5px 0px 0px
               +link-colors($text-black, $text-gray)
+
             &.is-active:after
               bottom: -8px
 
