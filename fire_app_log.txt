@@ -2553,3 +2553,12 @@ Load paths:
 2015-08-24 17:11:04      Copy /vender/clocks.js
 2015-08-24 17:11:04      Copy /vender/fitvids.js
 2015-08-24 17:11:04      Copy /vender/sly.min.js
+2015-08-24 17:13:47 identical stylesheets/all.css 
+2015-08-24 17:20:32 overwrite stylesheets/all.css 
+2015-08-24 17:20:38 overwrite stylesheets/all.css 
+2015-08-24 17:21:46 overwrite stylesheets/all.css 
+2015-08-24 17:22:10 overwrite stylesheets/all.css 
+2015-08-24 17:22:23 overwrite stylesheets/all.css 
+2015-08-24 17:22:43 overwrite stylesheets/all.css 
+2015-08-24 17:23:18 overwrite stylesheets/all.css 
+2015-08-24 17:23:53 identical stylesheets/all.css 

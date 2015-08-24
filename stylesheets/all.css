@@ -389,10 +389,10 @@ html, body, .page, .page { height: 100%; }
 .hero .frame ul.slidee li.is-active { background-color: #04519c; }
 .hero .select { float: left; position: relative; height: 48px; cursor: pointer; background: #272727; z-index: 200; display: none; }
 .hero .select.is-active { display: block; }
-.hero .select .ic-drop-down { position: absolute; top: 14px; right: 48px; width: 16px; height: 16px; background: url(/img/ic_drop_down.svg) no-repeat center; }
-.hero .select ul { height: 48px; margin: 0px; width: 100vw; list-style: none; }
-.hero .select ul li { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; color: white; font-size: 18px; line-height: 24px; font-weight: bold; line-height: 44px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; z-index: 2; }
-.hero .select ul li:not(.init) { float: left; width: 100vw; height: 48px; margin-left: -24px; padding-left: 24px; border-bottom: 1px white solid; background: #04519c; display: none; }
+.hero .select .ic-drop-down { position: absolute; top: 14px; right: 24px; width: 16px; height: 16px; background: url(/img/ic_drop_down.svg) no-repeat center; }
+.hero .select ul { height: 48px; margin: 0px; width: 100vw; padding: 0px; list-style: none; }
+.hero .select ul li { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 24px; color: white; font-size: 18px; line-height: 24px; font-weight: bold; line-height: 44px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; z-index: 2; }
+.hero .select ul li:not(.init) { float: left; width: 100vw; height: 48px; border-bottom: 1px white solid; background: #04519c; display: none; }
 .hero .select ul li:not(.init):hover, .hero .select ul li:not(.init).selected:not(.init) { background: #056bce; }
 .hero .select ul li span.screen-shot { display: none; }
 .hero ul.video-list { margin-top: 96px; padding: 0px; list-style: none; display: none; }
