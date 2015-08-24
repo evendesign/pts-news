@@ -41,6 +41,21 @@ var video_select = function (){
 
 video_select();
 
+// video select dropdown //
+if ($(window).width() < 960){
+  $(".select").find("ul").on("click", ".init", function() {
+      $(this).closest("ul").children('li:not(.init)').toggle();
+  });
+
+  var allOptions = $(".select").find("ul").children('li:not(.init)');
+  $(".select").find("ul").on("click", "li:not(.init)", function() {
+      allOptions.removeClass('selected');
+      $(this).addClass('selected');
+      $(".select").find("ul").children('.init').html($(this).html());
+      allOptions.toggle();
+  });
+}
+
 // sly.js //
 
 if ($(window).width() < 960){
@@ -55,7 +70,7 @@ if ($(window).width() < 960){
     touchDragging: 1,
     releaseSwing: 1,
     startAt: 1,
-    speed: 200,
+    speed: 1000,
     moveBy: 600,
     elasticBounds: 1,
     dragHandle: 1,
@@ -74,7 +89,7 @@ if ($(window).width() < 960){
     touchDragging: 1,
     releaseSwing: 1,
     startAt: 1,
-    speed: 200,
+    speed: 1000,
     moveBy: 600,
     elasticBounds: 1,
     dragHandle: 1,
@@ -87,18 +102,3 @@ if ($(window).width() < 960){
 $(document).ready(function(){
   $(".video-list").fitVids();
 });
-
-// video selet //
-if ($(window).width() < 960){
-  $(".select").find("ul").on("click", ".init", function() {
-      $(this).closest("ul").children('li:not(.init)').toggle();
-  });
-
-  var allOptions = $(".select").find("ul").children('li:not(.init)');
-  $(".select").find("ul").on("click", "li:not(.init)", function() {
-      allOptions.removeClass('selected');
-      $(this).addClass('selected');
-      $(".select").find("ul").children('.init').html($(this).html());
-      allOptions.toggle();
-  });
-}
