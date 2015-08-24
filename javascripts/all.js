@@ -8,7 +8,41 @@ var off_canvas = function (){
 
 off_canvas();
 
+// hero video select //
+var video_select = function (){
+  $(".slidee").find("li").each(function(){
+    var li = $(this);
+    li.on("click", function(event){
+      li.addClass("is-active");
+      li.siblings().removeClass("is-active");
+      var this_program = li.attr("data-value");
+      var program_list = $(".select[data-value="+ this_program +"]");
+      program_list.addClass("is-active");
+      program_list.siblings().removeClass("is-active");
+      var video_list = $(".video-list[data-value="+ this_program +"]");
+      video_list.addClass("is-active");
+      video_list.siblings("ul").removeClass("is-active");
+      event.preventDefault();
+    })
+  })
+  $(".select").find("li").each(function(){
+    var li = $(this);
+    li.on("click", function(event){
+      li.addClass("is-active");
+      li.siblings().removeClass("is-active");
+      var this_video = li.attr("data-value");
+      var video = $(".video-list.is-active").find("li").filter("[data-value="+ this_video +"]");
+      video.addClass("is-active");
+      video.siblings().removeClass("is-active");
+      event.preventDefault();
+    })
+  })
+};
+
+video_select();
+
 // sly.js //
+
 if ($(window).width() < 960){
   var $frame = $('.frame'); window.frr = $frame;
   var sly = new Sly($frame, {
@@ -51,7 +85,7 @@ if ($(window).width() < 960){
 
 // fitVids.js //
 $(document).ready(function(){
-  $(".video").fitVids();
+  $(".video-list").fitVids();
 });
 
 // video selet //

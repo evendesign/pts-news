@@ -387,18 +387,23 @@ html, body, .page, .page { height: 100%; }
 .hero .frame ul.slidee li:hover { background: #414141; }
 .hero .frame ul.slidee li a { height: 45px; padding: 0px 24px; color: white; font-size: 18px; line-height: 24px; font-weight: bold; line-height: 45px; text-decoration: none; }
 .hero .frame ul.slidee li.is-active { background-color: #04519c; }
-.hero .select { float: left; position: relative; height: 48px; cursor: pointer; background: #272727; z-index: 200; }
+.hero .select { float: left; position: relative; height: 48px; cursor: pointer; background: #272727; z-index: 200; display: none; }
+.hero .select.is-active { display: block; }
 .hero .select .ic-drop-down { position: absolute; top: 14px; right: 48px; width: 16px; height: 16px; background: url(/img/ic_drop_down.svg) no-repeat center; }
 .hero .select ul { height: 48px; margin: 0px; width: 100vw; list-style: none; }
 .hero .select ul li { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; color: white; font-size: 18px; line-height: 24px; font-weight: bold; line-height: 44px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; z-index: 2; }
 .hero .select ul li:not(.init) { float: left; width: 100vw; height: 48px; margin-left: -24px; padding-left: 24px; border-bottom: 1px white solid; background: #04519c; display: none; }
 .hero .select ul li:not(.init):hover, .hero .select ul li:not(.init).selected:not(.init) { background: #056bce; }
 .hero .select ul li span.screen-shot { display: none; }
-.hero .video { margin-top: 96px; }
+.hero ul.video-list { margin-top: 96px; padding: 0px; list-style: none; display: none; }
+.hero ul.video-list.is-active { display: block; }
+.hero ul.video-list li { display: none; }
+.hero ul.video-list li.is-active { display: block; }
 @media (min-width: 1024px) { .hero { position: relative; width: 100%; margin-left: -32px; padding-right: 64px; padding-top: 0px; background: black; }
   .hero .frame { position: relative; width: 100%; padding-right: 64px; }
   .hero .frame:after { content: ""; display: inline-block; position: absolute; top: 0px; right: 0px; width: 64px; height: 45px; background: #272727; }
   .hero .select { float: left; width: 335px; height: 475px; overflow-x: hidden; overflow-y: auto; background: #272727; }
+  .hero .select.is-active li.is-active { background: #414141; }
   .hero .select .ic-drop-down { display: none; }
   .hero .select ul { width: 335px; }
   .hero .select ul li { white-space: normal; }
@@ -409,11 +414,11 @@ html, body, .page, .page { height: 100%; }
   .hero .select ul li.init { display: none; }
   .hero .select ul li:not(.init) { width: 335px; height: 96px; padding: 0px; border-bottom: 1px solid #414141; line-height: 96px; display: block; background: #272727; }
   .hero .select ul li:not(.init):hover, .hero .select ul li:not(.init).selected:not(.init) { background: #414141; }
-  .hero .video { position: absolute; top: 48px; left: 50%; width: 640px; height: 475px; margin: 0px 0px 0px -150px; background-color: black; } }
+  .hero ul.video-list { position: absolute; top: 48px; left: 50%; width: 640px; height: 475px; margin: 0px 0px 0px -150px; background-color: black; } }
 @media (min-width: 1200px) { .hero { padding-right: 64px; }
   .hero .frame { float: left; width: 110px; height: 475px; padding: 0px; border: none; border-right: 3px solid #04519c; }
   .hero .frame:after { display: none; }
   .hero .frame ul.slidee { height: 100%; list-style: none; }
   .hero .frame ul.slidee li { float: left; margin: 0px 5px 0px 0px; padding: 0px; width: 100%; border-bottom: 1px solid #414141; text-align: center; background: #272727; }
   .hero .frame ul.slidee li a { padding: 0px 12px; height: 60px; font-size: 16px; line-height: 24px; line-height: 60px; }
-  .hero .video { position: relative; top: 0px; left: 0px; float: right; margin: 0px -64px 0 0; } }
+  .hero ul.video-list { position: relative; top: 0px; left: 0px; float: right; margin: 0px -64px 0 0; } }

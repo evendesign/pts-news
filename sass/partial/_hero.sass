@@ -54,6 +54,10 @@
     cursor: pointer
     background: $background-color-gray-dark
     z-index: 200
+    display: none
+
+    &.is-active
+      display: block
 
     .ic-drop-down
       position: absolute
@@ -97,8 +101,21 @@
 
           &.screen-shot
             display: none
-  .video
+
+  ul.video-list
     margin-top: 96px
+    padding: 0px
+    list-style: none
+    display: none
+
+    &.is-active
+      display: block
+
+    li
+      display: none
+
+      &.is-active
+        display: block
 
   +at-breakpoint($desktop)
     position: relative
@@ -130,6 +147,11 @@
       overflow-x: hidden
       overflow-y: auto
       background: $background-color-gray-dark
+
+      &.is-active
+
+        li.is-active
+          background: lighten($background-color-gray-dark, 10%)
 
       .ic-drop-down
         display: none
@@ -174,7 +196,7 @@
             &:hover, &.selected:not(.init)
               background: lighten($background-color-gray-dark, 10%)
 
-    .video
+    ul.video-list
       position: absolute
       top: 48px
       left: 50%
@@ -216,7 +238,7 @@
             +adjust-font-size-to(16px)
             line-height: 60px
 
-    .video
+    ul.video-list
       position: relative
       top: 0px
       left: 0px
