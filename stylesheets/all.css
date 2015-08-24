@@ -329,7 +329,7 @@ html, body, .page, .page { height: 100%; }
   .header-family .search-pts input[type=search] { width: 424px; }
   .header-family .search-pts input[type=button] { width: 76px; } }
 
-.header-news:before { content: ""; display: inline-block; position: absolute; top: 0px; width: 100%; height: 3px; background-color: #04519c; }
+.header-news:before { content: ""; display: inline-block; position: absolute; top: 0px; left: 0px; width: 100%; height: 3px; background-color: #04519c; }
 .header-news a.menu-btn { display: inline-block; float: left; width: 30px; height: 19px; margin: 20px 0px 0px 20px; cursor: pointer; text-decoration: none; background: white url(/img/ic_menu.svg) no-repeat center; }
 .header-news .news-logo-mobile { position: absolute; top: 8px; left: 50%; margin-left: -51px; width: 103px; height: 41px; }
 .header-news .news-logo-mobile img { margin: 0px; }
