@@ -1,0 +1,110 @@
+// ---- susy setting ----
+// basic for susy
+$total-columns: 6
+$column-width: 5em
+$gutter-width: 1em
+$grid-padding: $gutter-width
+
+// add media
+$phone: 640px, $total-columns
+$pad: 960px, 8
+$desktop: 1024px, 10
+$wide-desktop: 1200px, 12
+
+// page-container
+$page-container: ".page"
+
+// debug layout
+// @import "layout-debug";
+
+$container-style: fluid
+
+// ---- container setting ----
+html, body, .page, #{$page-container}
+  height: 100%
+
+#{$page-container}
+  +container($phone, $pad, $desktop, $wide-desktop)
+
+$off-canvas-header-width: 260px
+
+.header-family
+  position: fixed
+  top: 0
+  width: $off-canvas-header-width
+  height: 100vh
+  +translateX(-100%)
+  background-color: $background-color-gray
+
+.off-canvas-mask
+  position: fixed
+  top: 0
+  left: $off-canvas-header-width
+  right: 0
+
+.open-menu
+  .page
+    overflow: hidden
+
+  .container
+    +translateX($off-canvas-header-width)
+
+  .off-canvas-mask
+    bottom: 0
+    opacity: .5
+
+.latest-news
+  ul.news-list
+    +span-columns(6 omega, $total_columns)
+
++at-breakpoint($phone)
+  .page
+    padding: 0px
+
+  .main
+    padding: 0px $gutter-width * 2
+
+
++at-breakpoint($desktop)
+  .header-family
+    position: relative
+    width: 100%
+    height: 86px
+    padding: rhythm(1) rhythm(1) 0px rhythm(1)
+    background-color: transparent
+    +translateX(0px)
+
+  .header-family
+    position: static
+    +translateX(0%)
+
+  .content
+    +box-sizing(border-box)
+    padding: 0
+    +span-columns(6 omega, $total_columns)
+
+  .open-menu
+    .page
+      overflow: visible
+
+    .main
+      +translateX(0)
+
+    .off-canvas-mask
+      display: none
+
+  .latest-news
+    ul.news-list
+      +span-columns(5, 10)
+      +nth-omega(2n)
+
++at-breakpoint($wide-desktop)
+  #{$page-container}
+    $grid-padding: $gutter-width * 2
+    $container-style: magic
+    +container
+
+  .latest-news
+    ul.news-list
+      +span-columns(6, 12)
+      +nth-omega(2n)

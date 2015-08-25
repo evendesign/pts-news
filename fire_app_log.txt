@@ -2890,3 +2890,25 @@ Load paths:
 2015-08-25 17:24:13 overwrite stylesheets/all.css 
 2015-08-25 17:24:50 overwrite stylesheets/all.css 
 2015-08-25 17:25:19 overwrite stylesheets/all.css 
+2015-08-25 17:31:33     error sass/all.scss (Line 4 of sass/setup/_layout.scss: Invalid CSS after "$column-width": expected selector or at-rule, was ": 5em")
+2015-08-25 17:31:33 overwrite stylesheets/all.css 
+2015-08-25 17:31:33     error sass/all.scss (Line 4 of sass/setup/_layout.scss: Invalid CSS after "$column-width": expected selector or at-rule, was ": 5em")
+2015-08-25 17:31:33 identical stylesheets/all.css 
+2015-08-25 17:31:43 overwrite stylesheets/all.css 
+2015-08-25 17:31:43 identical stylesheets/all.css 
+2015-08-25 17:31:44 identical stylesheets/all.css 
+2015-08-25 17:31:45 identical stylesheets/all.css 
+2015-08-25 17:34:26 overwrite stylesheets/all.css 
+2015-08-25 17:34:27 identical stylesheets/all.css 
+2015-08-25 17:34:39 overwrite stylesheets/all.css 
+2015-08-25 17:34:39 identical stylesheets/all.css 
+2015-08-25 17:35:30 identical stylesheets/all.css 
+2015-08-25 17:35:31 identical stylesheets/all.css 
+2015-08-25 17:37:26 overwrite stylesheets/all.css 
+2015-08-25 17:37:27 identical stylesheets/all.css 
+2015-08-25 17:38:59 overwrite stylesheets/all.css 
+2015-08-25 17:39:00 identical stylesheets/all.css 
+2015-08-25 17:39:19 overwrite stylesheets/all.css 
+2015-08-25 17:39:20 identical stylesheets/all.css 
+2015-08-25 17:39:50 identical stylesheets/all.css 
+2015-08-25 17:39:50 identical stylesheets/all.css 
