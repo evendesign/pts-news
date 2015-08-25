@@ -440,7 +440,8 @@ html, body, .page, .page { height: 100%; }
   .latest-news ul.news-list li a.news-item .news-item-topic { width: 75vw; } }
 @media (min-width: 960px) { .latest-news { padding: 20px 0px 36px 0px; }
   .latest-news ul.news-list li a.news-item .news-item-topic { width: 80vw; } }
-@media (min-width: 1024px) { .latest-news ul.news-list { width: 49.15254%; float: left; margin-right: 1.69492%; }
+@media (min-width: 1024px) { .latest-news { padding: 36px 0px 20px 5px; }
+  .latest-news ul.news-list { width: 49.15254%; float: left; margin-right: 1.69492%; }
   .latest-news ul.news-list:nth-child(2n) { float: right; margin-right: 0; }
   .latest-news ul.news-list li a.news-item .news-item-topic { width: auto; } }
 @media (min-width: 1200px) { .latest-news ul.news-list { width: 49.29577%; float: left; margin-right: 1.40845%; }
