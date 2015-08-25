@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_play</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="news_page_index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="PTSnews-Index_pad-ver2_menu" sketch:type="MSArtboardGroup" transform="translate(-34.000000, -1119.000000)">
+            <g id="Group_latest" sketch:type="MSLayerGroup" transform="translate(19.700000, 747.000000)">
+                <g id="news_latest_ul" transform="translate(0.000000, 59.000000)" sketch:type="MSShapeGroup">
+                    <g id="li_left">
+                        <g id="li-copy-10" transform="translate(0.000000, 305.000000)">
+                            <g id="ic_play" transform="translate(15.000000, 8.000000)">
+                                <circle id="Oval-1" fill-opacity="0.799999952" fill="#FFFFFF" cx="10" cy="10" r="10"></circle>
+                                <path d="M6.94444444,14.0277778 L6.94444444,5.69444444 L15.2777778,9.86111111 L6.94444444,14.0277778 Z" id="Triangle-1" fill="#04519C"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

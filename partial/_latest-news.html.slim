@@ -1,0 +1,12 @@
+.latest-news
+  .news-title
+    a href="#" = image_tag "/img/latest-title.svg", :size => "149x31"
+  - 2.times
+    ul.news-list
+      - 7.times
+        li
+          a.news-item
+            .news-item-media.video
+              = image_tag(lorem_image("48x36"))
+            .news-item-topic
+              = zh_lorem_words(20+rand(4))

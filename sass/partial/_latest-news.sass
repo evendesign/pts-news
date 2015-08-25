@@ -1,0 +1,83 @@
+.latest-news
+  float: left
+  padding: 20px
+
+  ul.news-list
+    +span-columns(6 omega, $total_columns)
+    margin: 0px
+    padding: 0px
+    list-style-type: none
+
+    li
+      width: 100%
+      border-bottom: 1px solid $line-color-gray-light
+      cursor: pointer
+
+      &:hover
+        background-color: lighten($color-blue-pts, 60%)
+
+      a.news-item
+        display: inline-block
+        height: 59px
+        +link-colors($text-black)
+
+        .news-item-media
+          float: left
+          position: relative
+
+          img
+            margin: 14px 0px 0px 0px
+
+          &.video:before
+            content: ''
+            display: inline-block
+            position: absolute
+            top: 22px
+            left: 13px
+            width: 20px
+            height: 20px
+            background: url(/img/ic_play.svg) no-repeat center
+
+        .news-item-topic
+          float: left
+          width: 65vw
+          margin-left: 15px
+          line-height: 60px
+          text-overflow: ellipsis
+          white-space: nowrap
+          overflow: hidden
+
+  +at-breakpoint($phone)
+    padding: 20px 0px 36px 36px
+
+    ul.news-list
+      li
+        a.news-item
+          .news-item-topic
+            width: 75vw
+
+  +at-breakpoint($pad)
+    padding: 20px 0px 36px 0px
+
+    ul.news-list
+      li
+        a.news-item
+          .news-item-topic
+            width: 80vw
+
+  +at-breakpoint($desktop)
+
+    ul.news-list
+      +span-columns(5, 10)
+      +nth-omega(2n)
+
+      li
+        a.news-item
+          .news-item-topic
+            width: auto
+
+  +at-breakpoint($wide-desktop)
+
+    ul.news-list
+      +span-columns(6, 12)
+      +nth-omega(2n)
