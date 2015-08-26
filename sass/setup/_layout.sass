@@ -15,7 +15,7 @@ $wide-desktop: 1200px, 12
 $page-container: ".page"
 
 // debug layout
-// @import "layout-debug";
+// @import "layout-debug"
 
 $container-style: fluid
 
@@ -53,9 +53,13 @@ $off-canvas-header-width: 260px
     bottom: 0
     opacity: .5
 
-.latest-news
-  ul.news-list
-    +span-columns(6 omega, $total_columns)
+// .news-title
+//   +isolate-grid(6, 6)
+
+
+// .latest-news
+//   ul.news-list
+//     +isolate-grid(6, 6)
 
 +at-breakpoint($phone)
   .page
@@ -93,10 +97,16 @@ $off-canvas-header-width: 260px
     .off-canvas-mask
       display: none
 
+  .news-title
+    +isolate-grid(10, 10)
+
   .latest-news
     ul.news-list
-      +span-columns(5, 10)
-      +nth-omega(2n)
+      +isolate-grid(5, 10)
+
+  .category-news
+    .category-item
+      +isolate-grid(5, 10)
 
 +at-breakpoint($wide-desktop)
   #{$page-container}
@@ -104,7 +114,13 @@ $off-canvas-header-width: 260px
     $container-style: magic
     +container
 
+  .news-title
+    +isolate-grid(12, 12)
+
   .latest-news
     ul.news-list
-      +span-columns(6, 12)
-      +nth-omega(2n)
+      +isolate-grid(6, 12)
+
+  .category-news
+    .category-item
+      +isolate-grid(4, 12)

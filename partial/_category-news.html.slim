@@ -1,0 +1,12 @@
+.category-news
+  .news-title
+    = image_tag "/img/category-title.svg", :size => "191x31"
+  .category-content
+    - 11.times
+      .category-item
+        .category-title
+          a href="#" = zh_lorem_words(2+rand(2))
+        ul
+          - 5.times
+            li
+              a = zh_lorem_words(16+rand(2))

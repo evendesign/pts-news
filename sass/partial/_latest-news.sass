@@ -1,9 +1,10 @@
 .latest-news
-  float: left
-  padding: 20px
+  padding: 20px 20px 40px 20px
 
   ul.news-list
-    margin: 0px
+    height: auto
+    margin-top: 0px
+    margin-bottom: 0px
     padding: 0px
     list-style-type: none
 
@@ -17,7 +18,7 @@
 
       a.news-item
         display: inline-block
-        height: 59px
+        height: 60px
         +link-colors($text-black)
 
         .news-item-media
@@ -47,28 +48,17 @@
           overflow: hidden
 
   +at-breakpoint($phone)
-    padding: 20px 0px 36px 36px
-
-    ul.news-list
-      li
-        a.news-item
-          .news-item-topic
-            width: 75vw
-
-  +at-breakpoint($pad)
-    padding: 20px 0px 36px 0px
-
-    ul.news-list
-      li
-        a.news-item
-          .news-item-topic
-            width: 80vw
-
-  +at-breakpoint($desktop)
-    padding: 36px 0px 20px 5px
-
+    padding-left: 36px
     ul.news-list
       li
         a.news-item
           .news-item-topic
             width: auto
+
+  +at-breakpoint($desktop)
+    padding: 0px
+    ul.news-list
+      margin-bottom: 48px
+      li
+        a.news-item
+          .news-item-topic

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="22px" viewBox="0 0 20 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_more</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="news_page_index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="PTSNews-Index_4_36px_dot" sketch:type="MSArtboardGroup" transform="translate(-126.000000, -1339.000000)" fill="#B2B2B2">
+            <g id="Group_category_ver2" sketch:type="MSLayerGroup" transform="translate(75.000000, 1266.000000)">
+                <g id="Group_1" transform="translate(0.900000, 72.000000)" sketch:type="MSShapeGroup">
+                    <g id="title_more">
+                        <g id="ic_more" transform="translate(55.000000, 3.000000)">
+                            <path d="M5.48221401,5.06263867 C5.17426604,4.93206194 4.80819537,4.99231588 4.5593298,5.24118145 L-3.75823326,13.5587445 C-4.07866452,13.8791758 -4.0842911,14.4220938 -3.7528998,14.7534851 C-3.41919811,15.0871868 -2.88660493,15.0872643 -2.55815922,14.7588185 L5.48221401,6.71844532 L13.5225872,14.7588185 C13.851033,15.0872643 14.3836261,15.0871868 14.7173278,14.7534851 C15.0487191,14.4220938 15.0430925,13.8791758 14.7226613,13.5587445 L6.40509823,5.24118145 C6.15623265,4.99231588 5.79016199,4.93206194 5.48221401,5.06263867 Z" id="Rectangle-1158" transform="translate(5.482214, 10.000000) rotate(-270.000000) translate(-5.482214, -10.000000) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
