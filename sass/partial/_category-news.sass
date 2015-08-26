@@ -1,6 +1,9 @@
 .category-news
   padding: 20px 20px 40px 20px
 
+  .news-title:after
+    margin-bottom: 0px
+
   .category-item
     height: auto
 
@@ -49,8 +52,9 @@
 
   +at-breakpoint($desktop)
     padding: 0px
-    +adjust-font-size-to(16px)
 
     .category-item
       ul
         margin: 0px 0px 50px 0px
+        +adjust-font-size-to(16px)
+        line-height: 36px

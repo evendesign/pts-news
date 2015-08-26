@@ -1,8 +1,14 @@
 .program-news
   .news-title
+    = image_tag "/img/program-title.svg", :size => "192x31"
   .program-content
-    .program-item
-      a.program-logo
-      .program-time
-      a.program-topic
-      .program-description
+    - 8.times
+      .program-item
+        a.program-logo href="#"
+          = image_tag(lorem_image("120x30"))
+        .program-time
+          | 每周一到周五 08:00
+        a.program-topic
+          = zh_lorem_sentence
+        .program-description
+          = zh_lorem_paragraph

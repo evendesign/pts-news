@@ -100,6 +100,10 @@ $off-canvas-header-width: 260px
     .category-item
       +isolate-grid(5, 10)
 
+  .program-news
+    .program-item
+      +isolate-grid(5, 10)
+
 +at-breakpoint($wide-desktop)
   #{$page-container}
     $grid-padding: $gutter-width * 2
@@ -115,4 +119,8 @@ $off-canvas-header-width: 260px
 
   .category-news
     .category-item
+      +isolate-grid(4, 12)
+
+  .program-news
+    .program-item
       +isolate-grid(4, 12)
