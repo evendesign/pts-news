@@ -1,1 +1,28 @@
 .ad-news
+  +pie-clearfix
+  margin-top: 20px
+  padding: 20px 20px 40px 20px
+
+  .program
+    float: left
+    display: inline-block
+
+    .banner
+      float: left
+      margin-right: 20px
+
+  .facebook
+    float: left
+    display: none
+
+  +at-breakpoint($phone)
+    padding-left: 36px
+
+  +at-breakpoint($desktop)
+    padding: 0px
+
+    .program
+      width: 520px
+
+    .facebook
+      display: block

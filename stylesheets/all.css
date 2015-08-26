@@ -452,6 +452,7 @@ html, body, .page, .page { height: 100%; }
   .hero ul.video-list { position: relative; top: 0px; left: 0px; float: right; margin: 0px -64px 0 0; } }
 
 .latest-news { padding: 20px 20px 40px 20px; }
+.latest-news:after { content: ""; display: table; clear: both; }
 .latest-news .news-title:after { margin-bottom: 0px; }
 .latest-news ul.news-list { height: auto; margin-top: 0px; margin-bottom: 0px; padding: 0px; list-style-type: none; }
 .latest-news ul.news-list li { width: 100%; border-bottom: 1px solid #d8d8d8; cursor: pointer; }
@@ -467,6 +468,7 @@ html, body, .page, .page { height: 100%; }
   .latest-news ul.news-list { margin-bottom: 48px; } }
 
 .category-news { padding: 20px 20px 40px 20px; }
+.category-news:after { content: ""; display: table; clear: both; }
 .category-news .news-title:after { margin-bottom: 0px; }
 .category-news .category-item { height: auto; }
 .category-news .category-item .category-title { margin-top: 10px; font-size: 24px; line-height: 48px; }
@@ -484,6 +486,7 @@ html, body, .page, .page { height: 100%; }
   .category-news .category-item ul { margin: 0px 0px 50px 0px; font-size: 16px; line-height: 24px; line-height: 36px; } }
 
 .program-news { padding: 20px 20px 40px 20px; }
+.program-news:after { content: ""; display: table; clear: both; }
 .program-news .program-item { margin-bottom: 36px; }
 .program-news .program-item a.program-logo img { margin: 0px; }
 .program-news .program-item .program-time { font-size: 18px; line-height: 24px; line-height: 36px; }
@@ -495,3 +498,13 @@ html, body, .page, .page { height: 100%; }
   .program-news .program-item .program-time { font-size: 14px; line-height: 24px; line-height: 36px; }
   .program-news .program-item a.program-topic { font-size: 16px; line-height: 24px; }
   .program-news .program-item .program-description { font-size: 16px; line-height: 24px; } }
+
+.ad-news { margin-top: 20px; padding: 20px 20px 40px 20px; }
+.ad-news:after { content: ""; display: table; clear: both; }
+.ad-news .program { float: left; display: inline-block; }
+.ad-news .program .banner { float: left; margin-right: 20px; }
+.ad-news .facebook { float: left; display: none; }
+@media (min-width: 640px) { .ad-news { padding-left: 36px; } }
+@media (min-width: 1024px) { .ad-news { padding: 0px; }
+  .ad-news .program { width: 520px; }
+  .ad-news .facebook { display: block; } }
