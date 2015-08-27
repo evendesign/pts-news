@@ -1,0 +1,157 @@
+.footer
+  float: left
+  width: 100vw
+  background-color: $background-color-gray
+  overflow-x: hidden
+
+  ul
+    list-style: none
+    margin: 0px
+    padding: 0px
+
+  a
+    +link-colors(darken($text-gray, 15%))
+
+    &:hover
+      text-decoration: none
+
+  .footer-nav-group
+    width: 100vw
+    height: auto
+    margin-top: 40px
+    margin-left: 12px
+
+  .footer-nav-item
+    float: left
+    margin-right: 26px
+    margin-bottom: 36px
+
+  .footer-nav-title
+    +adjust-font-size-to(18px)
+    line-height: 36px
+
+    &:after
+      content: ''
+      display: block
+      background-color: $text-gray-light
+      width: 140px
+      height: 1px
+      margin-left: -2px
+
+  ul.footer-list
+    line-height: 36px
+
+  label.e-newsletter
+    float: left
+    width: 100vw
+    margin-left: 12px
+
+  label.footer-nav-title
+    display: block
+
+    &:after
+      display: none
+
+
+  input#e-newsletter
+    width: 160px
+    height: 23px
+    padding-left: 12px
+    border: $line-color-gray-light 1px solid
+    +border-radius(2px 0 0 2px)
+    -webkit-appearance: none
+    appearance: none
+    +adjust-font-size-to(14px)
+
+    &:focus
+      outline: none
+
+  button
+    height: 27px
+    margin: 0px
+    border: none
+    padding: 0px 24px
+    border: $color-blue-pts 1px solid
+    +border-radius(0 2px 2px 0)
+    +adjust-font-size-to(14px)
+    color: #fff
+    background-color: $color-blue-pts
+
+  .social-icons
+    float: left
+    width: 100vw
+    margin-top: 24px
+    margin-left: 12px
+
+    li
+      display: inline-block
+
+    span
+      display: inline-block
+      width: 44px
+      height: 44px
+      margin-right: 10px
+      text-indent: -1999999px
+      overflow: hidden
+
+  .facebook
+    background: url(/img/ic_fb.svg) no-repeat center
+
+  .line
+    background: url(/img/ic_line.png) no-repeat center
+
+  .youtube
+    background: url(/img/ic_youtube.svg) no-repeat center
+
+  .company-info
+    float: left
+    margin-top: 12px
+    margin-left: 12px
+    +adjust-font-size-to(13px)
+    line-height: 20px
+
+  .copyright
+    float: left
+    width: 100%
+    margin: 60px 0px
+    text-align: center
+    +adjust-font-size-to(13px)
+
+  +at-breakpoint($phone)
+    .footer-nav-group, label.e-newsletter, .social-icons, .company-info
+      margin-left: 36px
+
+  +at-breakpoint($pad)
+    width: 100%
+
+    .footer-nav-group
+      float: left
+      display: block
+      width: 100%
+      height: 100%
+
+    label.e-newsletter
+      width: 280px
+
+    label.footer-nav-title
+      display: inline-block
+
+    .social-icons, .company-info
+      float: left
+      width: auto
+
+  +at-breakpoint($desktop)
+    .footer-nav-group
+      float: none
+      margin-left: 24px
+
+    label.e-newsletter
+      width: auto
+      margin-left: 0px
+
+    label.footer-nav-title
+      display: block
+
+    .social-icons, .company-info
+      float: left
+      margin-left: 0px
