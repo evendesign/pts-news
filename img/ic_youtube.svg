@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_youtube</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="news_page_index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="PTSNews-Index_4_36px_dot" sketch:type="MSArtboardGroup" transform="translate(-1082.000000, -3641.000000)">
+            <g id="footer" sketch:type="MSLayerGroup" transform="translate(0.000000, 3531.000000)">
+                <g id="ul_6" transform="translate(970.000000, 40.000000)" sketch:type="MSShapeGroup">
+                    <g id="social_iocn" transform="translate(1.000000, 70.000000)">
+                        <g id="ic_youtube" transform="translate(111.000000, 0.000000)">
+                            <rect id="Rectangle-730" fill="#E32524" x="0" y="0" width="44" height="44"></rect>
+                            <path d="M36,27 L36,17 C36,16.9083145 36,12 31,12 L13,12 C12.8236124,12 8,12 8,17 L8,27 C8,27.0916855 8,32 13,32 L31,32 C31.1747413,32 36,32 36,27 M27,23 L18,28 L18,17 L27,23" id="Shape" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
