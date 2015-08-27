@@ -3737,3 +3737,5 @@ Load paths:
 2015-08-26 18:20:29      Copy /vender/fitvids.js
 2015-08-26 18:20:29      Copy /vender/sly.min.js
 2015-08-26 18:20:30 identical stylesheets/all.css 
+2015-08-26 18:33:15 identical stylesheets/all.css 
+2015-08-27 15:18:58 overwrite stylesheets/all.css 

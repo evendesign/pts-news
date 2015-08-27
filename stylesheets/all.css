@@ -187,7 +187,7 @@ html, body, .page, .page { height: 100%; }
 @media (min-width: 640px) { .page { padding-left: 1em; padding-right: 1em; margin-left: auto; margin-right: auto; }
   .page:after { content: ""; display: table; clear: both; } }
 
-.header-family { position: fixed; top: 0; width: 260px; height: 100vh; -webkit-transform: translateX(-100%); -moz-transform: translateX(-100%); -ms-transform: translateX(-100%); -o-transform: translateX(-100%); transform: translateX(-100%); background-color: #e0e0e0; }
+.header-family { position: fixed; top: 0; width: 260px; height: 100vh; overflow: auto; -webkit-transform: translateX(-100%); -moz-transform: translateX(-100%); -ms-transform: translateX(-100%); -o-transform: translateX(-100%); transform: translateX(-100%); background-color: #e0e0e0; }
 
 .off-canvas-mask { position: fixed; top: 0; left: 260px; right: 0; }
 
