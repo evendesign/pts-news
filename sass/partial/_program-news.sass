@@ -1,30 +1,26 @@
 .program-news
   +pie-clearfix
-  padding: 20px 20px 40px 20px
+  padding: 20px 20px 40px 12px
 
   .program-item
     margin-bottom: 36px
 
-    a.program-logo
-      img
-        margin: 0px
+  a.program-logo
+    img
+      margin: 0px
 
-    .program-time
-      +adjust-font-size-to(18px)
-      line-height: 36px
+  .program-time
+    line-height: 36px
 
-    a.program-topic
-      display: block
-      margin-bottom: 12px
-      +adjust-font-size-to(20px)
-      +link-colors($color-blue-pts)
-      font-weight: bold
+  a.program-topic
+    display: block
+    margin-bottom: 12px
+    +adjust-font-size-to(18px)
+    +link-colors($color-blue-pts)
+    font-weight: bold
 
-      &:hover
-        text-decoration: none
-
-    .program-description
-      +adjust-font-size-to(18px)
+    &:hover
+      text-decoration: none
 
   +at-breakpoint($phone)
     padding-left: 36px
@@ -32,14 +28,9 @@
   +at-breakpoint($desktop)
     padding: 0px
 
-    .program-item
+    .program-time
+      +adjust-font-size-to(14px)
+      line-height: 36px
 
-      .program-time
-        +adjust-font-size-to(14px)
-        line-height: 36px
-
-      a.program-topic
-        +adjust-font-size-to(16px)
-
-      .program-description
-        +adjust-font-size-to(16px)
+    .program-description
+      +adjust-font-size-to(16px)

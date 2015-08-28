@@ -1,6 +1,6 @@
 .category-news
   +pie-clearfix
-  padding: 20px 20px 40px 20px
+  padding: 20px 20px 40px 12px
 
   .news-title:after
     margin-bottom: 0px
@@ -8,45 +8,44 @@
   .category-item
     height: auto
 
-    .category-title
-      margin-top: 10px
-      +adjust-font-size-to(24px)
+  .category-title
+    margin-top: 10px
+    +adjust-font-size-to(24px)
 
-      a
-        +link-colors($color-blue-pts)
-        cursor: pointer
+    a
+      +link-colors($color-blue-pts)
+      cursor: pointer
 
-        &:hover
-          text-decoration: none
+      &:hover
+        text-decoration: none
 
-        &:after
-          content: ""
-          display: inline-block
-          width: 20px
-          height: 20px
-          background: url(/img/ic_more.svg) no-repeat center
+      &:after
+        content: ""
+        display: inline-block
+        width: 20px
+        height: 20px
+        background: url(/img/ic_more.svg) no-repeat center
 
-    ul
-      list-style-type: none
-      margin: 0px 0px 20px 0px
-      padding: 0px
-      +adjust-font-size-to(18px)
-      line-height: 36px
+  ul
+    list-style-type: none
+    margin: 0px 0px 20px 0px
+    padding: 0px
+    line-height: 36px
 
-      li
-        padding-left: 1em
-        text-indent: -.7em
+  li
+    padding-left: 1em
+    text-indent: -.7em
 
-        &:before
-          content: "●"
-          color: $color-yellow-pts
+    &:before
+      content: "●"
+      color: $color-yellow-pts
 
-        a
-          +link-colors($text-black, $text-gray)
-          cursor: pointer
+  a
+    +link-colors($text-black, $text-gray)
+    cursor: pointer
 
-          &:hover
-            text-decoration: none
+    &:hover
+      text-decoration: none
 
   +at-breakpoint($phone)
     padding-left: 36px
@@ -54,8 +53,5 @@
   +at-breakpoint($desktop)
     padding: 0px
 
-    .category-item
-      ul
-        margin: 0px 0px 50px 0px
-        +adjust-font-size-to(16px)
-        line-height: 36px
+    ul
+      margin: 0px 0px 50px 0px

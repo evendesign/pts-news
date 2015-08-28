@@ -10,12 +10,12 @@
     height: 3px
     background-color: $color-blue-pts
 
-  a.menu-btn
+  .menu-btn
     display: inline-block
     float: left
     width: 30px
     height: 19px
-    margin: 20px 0px 0px 20px
+    margin: 22px 0px 0px 20px
     cursor: pointer
     text-decoration: none
     background: #fff url(/img/ic_menu.svg) no-repeat center
@@ -44,44 +44,38 @@
     padding: 0
     background-color: $color-blue-pts
 
-    ul.slidee
-      width: 100%
-      margin: 0px
-      padding: 0px
-      height: 50px
-      +horizontal-list
-      +no-bullets
-      background-color: $color-blue-pts
+  .slidee
+    width: 100%
+    margin: 0px
+    padding: 0px
+    height: 50px
+    list-style: none
+    background-color: $color-blue-pts
 
-      li
-        position : relative
-        float: left
-        height: 40px
-        margin: 0 5px 0 0
-        padding: 0px
-        line-height: rhythm(1.5)
+  .category-item
+    position : relative
+    display: inline-block
+    float: left
+    height: 40px
+    margin: 0px
+    padding: 0px
+    line-height: rhythm(1.5)
 
-        &:first-child
-          margin-left: 20px
+    &.is-active:after
+      content: ''
+      position: absolute
+      bottom: -10px
+      right: 16px
+      height: 3px
+      width: 66%
+      background-color: $color-yellow-pts
 
-        & + li
-          margin-left: 8px
-
-        &.is-active:after
-          content: ''
-          position: absolute
-          bottom: -10px
-          right: 18%
-          height: 3px
-          width: 82%
-          background-color: $color-yellow-pts
-
-        a
-          display: inline-block
-          padding: 8px 12px 0px 0px
-          cursor: pointer
-          text-decoration: none
-          +link-colors(#fff, $text-gray)
+    a
+      display: inline-block
+      padding: 8px 20px 0px 20px
+      cursor: pointer
+      text-decoration: none
+      +link-colors(#fff, $text-gray)
 
   .search-news
     position: absolute
@@ -91,81 +85,78 @@
     white-space: nowrap
     transform: translate(0,0)
 
-    input#search-news
-      float: left
-      -webkit-appearance: none
-      appearance: none
-      width: 30px
-      height: 34px
+  input#search-news
+    float: left
+    -webkit-appearance: none
+    appearance: none
+    width: 30px
+    height: 34px
+    padding-left: 20px
+    border: 1px solid #fff
+    +border-radius(2px)
+    +input-placeholder-color(#fff)
+    transition: width .55s ease
+
+    &:hover, &:focus, &:active
+      width: 270px
       padding-left: 20px
-      border: 1px solid #fff
-      +border-radius(2px)
-      +input-placeholder-color(#fff)
-      transition: width .55s ease
+      outline: none
+      border: 1px solid $line-color-gray-light
+      +input-placeholder-color($text-gray)
 
-      &:hover, &:focus, &:active
-        width: 270px
-        padding-left: 20px
-        outline: none
-        border: 1px solid $line-color-gray-light
-        +input-placeholder-color($text-gray)
+  .ic-search-news
+    position: absolute
+    right: 0px
+    margin: 7px 12px 0px 0px
 
-    .ic-search-news
-      position: absolute
-      right: 0px
-      margin: 7px 12px 0px 0px
-
-      img
-        margin: 0px
+    img
+      margin: 0px
 
   +at-breakpoint($desktop)
-    &
+    position: relative
+    height: 49px
+    padding: 24px 0px
+
+    .news-logo
+      display: block
+
+    &:before, .news-logo-mobile, a.menu-btn
+      display: none
+
+    .frame
       position: relative
-      height: 49px
-      padding: 24px 0px
+      top: -8px
+      float: left
+      width: 80%
+      height: auto
+      background-color: transparent
 
-      .news-logo
-        display: block
+    .slidee
+      width: 100%
+      background-color: transparent
 
-      &:before, .news-logo-mobile, a.menu-btn
-        display: none
+    .category-item
+      position : relative
+      float: left
+      height: 40px
+      padding: 0px
 
-      .frame
-        position: relative
-        top: -8px
-        float: left
-        width: 80%
-        height: auto
-        background-color: transparent
+      &.is-active:after
+        right: 6px
+        width: 75%
 
-        ul.slidee
-          width: 100%
-          background-color: transparent
+      a
+        padding: 10px 10px 0px 10px
+        +link-colors($text-black, $text-gray)
 
-          li
-            position : relative
-            float: left
-            height: 40px
-
-            &:first-child
-              margin-left: 0px
-
-            a
-              padding: 10px 5px 0px 0px
-              +link-colors($text-black, $text-gray)
-
-            &.is-active:after
-              bottom: -8px
-
-      .search-news
-        margin-top: 23px
-
-  +at-breakpoint($wide-desktop)
-    ul.slidee > li > a
-      padding: 10px 10px 0px 0px
+      &.is-active:after
+        bottom: -8px
 
     .search-news
+      margin-top: 23px
 
-      input#search-news
-        width: 140px
-        +input-placeholder-color($text-gray)
+  +at-breakpoint($wide-desktop)
+
+    input#search-news
+      width: 140px
+      +input-placeholder-color($text-gray)

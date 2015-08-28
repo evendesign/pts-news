@@ -5,7 +5,7 @@
     float: right
     width: 89px
     height: 89px
-    margin: -36px 45px 0 0
+    margin: -36px 46px 0 0
     background: url(/img/clock.svg) no-repeat center
     background-size: 100%
 
@@ -18,26 +18,26 @@
       -webkit-animation: rotate 43200s infinite linear
       animation: rotate 43200s infinite linear
 
-      .hours
-        @extend %commom-hand
-        top: 18px
-        left: 25px
-        width: 40px
-        height: 32px
-        background: url(/img/short_hand.svg) no-repeat center
+    .hours
+      @extend %commom-hand
+      top: 18px
+      left: 25px
+      width: 40px
+      height: 32px
+      background: url(/img/short_hand.svg) no-repeat center
 
     .minutes-container
       +stretch (0px, 0px, 0px, 0px)
       -webkit-animation: rotate 3600s infinite steps(60)
       animation: rotate 3600s infinite steps(60)
 
-      .minutes
-        @extend %commom-hand
-        top: 8px
-        left: 42px
-        width: 6px
-        height: 45px
-        background: url(/img/long_hand.svg) no-repeat center
+    .minutes
+      @extend %commom-hand
+      top: 8px
+      left: 42px
+      width: 6px
+      height: 45px
+      background: url(/img/long_hand.svg) no-repeat center
 
 @-webkit-keyframes rotate
   100%

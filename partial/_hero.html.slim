@@ -1,94 +1,94 @@
 .hero
   .frame
     ul.slidee
-      li.is-active data-value='program_1'
+      li.program-item.is-active data-value='program_1'
         a 每日新聞
-      li data-value='program_2'
+      li.program-item data-value='program_2'
         a PNN 專區
-      li data-value='program_3'
+      li.program-item data-value='program_3'
         a 有話好說
-      li data-value='program_4'
+      li.program-item data-value='program_4'
         a 我們的島
-      li data-value='program_5'
+      li.program-item data-value='program_5'
         a 全球現場
-      li data-value='program_6'
+      li.program-item data-value='program_6'
         a 獨立特派員
 
   .select.is-active data-value='program_1'
     .ic-drop-down
     ul
-      li.init 請選擇影片 program_1
-      li.is-active data-value='video_1'
+      li.video-topic-item.init 請選擇影片 program_1
+      li.video-topic-item.is-active data-value='video_1'
         span.screen-shot = image_tag(lorem_image("128x96"))
         span.video-name 高齡社會來襲！長照服務法能救救我們嗎？
-      li data-value='video_2'
+      li.video-topic-item data-value='video_2'
         span.screen-shot = image_tag(lorem_image("128x96"))
         span.video-name 這是 program_1
-      li data-value='video_3'
+      li.video-topic-item data-value='video_3'
         span.screen-shot = image_tag(lorem_image("128x96"))
         span.video-name 有話好說：700噸氰化鈉大爆炸！毒氣毒水四處擴散？
-      li data-value='video_4'
+      li.video-topic-item data-value='video_4'
         span.screen-shot = image_tag(lorem_image("128x96"))
         span.video-name 有話好說：求償7千萬！台西罹癌高！六輕污染害的？
-      li data-value='video_5'
+      li.video-topic-item data-value='video_5'
         span.screen-shot = image_tag(lorem_image("128x96"))
         span.video-name 日澳潛艦
-      li data-value='video_6'
+      li.video-topic-item data-value='video_6'
         span.screen-shot = image_tag(lorem_image("128x96"))
         span.video-name = zh_lorem_words(18+rand(4))
 
   .select data-value='program_2'
     .ic-drop-down
     ul
-      li.init 請選擇影片 program_2
-      li data-value='video_1'
+      li.video-topic-item.init 請選擇影片 program_2
+      li.video-topic-item data-value='video_1'
         span.screen-shot = image_tag(lorem_image("128x96"))
         span.video-name this is program_2
-      li data-value='video_2'
+      li.video-topic-item data-value='video_2'
         span.screen-shot = image_tag(lorem_image("128x96"))
         span.video-name 古蹟可以買賣嗎？從文萌樓談起
 
   .select data-value='program_3'
     .ic-drop-down
     ul
-      li.init 請選擇影片 program_3
-      li data-value='video_1'
+      li.video-topic-item.init 請選擇影片 program_3
+      li.video-topic-item data-value='video_1'
         span.screen-shot = image_tag(lorem_image("128x96"))
         span.video-name 有話好說：700噸氰化鈉大爆炸！毒氣毒水四處擴散？
-      li data-value='video_2'
+      li.video-topic-item data-value='video_2'
         span.screen-shot = image_tag(lorem_image("128x96"))
         span.video-name this is program_3
 
   .select data-value='program_4'
     .ic-drop-down
     ul
-      li.init 請選擇影片 program_4
-      li data-value='video_1'
+      li.video-topic-item.init 請選擇影片 program_4
+      li.video-topic-item data-value='video_1'
         span.screen-shot = image_tag(lorem_image("128x96"))
         span.video-name this is program_4
 
   ul.video-list.is-active data-value='program_1'
-    li.is-active data-value='video_1'
+    li.video-item.is-active data-value='video_1'
       <iframe width="640" height="475" src="https://www.youtube.com/embed/I7FJakVCyZM" frameborder="0" allowfullscreen></iframe>
-    li data-value='video_2'
+    li.video-item data-value='video_2'
       | this is video_2
-    li data-value='video_3'
+    li.video-item data-value='video_3'
       | this is video_3
-    li data-value='video_4'
+    li.video-item data-value='video_4'
       | this is video_4
-    li data-value='video_5'
+    li.video-item data-value='video_5'
       | this is video_5
-    li data-value='video_6'
+    li.video-item data-value='video_6'
       | this is video_6
 
   ul.video-list data-value='program_2'
-    li.is-active data-value='video_1'
+    li.video-item.is-active data-value='video_1'
       |this ia program_2
 
   ul.video-list data-value='program_3'
-    li.is-active data-value='video_1'
+    li.video-item.is-active data-value='video_1'
       |this ia program_3
 
   ul.video-list data-value='program_4'
-    li.is-active data-value='video_1'
+    li.video-item.is-active data-value='video_1'
       |this ia program_4

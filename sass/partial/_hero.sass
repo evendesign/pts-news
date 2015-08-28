@@ -1,6 +1,5 @@
 .hero
-  float: left
-  +padding-leader(4)
+  +padding-leader(5.5)
   margin-bottom: 40px
   width: 100vw
 
@@ -11,6 +10,9 @@
   iframe,embed,object
     max-width: 100%
 
+  img
+    margin: 0px
+
   .frame
     float: left
     width: 100vw
@@ -19,34 +21,34 @@
     border-bottom: 3px solid $color-blue-pts
     background: $background-color-gray-dark
 
-    ul.slidee
-      margin: 0px
-      padding: 0px
-      height: 100%
-      list-style: none
-      background: $background-color-gray-dark
+  .slidee
+    margin: 0px
+    padding: 0px
+    height: 100%
+    list-style: none
+    background: $background-color-gray-dark
 
-      li
-        float: left
-        margin: 0px 5px 0px 0px
-        padding: 0px
-        width: auto
-        cursor: pointer
+  .program-item
+    float: left
+    margin: 0px
+    padding: 0px
+    width: auto
+    cursor: pointer
 
-        &:hover
-          background: lighten($background-color-gray-dark, 10%)
+    &:hover
+      background: lighten($background-color-gray-dark, 10%)
 
-        a
-          height: 45px
-          padding: 0px 24px
-          color: #fff
-          +adjust-font-size-to(18px)
-          font-weight: bold
-          line-height: 45px
-          text-decoration: none
+    &.is-active
+      background-color: $color-blue-pts
 
-        &.is-active
-          background-color: $color-blue-pts
+    a
+      height: 45px
+      padding: 0px 24px
+      color: #fff
+      +adjust-font-size-to(18px)
+      font-weight: bold
+      line-height: 45px
+      text-decoration: none
 
   .select
     float: left
@@ -75,35 +77,33 @@
       padding: 0px
       list-style: none
 
-      li
-        +box-sizing(border-box)
-        padding-left: 24px
-        color: #fff
-        +adjust-font-size-to(18px)
-        font-weight: bold
-        line-height: 44px
-        text-overflow: ellipsis
-        white-space: nowrap
-        overflow: hidden
-        z-index: 2
+    li
+      +box-sizing(border-box)
+      padding-left: 24px
+      color: #fff
+      +adjust-font-size-to(18px)
+      font-weight: bold
+      line-height: 44px
+      text-overflow: ellipsis
+      white-space: nowrap
+      overflow: hidden
+      z-index: 2
 
-        &:not(.init)
-          float: left
-          width: 100vw
-          height: 48px
-          border-bottom: 1px #fff solid
-          background: $color-blue-pts
-          display: none
+  .video-topic-item:not(.init)
+    float: left
+    width: 100vw
+    height: 48px
+    border-bottom: 1px #fff solid
+    background: $color-blue-pts
+    display: none
 
-          &:hover, &.selected:not(.init)
-            background: lighten($color-blue-pts, 10%)
+    &:hover, &.selected:not(.init)
+      background: lighten($color-blue-pts, 10%)
 
-        span
+  .screen-shot
+    display: none
 
-          &.screen-shot
-            display: none
-
-  ul.video-list
+  .video-list
     margin-top: 96px
     padding: 0px
     list-style: none
@@ -112,13 +112,14 @@
     &.is-active
       display: block
 
-    li
-      display: none
+  .video-item
+    display: none
 
-      &.is-active
-        display: block
+    &.is-active
+      display: block
 
   +at-breakpoint($desktop)
+    float: left
     position: relative
     width: 100%
     margin-left: -32px
@@ -149,55 +150,50 @@
       overflow-y: auto
       background: $background-color-gray-dark
 
-      &.is-active
-
-        li.is-active
-          background: lighten($background-color-gray-dark, 10%)
-
       .ic-drop-down
         display: none
 
       ul
         width: 335px
 
-        li
-          white-space: normal
+      span
+        display: inline-block
+        float: left
 
-          span
-            display: inline-block
-            float: left
+      li
+        white-space: normal
 
-            img
-              margin: 0px
+      .init
+        display: none
 
-            &.screen-shot
-              display: block
+    .video-topic-item:not(.init)
+      width: 335px
+      height: 96px
+      padding: 0px
+      border-bottom: 1px solid lighten($background-color-gray-dark, 10%)
+      line-height: 96px
+      background: $background-color-gray-dark
+      display: block
 
-            &.video-name
-              width: 173px
-              height: 74px
-              margin: 10px 0px
-              padding: 0px 12px
-              +adjust-font-size-to(16px)
-              word-break: normal
-              overflow: hidden
+      &:hover, &.selected
+        background: lighten($background-color-gray-dark, 10%)
 
-          &.init
-            display: none
+    .screen-shot
+      display: block
 
-          &:not(.init)
-            width: 335px
-            height: 96px
-            padding: 0px
-            border-bottom: 1px solid lighten($background-color-gray-dark, 10%)
-            line-height: 96px
-            background: $background-color-gray-dark
-            display: block
+    .video-topic-item.is-active
+      background: lighten($background-color-gray-dark, 10%)
 
-            &:hover, &.selected:not(.init)
-              background: lighten($background-color-gray-dark, 10%)
+    .video-name
+      width: 173px
+      height: 74px
+      margin: 10px 0px
+      padding: 0px 12px
+      +adjust-font-size-to(16px)
+      word-break: normal
+      overflow: hidden
 
-    ul.video-list
+    .video-list
       position: absolute
       top: 48px
       left: 50%
@@ -220,26 +216,25 @@
       &:after
         display: none
 
-      ul.slidee
-        height: 100%
-        list-style: none
+    .slidee
+      list-style: none
 
-        li
-          float: left
-          width: 100%
-          margin: 0px 5px 0px 0px
-          padding: 0px
-          border-bottom: 1px solid lighten($background-color-gray-dark, 10%)
-          text-align: center
-          background: $background-color-gray-dark
+    .program-item
+      float: left
+      width: 100%
+      margin: 0px 5px 0px 0px
+      padding: 0px
+      border-bottom: 1px solid lighten($background-color-gray-dark, 10%)
+      text-align: center
+      background: $background-color-gray-dark
 
-          a
-            height: 60px
-            padding: 0px 12px
-            +adjust-font-size-to(16px)
-            line-height: 60px
+      a
+        height: 60px
+        padding: 0px 12px
+        +adjust-font-size-to(16px)
+        line-height: 60px
 
-    ul.video-list
+    .video-list
       position: relative
       top: 0px
       left: 0px

@@ -1,69 +1,66 @@
 .latest-news
   +pie-clearfix
-  padding: 20px 20px 40px 20px
+  padding: 20px 20px 40px 12px
 
   .news-title:after
     margin-bottom: 0px
 
-  ul.news-list
+  .news-list
     height: auto
     margin-top: 0px
     margin-bottom: 0px
     padding: 0px
     list-style-type: none
 
-    li
-      width: 100%
-      border-bottom: 1px solid $line-color-gray-light
-      cursor: pointer
+  li
+    width: 100%
+    height: auto
+    border-bottom: 1px solid $line-color-gray-light
+    cursor: pointer
 
-      &:hover
-        background-color: lighten($color-blue-pts, 60%)
+    &:hover
+      background-color: lighten($color-blue-pts, 60%)
 
-      a.news-item
-        display: inline-block
-        height: 60px
-        +link-colors($text-black)
+  a.news-item
+    display: inline-block
+    height: 60px
+    +link-colors($text-black)
 
-        .news-item-media
-          float: left
-          position: relative
+  .news-item-media
+    float: left
+    position: relative
 
-          img
-            margin: 14px 0px 0px 0px
+    img
+      margin: 14px 0px 0px 0px
 
-          &.video:before
-            content: ''
-            display: inline-block
-            position: absolute
-            top: 22px
-            left: 13px
-            width: 20px
-            height: 20px
-            background: url(/img/ic_play.svg) no-repeat center
+    &.video:before
+      content: ''
+      display: inline-block
+      position: absolute
+      top: 22px
+      left: 13px
+      width: 20px
+      height: 20px
+      background: url(/img/ic_play.svg) no-repeat center
 
-        .news-item-topic
-          float: left
-          width: 65vw
-          margin-left: 15px
-          +adjust-font-size-to(18px)
-          line-height: 60px
-          text-overflow: ellipsis
-          white-space: nowrap
-          overflow: hidden
+  .news-item-topic
+    float: left
+    width: 65vw
+    margin-left: 15px
+    +adjust-font-size-to(18px)
+    line-height: 60px
+    text-overflow: ellipsis
+    white-space: nowrap
+    overflow: hidden
 
   +at-breakpoint($phone)
     padding-left: 36px
-    ul.news-list
-      li
-        a.news-item
-          .news-item-topic
-            width: auto
+
+    .news-item-topic
+      width: auto
 
   +at-breakpoint($desktop)
     padding: 0px
-    ul.news-list
+
+    .news-list
       margin-bottom: 48px
-      li
-        a.news-item
-          .news-item-topic
