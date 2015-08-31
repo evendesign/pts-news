@@ -9,6 +9,7 @@
 @import "component/form";
 @import "component/clock";
 @import "component/news-title";
+@import "component/breadcrumb";
 
 // @import "component/pagination";
 @import "component/component-name";
@@ -21,8 +22,9 @@
 @import "partial/_latest-news";
 @import "partial/_category-news";
 @import "partial/_program-news";
-@import "partial/_ad-news";
+@import "partial/_ad-news-index";
 @import "partial/_footer-family";
+@import "partial/_list-news";
 
 // ==== page ====
 

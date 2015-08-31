@@ -61,6 +61,12 @@ $off-canvas-header-width: 260px
   .main
     padding: 0px $gutter-width * 2
 
+  .list-news
+    .list-news-description
+      +span-columns(4 , 6)
+    .list-news-media
+      +span-columns(2 omega, 6)
+
 
 +at-breakpoint($desktop)
   .header-family
@@ -105,6 +111,16 @@ $off-canvas-header-width: 260px
     .program-item
       +isolate-grid(5, 10)
 
+  .breadcrumb
+    +span-columns(8, 10)
+
+  .list-news
+    .list-news-content
+      +span-columns(8 , 10)
+
+    .ad-news
+      +span-columns(2 omega, 10)
+
 +at-breakpoint($wide-desktop)
   #{$page-container}
     $grid-padding: $gutter-width * 2
@@ -125,3 +141,13 @@ $off-canvas-header-width: 260px
   .program-news
     .program-item
       +isolate-grid(4, 12)
+
+  .breadcrumb
+    +span-columns(9, 12)
+
+  .list-news
+    .list-news-content
+      +span-columns(9 , 12)
+
+    .ad-news
+      +span-columns(3 omega, 12)
