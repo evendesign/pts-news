@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="45px" height="44px" viewBox="0 0 45 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_mail</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="44" height="44"></rect>
+    </defs>
+    <g id="news_article" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="PTSNews-News-list_ver2" sketch:type="MSArtboardGroup" transform="translate(-232.000000, -793.000000)">
+            <g id="social_share_up-copy" sketch:type="MSLayerGroup" transform="translate(76.000000, 793.000000)">
+                <g id="ic_mail" transform="translate(156.062500, 0.000000)">
+                    <mask id="mask-2" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#ACACAC" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <path d="M25.1779043,22.4389004 L33.6875,28.5837932 L33.6875,14.4375 L25.1779043,22.4389004 Z M10.3125,14.4375 L10.3125,28.5837932 L18.8219131,22.43804 L10.3125,14.4375 Z M22,25.4268362 L19.9683381,23.5169836 L10.3125,29.5625 L33.6875,29.5625 L24.0314336,23.5169836 L22,25.4268362 Z M32.98625,14.4375 L11.01375,14.4375 L22,23.0002647 L32.98625,14.4375 Z" id="Shape-Copy" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

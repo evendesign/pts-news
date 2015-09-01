@@ -1,0 +1,46 @@
+.article-news
+  .breadcrumb
+    span.site
+      a href="/" 公視新聞網
+    span.aarow
+    span.category
+      a href="/" 政治
+    span.aarow
+  .article-item
+    h1.article-title = zh_lorem_words(18+rand(4))
+    .list-news-program
+      | 中晝新聞
+    .list-news-time
+      = lorem_date.to_date
+      |&nbsp 12:00
+    .article-video
+      <iframe width="640" height="475" src="https://www.youtube.com/embed/I7FJakVCyZM" frameborder="0" allowfullscreen></iframe>
+    = render "social-icons"
+    .article-content
+      = zh_lorem_paragraph
+      br
+      br
+      = zh_lorem_paragraph
+      br
+      br
+      = zh_lorem_paragraph
+      br
+      br
+      = zh_lorem_paragraph
+      br
+      br
+      = zh_lorem_paragraph
+      br
+      br
+      = zh_lorem_paragraph
+      br
+      br
+      = zh_lorem_paragraph
+      br
+      br
+      = zh_lorem_paragraph
+    = render "social-icons"
+    .facebook-comments
+      = image_tag(lorem_image("500x240"))
+    = render "/partial/latest-news"
+  = render "/partial/ad-news"

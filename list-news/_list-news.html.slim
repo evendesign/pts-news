@@ -1,31 +1,22 @@
 .list-news
-  .list-new-left
-    .breadcrumb
-      span.site
-        a href="/" 公視新聞網
-      span.aarow
-      span.category 政治
-    .list-news-content
-      ul.list-news
-        - 8.times
-          li.list-news-itme
-            h2.list-news-title
-              a href="#" = zh_lorem_words(18+rand(4))
-            .list-news-program
-              | 中晝新聞
-            .list-news-time
-              = lorem_date.to_date
-              |&nbsp 12:00
-            .list-news-description
-              = zh_lorem_paragraph
-            .list-news-media
-              = image_tag(lorem_image("210x160"))
-  .list-new-right
-    .ad-news
-      .google-ad
-        a href="#" = image_tag(lorem_image("240x240"))
-      - 6.times
-        .banner
-          a href="#" = image_tag(lorem_image("240x60"))
-      .facebook
-        = image_tag(lorem_image("240x155"))
+  .breadcrumb
+    span.site
+      a href="/" 公視新聞網
+    span.aarow
+    span.category 政治
+  .list-news-content
+    ul.list-news
+      - 8.times
+        li.list-news-itme
+          h2.list-news-title
+            a href="#" = zh_lorem_words(18+rand(4))
+          .list-news-program
+            | 中晝新聞
+          .list-news-time
+            = lorem_date.to_date
+            |&nbsp 12:00
+          .list-news-description
+            = zh_lorem_paragraph
+          .list-news-media
+            = image_tag(lorem_image("210x160"))
+  = render "/partial/ad-news"
