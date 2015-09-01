@@ -56,6 +56,12 @@ if ($(window).width() < 960){
   });
 }
 
+// fitVids.js //
+$(document).ready(function(){
+  $(".video-list").fitVids();
+  $(".article-video").fitVids();
+});
+
 // sly.js //
 
 if ($(window).width() < 960){
@@ -97,8 +103,3 @@ if ($(window).width() < 960){
     clickBar: 1,
   }).init();
 }
-
-// fitVids.js //
-$(document).ready(function(){
-  $(".video-list").fitVids();
-});
