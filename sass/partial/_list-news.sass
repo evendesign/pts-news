@@ -8,8 +8,10 @@
     padding: 0px
 
   .list-news-itme
-    border-bottom: 1px solid $line-color-gray-light
-    margin-bottom: 24px
+
+    & + .list-news-itme
+      border-top: 1px solid $line-color-gray-light
+
 
     &:after
       content: ''
@@ -17,6 +19,7 @@
       clear: both
 
   .list-news-title
+    margin-top: 24px
     margin-bottom: 8px
     +adjust-font-size-to(20px)
 
