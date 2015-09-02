@@ -4,26 +4,35 @@
     float: left
     display: none
 
-    img
-      margin-bottom: 0px
+    a
+      display: inline-block
+      text-indent: -1999999px
+      overflow: hidden
+      +replace-text-with-svg("pts_logo_78x60")
 
   .tv-program
-    display: none
+    position: relative
     float: left
     margin-left: rhythm(1)
-    padding: 0 10px 0 10px
+    padding: 0 10px 0 36px
     +border-radius(2px)
     cursor: pointer
     font-size: $base-font-size - 2
     font-weight: bold
     color: #fff
     background-color: $color-blue-pts
+    display: none
 
     &:hover
       background-color: darken($color-blue-pts, 10%)
 
-    img
-      margin: 0px 8px -3px 0
+    &:before
+      content: ''
+      display: inline-block
+      position: absolute
+      top: 3px
+      left: 10px
+      +replace-text-with-svg("ic-tv")
 
   ul
     left: 0px
@@ -103,12 +112,12 @@
       +input-placeholder-color($text-black)
 
     input[type=button]
-      float: right
-      width: 50px
-      height: 60px
-      padding: 0px
+      position: absolute
+      top: 18px
+      right: -40px
       border: none
-      background: url(/img/ic-search-blue-large.svg) no-repeat center
+      background: transparent
+      +replace-text-with-svg("ic-search-blue-large")
 
   +at-breakpoint($desktop)
     .pts-logo, .tv-program
@@ -179,7 +188,7 @@
 
       input[type=search]
         float: left
-        width: 315px
+        width: 345px
         height: 16px
         padding: 3px 0px 3px 10px
         border: $line-color-gray-light 1px solid
@@ -188,12 +197,15 @@
         +input-placeholder-color($text-gray)
 
       input[type=button]
+        position: relative
+        top: 0px
+        right: 0px
         float: left
-        width: 76px
-        height: rhythm(1)
-        margin-bottom: -3px
+        padding: 12px 0px
         +border-radius(0 2px 2px 0)
-        background: $color-blue-pts url(/img/ic-search-white-small.svg) no-repeat center
+        background-color: $color-blue-pts
+        +replace-text-with-svg("ic-search-white-small")
+        width: 76px
 
   +at-breakpoint($wide-desktop)
 
@@ -207,6 +219,3 @@
 
       input[type=search]
         width: 424px
-
-      input[type=button]
-        width: 76px

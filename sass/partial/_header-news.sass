@@ -13,28 +13,22 @@
   .menu-btn
     display: inline-block
     float: left
-    width: 30px
-    height: 19px
     margin: 22px 0px 0px 20px
     cursor: pointer
     text-decoration: none
-    background: #fff url(/img/ic_menu.svg) no-repeat center
-
-  .news-logo-mobile
-    position: absolute
-    top: 8px
-    left: 50%
-    margin-left: -51px
-    width: 103px
-    height: 41px
-
-    img
-      margin: 0px
+    +replace-text-with-svg("ic_menu")
 
   .news-logo
-    display: none
-    float: left
-    margin-right: 36px
+    position: absolute
+    top: 12px
+    left: 50%
+    margin-left: -50px
+
+    a
+      display: inline-block
+      text-indent: -1999999px
+      overflow: hidden
+      +replace-text-with-svg("logo-news-mobile-100x40")
 
   .frame
     position: absolute
@@ -61,56 +55,59 @@
     padding: 0px
     line-height: rhythm(1.5)
 
-    &.is-active:after
-      content: ''
-      position: absolute
-      bottom: -10px
-      right: 16px
-      height: 3px
-      width: 66%
-      background-color: $color-yellow-pts
-
     a
       display: inline-block
-      padding: 8px 20px 0px 20px
+      margin: 9px 20px 0px 20px
       cursor: pointer
       text-decoration: none
+      line-height: 38px
       +link-colors(#fff, $text-gray)
+
+    &.is-active > a
+      border-bottom: 3px solid $color-yellow-pts
 
   .search-news
     position: absolute
-    top: 2px
+    top: 10px
     right: rhythm(0.5)
-    margin-top: 10px
     white-space: nowrap
     transform: translate(0,0)
-
-  input#search-news
-    float: left
-    -webkit-appearance: none
-    appearance: none
+    transition: width .55s ease
     width: 30px
     height: 34px
     padding-left: 20px
     border: 1px solid #fff
     +border-radius(2px)
-    +input-placeholder-color(#fff)
-    transition: width .55s ease
+    overflow: hidden
+    background-color: #fff
 
-    &:hover, &:focus, &:active
+    &:hover
+      height: 34px
       width: 270px
-      padding-left: 20px
-      outline: none
       border: 1px solid $line-color-gray-light
-      +input-placeholder-color($text-gray)
+
+      #search-news
+        +input-placeholder-color($text-gray)
+
+    input
+      float: left
+      -webkit-appearance: none
+      appearance: none
+      width: 400px
+      height: 30px
+      border: 1px solid #fff
+      +border-radius(2px)
+      +input-placeholder-color(#fff)
+      transition: width .55s ease
+
+      &:hover, &:focus, &:active
+        outline: none
 
   .ic-search-news
     position: absolute
     right: 0px
-    margin: 7px 12px 0px 0px
-
-    img
-      margin: 0px
+    margin: 5px 10px 0px 0px
+    +replace-text-with-svg("ic-search-blue-large")
 
   +at-breakpoint($desktop)
     position: relative
@@ -118,7 +115,14 @@
     padding: 24px 0px
 
     .news-logo
-      display: block
+      position: relative
+      float: left
+      top: 0px
+      left: 0px
+      margin: 0px 36px 0px 0px
+
+      a
+        +replace-text-with-svg("logo-news")
 
     &:before, .news-logo-mobile, a.menu-btn
       display: none
@@ -146,17 +150,19 @@
         width: 75%
 
       a
-        padding: 10px 10px 0px 10px
+        margin: 10px 20px 0px 0px
         +link-colors($text-black, $text-gray)
 
       &.is-active:after
         bottom: -8px
 
     .search-news
-      margin-top: 23px
+      margin-top: 16px
 
   +at-breakpoint($wide-desktop)
 
-    input#search-news
+    .search-news
       width: 140px
-      +input-placeholder-color($text-gray)
+
+      #search-news
+        +input-placeholder-color($text-gray)

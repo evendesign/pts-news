@@ -88,20 +88,19 @@
 
     span
       display: inline-block
-      width: 44px
-      height: 44px
       margin-right: 10px
       text-indent: -1999999px
       overflow: hidden
 
   .facebook
-    background: url(/img/ic_fb.svg) no-repeat center
+    +replace-text-with-svg("ic_fb")
 
   .line
-    background: url(/img/ic_line.png) no-repeat center
+    // +replace-text-with-svg("ic-search-white-small")
+    background: url(/images/ic_line.png) no-repeat center
 
   .youtube
-    background: url(/img/ic_youtube.svg) no-repeat center
+    +replace-text-with-svg("ic_youtube")
 
   .company-info
     float: left

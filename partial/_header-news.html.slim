@@ -1,9 +1,7 @@
 .header-news
   a.menu-btn
-  .news-logo-mobile
-    = image_tag "/img/pts-news-logo-mobile.png", :size => "103x41"
-  .news-logo
-    = image_tag "/img/logo-news.svg", :size => "90x45"
+  h1.news-logo
+    a href="#" 公視新聞網
   .frame
     ul.slidee
       li.category-item.is-active
@@ -28,7 +26,6 @@
         = link_to "科技", "連結"
       li.category-item
         = link_to "醫療", "連結"
-  .search-news
+  form.search-news
     input type="search" placeholder="搜尋公視新聞" id="search-news"
-    .ic-search-news
-      = image_tag "/img/ic-search-blue-large.svg", :size => "24x24"
+    label.ic-search-news

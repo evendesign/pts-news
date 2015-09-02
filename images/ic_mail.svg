@@ -7,8 +7,8 @@
         <rect id="path-1" x="0" y="0" width="44" height="44"></rect>
     </defs>
     <g id="news_article" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="PTSNews-News-list_ver2" sketch:type="MSArtboardGroup" transform="translate(-232.000000, -793.000000)">
-            <g id="social_share_up-copy" sketch:type="MSLayerGroup" transform="translate(76.000000, 793.000000)">
+        <g id="PTSnews-article_pad_ver1" sketch:type="MSArtboardGroup" transform="translate(-204.000000, -769.000000)">
+            <g id="social_share_up" sketch:type="MSLayerGroup" transform="translate(48.000000, 769.000000)">
                 <g id="ic_mail" transform="translate(156.062500, 0.000000)">
                     <mask id="mask-2" sketch:name="Mask" fill="white">
                         <use xlink:href="#path-1"></use>

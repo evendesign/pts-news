@@ -1,5 +1,5 @@
 .social-icons
-  margin: 6px 0px 0px 0px
+  margin: 24px 0px 14px 0px
   padding: 0px
   list-style: none
 
@@ -8,8 +8,6 @@
 
   span
     display: inline-block
-    width: 44px
-    height: 44px
     margin-right: 4px
     margin-bottom: 8px
     text-indent: -1999999px
@@ -19,23 +17,22 @@
     display: inline-block
 
   .facebook
-    background: url(/img/ic_fb.svg) no-repeat center
+    +replace-text-with-svg("ic_fb")
 
   .twitter
-    background: url(/img/ic_twitter.svg) no-repeat center
+    +replace-text-with-svg("ic_twitter")
 
   .google-plus
-    background: url(/img/ic_googleplus.svg) no-repeat center
+    +replace-text-with-svg("ic_googleplus")
 
   .mail
-    background: url(/img/ic_mail.svg) no-repeat center
+    +replace-text-with-svg("ic_mail")
 
   .pinterest
-    background: url(/img/ic_pinterest.svg) no-repeat center
+    +replace-text-with-svg("ic_pinterest")
 
   .linkedin
-    background: url(/img/ic_linkedin.svg) no-repeat center
+    +replace-text-with-svg("ic_linkedin")
 
   .line
-    // +replace-text-with-dimensions("ic_line.png")
-    background: url(/img/ic_line.png) no-repeat center
+    +replace-text-with-dimensions("ic_line.png")

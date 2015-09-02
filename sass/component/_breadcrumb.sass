@@ -15,10 +15,8 @@
     text-decoration: none
 
   .aarow
-    width: 14px
-    height: 10px
     margin: 0px 10px
-    background: url(/img/ic_aarow_right.png) no-repeat center
+    +replace-text-with-svg("ic_aarow_right")
 
   +at-breakpoint($desktop)
     &:after
