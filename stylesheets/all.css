@@ -292,7 +292,7 @@ html, body, .page, .page { height: 100%; }
 .form-action { margin-top: 24px; }
 .form-action .btn { margin-right: 12px; }
 
-@media (min-width: 1024px) { .clock { display: block; position: relative; float: right; width: 89px; height: 89px; margin: -36px 46px 0 0; background: url(/images/clock.svg) no-repeat center; background-size: 100%; }
+@media (min-width: 1024px) { .clock { display: block; position: relative; float: right; width: 89px; height: 89px; margin: -36px 0px; background: url(/images/clock.svg) no-repeat center; background-size: 100%; }
   .clock .hours, .clock .minutes { position: absolute; -webkit-transform-origin: 50% 80%; -moz-transform-origin: 50% 80%; -ms-transform-origin: 50% 80%; -o-transform-origin: 50% 80%; transform-origin: 50% 80%; }
   .clock .hours-container { position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; -webkit-animation: rotate 43200s infinite linear; animation: rotate 43200s infinite linear; }
   .clock .hours { top: 18px; left: 25px; width: 40px; height: 32px; background: url(/images/short_hand.svg) no-repeat center; }
@@ -358,7 +358,8 @@ body { width: 100vw; }
 .header-family .search-pts input[type=search]::-moz-placeholder { /* Mozilla Firefox 19+ */ color: #4d4d4d; }
 .header-family .search-pts input[type=search]:-ms-input-placeholder { /* Internet Explorer 10+ */ color: #333333; }
 .header-family .search-pts input[type=button] { position: absolute; top: 18px; right: -40px; border: none; background: transparent; text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('/images/ic-search-blue-large.png?1441182265'); background-repeat: no-repeat; background-position: 50% 50%; width: 24px; height: 24px; background-image: none, url('/images/ic-search-blue-large.svg?1441182265'); background-position: center center; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
-@media (min-width: 1024px) { .header-family .pts-logo, .header-family .tv-program { display: block; }
+@media (min-width: 1024px) { .header-family { width: auto; }
+  .header-family .pts-logo, .header-family .tv-program { display: block; }
   .header-family ul { width: auto; }
   .header-family .channel-list { position: relative; top: 0px; float: left; margin: 0px 24px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; cursor: pointer; font-size: 14px; font-weight: bold; color: white; background-color: #04519c; }
   .header-family .channel-item { -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; height: auto; padding: 0 10px; line-height: 24px; }
@@ -456,7 +457,7 @@ body { width: 100vw; }
   .hero .screen-shot { display: block; }
   .hero .video-topic-item.is-active { background: #414141; }
   .hero .video-name { width: 173px; height: 74px; margin: 10px 0px; padding: 0px 12px; font-size: 16px; line-height: 24px; word-break: normal; overflow: hidden; }
-  .hero .video-list { position: absolute; top: 48px; left: 50%; width: 640px; height: 475px; margin: 0px 0px 0px -150px; background-color: black; } }
+  .hero .video-list { position: absolute; top: 48px; left: 50%; width: 640px; height: 475px; margin: 0px 0px 0px -152px; background-color: black; } }
 @media (min-width: 1200px) { .hero { padding-right: 64px; }
   .hero .frame { float: left; width: 110px; height: 475px; padding: 0px; border: none; border-right: 3px solid #04519c; }
   .hero .frame:after { display: none; }

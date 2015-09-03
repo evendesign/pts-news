@@ -59,27 +59,3 @@
     color: $color;
   }
 }
-
-//horizontal-list 自改 margin 版
-@mixin horizontal-list-item-margin($margin: 4px, $direction: left) {
-  @include no-bullet;
-  white-space: nowrap;
-  @include float($direction);
-  @if $margin {
-    margin: {
-      left: $margin;
-      right: $margin;
-    };
-    &:first-child #{if(support-legacy-browser("ie", "6", $threshold: $css-sel2-support-threshold), ", &.first", "")} {
-      margin-#{$direction}: 0;
-    }
-    &:last-child {
-      margin-#{opposite-position($direction)}: 0;
-    }
-    @if support-legacy-browser("ie", "7", $threshold: $css-sel2-support-threshold) {
-      &.last {
-        margin-#{opposite-position($direction)}: 0;
-      }
-    }
-  }
-}
