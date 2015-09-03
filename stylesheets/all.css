@@ -322,7 +322,7 @@ html, body, .page, .page { height: 100%; }
 .social-icons .mail { text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('/images/ic_mail.png?1441174329'); background-repeat: no-repeat; background-position: 50% 50%; width: 45px; height: 44px; background-image: none, url('/images/ic_mail.svg?1441174329'); background-position: center center; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
 .social-icons .pinterest { text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('/images/ic_pinterest.png?1441174329'); background-repeat: no-repeat; background-position: 50% 50%; width: 45px; height: 44px; background-image: none, url('/images/ic_pinterest.svg?1441174329'); background-position: center center; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
 .social-icons .linkedin { text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('/images/ic_linkedin.png?1441174329'); background-repeat: no-repeat; background-position: 50% 50%; width: 45px; height: 44px; background-image: none, url('/images/ic_linkedin.svg?1441174329'); background-position: center center; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
-.social-icons .line { text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('/images/ic_line.png?1441106427'); background-repeat: no-repeat; background-position: 50% 50%; width: 45px; height: 44px; }
+.social-icons .line { text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('/images/ic_line.png?1441275085'); background-repeat: no-repeat; background-position: 50% 50%; width: 44px; height: 44px; background-image: none, url('/images/ic_line.svg?1441275087'); background-position: center center; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
 
 body { width: 100vw; }
 
@@ -537,9 +537,9 @@ body { width: 100vw; }
 .footer label.e-newsletter { float: left; width: 100vw; margin-left: 12px; }
 .footer label.footer-nav-title { display: block; }
 .footer label.footer-nav-title:after { display: none; }
-.footer input#e-newsletter { width: 160px; height: 23px; padding-left: 12px; border: #d8d8d8 1px solid; -webkit-border-radius: 2px 0 0 2px; -moz-border-radius: 2px 0 0 2px; -ms-border-radius: 2px 0 0 2px; -o-border-radius: 2px 0 0 2px; border-radius: 2px 0 0 2px; -webkit-appearance: none; appearance: none; font-size: 14px; line-height: 24px; }
+.footer input#e-newsletter { width: 160px; padding: 1px 0px 1px 12px; border: #d8d8d8 1px solid; -webkit-border-radius: 2px 0 0 2px; -moz-border-radius: 2px 0 0 2px; -ms-border-radius: 2px 0 0 2px; -o-border-radius: 2px 0 0 2px; border-radius: 2px 0 0 2px; -webkit-appearance: none; appearance: none; font-size: 14px; line-height: 24px; }
 .footer input#e-newsletter:focus { outline: none; }
-.footer button { height: 27px; margin: 0px; border: none; padding: 0px 24px; border: #04519c 1px solid; -webkit-border-radius: 0 2px 2px 0; -moz-border-radius: 0 2px 2px 0; -ms-border-radius: 0 2px 2px 0; -o-border-radius: 0 2px 2px 0; border-radius: 0 2px 2px 0; font-size: 14px; line-height: 24px; color: white; background-color: #04519c; }
+.footer button { height: 26px; margin: 0px 0px 0px -2px; border: none; padding: 0px 24px; border: #04519c 1px solid; -webkit-border-radius: 0 2px 2px 0; -moz-border-radius: 0 2px 2px 0; -ms-border-radius: 0 2px 2px 0; -o-border-radius: 0 2px 2px 0; border-radius: 0 2px 2px 0; font-size: 14px; line-height: 24px; color: white; background-color: #04519c; }
 .footer .social-icons { float: left; width: 100vw; margin-top: 24px; margin-left: 12px; }
 .footer .social-icons li { display: inline-block; }
 .footer .social-icons span { display: inline-block; margin-right: 10px; text-indent: -1999999px; overflow: hidden; }
