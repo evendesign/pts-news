@@ -561,7 +561,7 @@ body { width: 100vw; }
   .footer .social-icons, .footer .company-info { float: left; margin-left: 0px; } }
 
 .list-news { padding: 0 12px; padding-top: 132px; }
-.list-news .list-news { list-style: none; margin: 0px; padding: 0px; }
+.list-news .list-news { list-style: none; margin: 0px 0px 60px 0px; padding: 0px; }
 .list-news .list-news-itme + .list-news-itme { border-top: 1px solid #d8d8d8; }
 .list-news .list-news-itme:after { content: ""; display: block; clear: both; }
 .list-news .list-news-title { margin-top: 24px; margin-bottom: 8px; font-size: 20px; line-height: 24px; }
