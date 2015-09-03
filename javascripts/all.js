@@ -47,6 +47,10 @@ if ($(window).width() < 960){
       $(this).closest("ul").children('li:not(.init)').toggle();
   });
 
+  $(".select").find("ul").on("click", function() {
+      $(".select").find(".ic-drop-down").toggleClass("up");
+  });
+
   var allOptions = $(".select").find("ul").children('li:not(.init)');
   $(".select").find("ul").on("click", "li:not(.init)", function() {
       allOptions.removeClass('selected');
@@ -63,7 +67,6 @@ $(document).ready(function(){
 });
 
 // sly.js //
-
 if ($(window).width() < 960){
   var $frame = $('.frame'); window.frr = $frame;
   var sly = new Sly($frame, {
@@ -102,4 +105,4 @@ if ($(window).width() < 960){
     dynamicHandle: 1,
     clickBar: 1,
   }).init();
-}
+};
