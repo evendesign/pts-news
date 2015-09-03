@@ -2,6 +2,9 @@
   +pie-clearfix
   padding: 20px 12px 40px 12px
 
+  a
+    text-decoration: none
+
   .news-title
     a
       display: inline-block
@@ -28,14 +31,13 @@
     &:hover
       background-color: lighten($color-blue-pts, 60%)
 
-  a.news-item
+  .news-item
     display: inline-block
     height: 60px
     +link-colors($text-black)
 
   .news-item-media
-    float: left
-    position: relative
+    position: absolute
 
     img
       margin: 14px 0px 0px 0px
@@ -51,10 +53,8 @@
       background: url(/images/ic_play.svg) no-repeat center
 
   .news-item-topic
-    float: left
-    width: 65vw
-    margin-left: 15px
-    +adjust-font-size-to(18px)
+    width: 75vw
+    padding-left: 56px
     line-height: 60px
     text-overflow: ellipsis
     white-space: nowrap
@@ -64,7 +64,7 @@
     padding-left: 20px
 
     .news-item-topic
-      width: auto
+      width: 100%
 
   +at-breakpoint($desktop)
     padding: 0px

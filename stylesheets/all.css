@@ -468,18 +468,19 @@ body { width: 100vw; }
 
 .latest-news { padding: 20px 12px 40px 12px; }
 .latest-news:after { content: ""; display: table; clear: both; }
+.latest-news a { text-decoration: none; }
 .latest-news .news-title a { display: inline-block; text-indent: -1999999px; overflow: hidden; text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('/images/latest-title.png?1441259911'); background-repeat: no-repeat; background-position: 50% 50%; width: 148px; height: 31px; background-image: none, url('/images/latest-title.svg?1441259911'); background-position: center center; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
 .latest-news .news-title:after { margin-bottom: 0px; }
 .latest-news .news-list { height: auto; margin-top: 0px; margin-bottom: 0px; padding: 0px; list-style-type: none; }
 .latest-news li { width: 100%; height: auto; border-bottom: 1px solid #d8d8d8; cursor: pointer; }
 .latest-news li:hover { background-color: #d4e9fe; }
-.latest-news a.news-item { display: inline-block; height: 60px; color: #333333; }
-.latest-news .news-item-media { float: left; position: relative; }
+.latest-news .news-item { display: inline-block; height: 60px; color: #333333; }
+.latest-news .news-item-media { position: absolute; }
 .latest-news .news-item-media img { margin: 14px 0px 0px 0px; }
 .latest-news .news-item-media.video:before { content: ""; display: inline-block; position: absolute; top: 22px; left: 13px; width: 20px; height: 20px; background: url(/images/ic_play.svg) no-repeat center; }
-.latest-news .news-item-topic { float: left; width: 65vw; margin-left: 15px; font-size: 18px; line-height: 24px; line-height: 60px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.latest-news .news-item-topic { width: 75vw; padding-left: 56px; line-height: 60px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
 @media (min-width: 640px) { .latest-news { padding-left: 20px; }
-  .latest-news .news-item-topic { width: auto; } }
+  .latest-news .news-item-topic { width: 100%; } }
 @media (min-width: 1024px) { .latest-news { padding: 0px; }
   .latest-news .news-list { margin-bottom: 48px; } }
 
@@ -489,8 +490,7 @@ body { width: 100vw; }
 .category-news .news-title:after { margin-bottom: 0px; }
 .category-news .category-item { height: auto; }
 .category-news .category-title { margin-top: 10px; font-size: 24px; line-height: 48px; }
-.category-news .category-title a { color: #04519c; cursor: pointer; }
-.category-news .category-title a:hover { text-decoration: none; }
+.category-news .category-title a { color: #04519c; cursor: pointer; text-decoration: none; }
 .category-news .category-title a:after { content: ""; display: inline-block; width: 20px; height: 20px; background: url(/images/ic_more.svg) no-repeat center; }
 .category-news ul { list-style-type: none; margin: 0px 0px 20px 0px; padding: 0px; line-height: 36px; }
 .category-news li { padding-left: 1em; text-indent: -0.7em; }
