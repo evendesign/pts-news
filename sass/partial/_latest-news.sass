@@ -2,8 +2,15 @@
   +pie-clearfix
   padding: 20px 12px 40px 12px
 
-  .news-title:after
-    margin-bottom: 0px
+  .news-title
+    a
+      display: inline-block
+      text-indent: -1999999px
+      overflow: hidden
+      +replace-text-with-svg("latest-title")
+
+    &:after
+      margin-bottom: 0px
 
   .news-list
     height: auto
