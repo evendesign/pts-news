@@ -66,9 +66,10 @@
       position: absolute
       top: 14px
       right: 24px
-      width: 16px
-      height: 16px
-      background: url(/images/ic_drop_down.svg) no-repeat center
+      +replace-text-with-svg("ic_drop_down")
+
+      &.up
+        +replace-text-with-svg("ic_drop_up")
 
     ul
       height: 48px
