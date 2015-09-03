@@ -197,6 +197,12 @@ html, body, .page, .page { height: 100%; }
 
 @media (min-width: 640px) { .page { padding: 0px; }
   .main { padding: 0px 2em; }
+  .category-news .category-item { width: 48.57143%; float: left; margin-right: 2.85714%; margin-right: -100%; }
+  .category-news .category-item:nth-child(2n + 1) { margin-left: 0%; clear: left; }
+  .category-news .category-item:nth-child(2n + 2) { margin-left: 51.42857%; clear: none; }
+  .program-news .program-item { width: 48.57143%; float: left; margin-right: 2.85714%; margin-right: -100%; }
+  .program-news .program-item:nth-child(2n + 1) { margin-left: 0%; clear: left; }
+  .program-news .program-item:nth-child(2n + 2) { margin-left: 51.42857%; clear: none; }
   .list-news .list-news-description { width: 65.71429%; float: left; margin-right: 2.85714%; }
   .list-news .list-news-media { width: 31.42857%; float: right; margin-right: 0; } }
 @media (min-width: 1024px) { .header-family { position: relative; width: 100%; height: 86px; padding: 24px 24px 0px 24px; background-color: transparent; -webkit-transform: translateX(0px); -moz-transform: translateX(0px); -ms-transform: translateX(0px); -o-transform: translateX(0px); transform: translateX(0px); }
@@ -207,9 +213,9 @@ html, body, .page, .page { height: 100%; }
   .open-menu .off-canvas-mask { display: none; }
   .news-title { width: 100%; float: left; margin-right: 1.69492%; margin-right: -100%; }
   .news-title:nth-child(1n + 1) { margin-left: 0%; clear: left; }
-  .latest-news ul.news-list { width: 49.15254%; float: left; margin-right: 1.69492%; margin-right: -100%; }
-  .latest-news ul.news-list:nth-child(2n + 1) { margin-left: 0%; clear: left; }
-  .latest-news ul.news-list:nth-child(2n + 2) { margin-left: 50.84746%; clear: none; }
+  .latest-news .news-list { width: 49.15254%; float: left; margin-right: 1.69492%; margin-right: -100%; }
+  .latest-news .news-list:nth-child(2n + 1) { margin-left: 0%; clear: left; }
+  .latest-news .news-list:nth-child(2n + 2) { margin-left: 50.84746%; clear: none; }
   .category-news .category-item { width: 49.15254%; float: left; margin-right: 1.69492%; margin-right: -100%; }
   .category-news .category-item:nth-child(2n + 1) { margin-left: 0%; clear: left; }
   .category-news .category-item:nth-child(2n + 2) { margin-left: 50.84746%; clear: none; }

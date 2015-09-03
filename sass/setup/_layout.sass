@@ -61,6 +61,14 @@ $off-canvas-header-width: 260px
   .main
     padding: 0px $gutter-width * 2
 
+  .category-news
+    .category-item
+      +isolate-grid(3, 6)
+
+  .program-news
+    .program-item
+      +isolate-grid(3, 6)
+
   .list-news
     .list-news-description
       +span-columns(4 , 6)
@@ -99,7 +107,7 @@ $off-canvas-header-width: 260px
     +isolate-grid(10, 10)
 
   .latest-news
-    ul.news-list
+    .news-list
       +isolate-grid(5, 10)
 
   .category-news
