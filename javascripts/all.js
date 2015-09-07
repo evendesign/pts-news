@@ -8,6 +8,16 @@ var off_canvas = function (){
 
 off_canvas();
 
+// tv-program show //
+var TVprogram_show = function (){
+  $(".tv-program, .close").on("click", function(event){
+    $(".tv-program-bg, .tv-program-content").toggleClass("show");
+    event.preventDefault();
+  });
+};
+
+TVprogram_show();
+
 // hero video select //
 var video_select = function (){
   $(".slidee").find("li").each(function(){
@@ -106,3 +116,7 @@ if ($(window).width() < 960){
     clickBar: 1,
   }).init();
 };
+
+if (document.all && document.querySelector && !document.addEventListener) {
+  $(".clock").hide();
+}
