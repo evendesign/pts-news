@@ -32,8 +32,14 @@
   +at-breakpoint($phone)
     padding-left: 20px
 
+    .program-item
+      +isolate-grid(3, 6)
+
   +at-breakpoint($desktop)
     padding: 0px
+
+    .program-item
+      +isolate-grid(5, 10)
 
     .program-time
       +adjust-font-size-to(14px)
@@ -41,3 +47,8 @@
 
     .program-description
       +adjust-font-size-to(16px)
+
+  +at-breakpoint($wide-desktop)
+
+    .program-item
+      +isolate-grid(4, 12)

@@ -55,6 +55,12 @@
     padding-left: 20px
     padding-right: 20px
 
+    .list-news-description
+      +span-columns(4 , 6)
+
+    .list-news-media
+      +span-columns(2 omega, 6)
+
     .list-news-media
       margin-top: -61px
       img
@@ -64,8 +70,21 @@
   +at-breakpoint($desktop)
     padding: 0px
 
+    .list-news-content
+      +span-columns(8 , 10)
+
+    .ad-news
+      +span-columns(2 omega, 10)
+
     .list-news-itme
       margin-right: 24px
 
     .ad-news
       margin-top: -60px
+
+  +at-breakpoint($wide-desktop)
+    .list-news-content
+      +span-columns(9 , 12)
+
+    .ad-news
+      +span-columns(3 omega, 12)

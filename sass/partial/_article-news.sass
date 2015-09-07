@@ -57,6 +57,13 @@
   +at-breakpoint($desktop)
     padding: 0px
 
+    .breadcrumb, .article-item
+      +span-columns(8 , 10)
+
+    .ad-news
+      +span-columns(2 omega, 10)
+      margin-top: -16px
+
     .article-title, .article-video
       margin-right: 24px
 
@@ -66,5 +73,9 @@
       .news-item-topic
         width: 300px
 
+  +at-breakpoint($wide-desktop)
+    .breadcrumb, .article-item
+      +span-columns(9 , 12)
+
     .ad-news
-      margin-top: -16px
+      +span-columns(3 omega, 12)

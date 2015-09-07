@@ -56,8 +56,18 @@
   +at-breakpoint($phone)
     padding-left: 20px
 
+    .category-item
+      +isolate-grid(3, 6)
+
   +at-breakpoint($desktop)
     padding: 0px
 
+    .category-item
+      +isolate-grid(5, 10)
+
     ul
       margin: 0px 0px 50px 0px
+
+  +at-breakpoint($wide-desktop)
+    .category-item
+      +isolate-grid(4, 12)

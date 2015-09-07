@@ -6,10 +6,10 @@ $gutter-width: 1em
 $grid-padding: $gutter-width
 
 // add media
-$phone: 640px, $total-columns
-$pad: 960px, 8
-$desktop: 1024px, 10
-$wide-desktop: 1200px, 12
+$phone: 640px $total-columns
+$pad: 960px 8
+$desktop: 1024px 10
+$wide-desktop: 1200px 12
 
 // page-container
 $page-container: ".page"
@@ -61,20 +61,6 @@ $off-canvas-header-width: 260px
   .main
     padding: 0px $gutter-width * 2
 
-  .category-news
-    .category-item
-      +isolate-grid(3, 6)
-
-  .program-news
-    .program-item
-      +isolate-grid(3, 6)
-
-  .list-news
-    .list-news-description
-      +span-columns(4 , 6)
-    .list-news-media
-      +span-columns(2 omega, 6)
-
 +at-breakpoint($desktop)
   .header-family
     position: relative
@@ -103,76 +89,8 @@ $off-canvas-header-width: 260px
     .off-canvas-mask
       display: none
 
-  .tv-program-content
-    .tv-program-item
-      +isolate-grid(4, 12)
-
-  .news-title
-    +isolate-grid(10, 10)
-
-  .latest-news
-    .news-list
-      +isolate-grid(5, 10)
-
-  .category-news
-    .category-item
-      +isolate-grid(5, 10)
-
-  .program-news
-    .program-item
-      +isolate-grid(5, 10)
-
-  .breadcrumb
-    +span-columns(8, 10)
-
-  .list-news
-    .list-news-content
-      +span-columns(8 , 10)
-
-    .ad-news
-      +span-columns(2 omega, 10)
-
-  .article-news
-    .breadcrumb, .article-item
-      +span-columns(8 , 10)
-
-    .ad-news
-      +span-columns(2 omega, 10)
-
 +at-breakpoint($wide-desktop)
   #{$page-container}
     $grid-padding: $gutter-width * 2
     $container-style: magic
     +container
-
-  .news-title
-    +isolate-grid(12, 12)
-
-  .latest-news
-    ul.news-list
-      +isolate-grid(6, 12)
-
-  .category-news
-    .category-item
-      +isolate-grid(4, 12)
-
-  .program-news
-    .program-item
-      +isolate-grid(4, 12)
-
-  .breadcrumb
-    +span-columns(9, 12)
-
-  .list-news
-    .list-news-content
-      +span-columns(9 , 12)
-
-    .ad-news
-      +span-columns(3 omega, 12)
-
-  .article-news
-    .breadcrumb, .article-item
-      +span-columns(9 , 12)
-
-    .ad-news
-      +span-columns(3 omega, 12)
