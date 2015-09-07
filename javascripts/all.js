@@ -116,3 +116,7 @@ if ($(window).width() < 960){
     clickBar: 1,
   }).init();
 };
+
+if (document.all && document.querySelector && !document.addEventListener) {
+  $(".clock").hide();
+}

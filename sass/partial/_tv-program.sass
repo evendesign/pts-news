@@ -1,11 +1,10 @@
-.tv-program-bg, .tv-program-content
+.tv-program-bg
   display: none
 
-.show
-  display: block
+  &.show
+    display: block
 
-+at-breakpoint($desktop)
-  .tv-program-bg
+  +at-breakpoint($desktop)
     position: absolute
     top: 0px
     left: 0px
@@ -14,46 +13,46 @@
     height: 500%
     background-color: #fff
 
-  .tv-program-content
-    position: absolute
-    top: 0px
-    left: 10%
-    z-index: 9999
-    width: 80%
-    height: 100%
+    .tv-program-content
+      position: absolute
+      top: 0px
+      left: 10%
+      z-index: 9999
+      width: 80%
+      height: 100%
 
-  .channel
-    margin: 40px 0px
-    text-align: right
-    +adjust-font-size-to(30px)
-    color: $color-blue-pts
+    .channel
+      margin: 40px 0px
+      text-align: right
+      +adjust-font-size-to(30px)
+      color: $color-blue-pts
 
-    span
-      display: inline-block
-      margin: 0px 0px -5px 24px
-      +replace-text-with-svg("ic_X")
-      cursor: pointer
+      span
+        display: inline-block
+        margin: 0px 0px -5px 24px
+        +replace-text-with-svg("ic_X")
+        cursor: pointer
 
 
-  .tv-program-category
-    +adjust-font-size-to(20px)
-    color: $color-blue-pts
+    .tv-program-category
+      +adjust-font-size-to(20px)
+      color: $color-blue-pts
 
-  .tv-program-item
-    +isolate-grid(4, 12)
-    margin-bottom: 36px
+    .tv-program-item
+      +isolate-grid(4, 12)
+      margin-bottom: 36px
 
-    a
-      line-height: 32px
-      +link-colors($text-black, $text-gray)
-      text-decoration: none
+      a
+        line-height: 32px
+        +link-colors($text-black, $text-gray)
+        text-decoration: none
 
-  .program-list
-    list-style: none
-    padding: 0px
-    margin: 12px 0px 0px 0px
+    .program-list
+      list-style: none
+      padding: 0px
+      margin: 12px 0px 0px 0px
 
-+at-breakpoint($wide-desktop)
-  .tv-program-content
-    left: 15%
-    width: 70%
+  +at-breakpoint($wide-desktop)
+    .tv-program-content
+      left: 15%
+      width: 70%

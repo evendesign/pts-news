@@ -1,5 +1,4 @@
 .header-family
-
   .pts-logo
     float: left
     display: none
@@ -120,7 +119,12 @@
       +replace-text-with-svg("ic-search-blue-large")
 
   +at-breakpoint($desktop)
+    position: static
     width: auto
+    height: 86px
+    padding: rhythm(1) rhythm(1) 0px rhythm(1)
+    background-color: transparent
+    +translateX(0%)
 
     .pts-logo, .tv-program
       display: block
@@ -210,7 +214,6 @@
         width: 76px
 
   +at-breakpoint($wide-desktop)
-
     .navigation-list
       margin: 16px 0px 0px 10px
 

@@ -1,0 +1,102 @@
+body
+  background-color: lighten($background-color-gray, 5%)
+  width: 1220px
+  margin-left: auto
+  margin-right: auto
+
+  &:before
+    content: ''
+    display: inline-block
+    +stretch (0px, 0px, 0px, 0px)
+    z-index: -1
+    width: 100%
+    height: 110px
+    border-bottom: 3px solid $color-blue-pts
+    background-color: $background-color-gray-light
+
+  .main
+    float: left
+    margin: 40px 24px
+    background-color: #fff
+    padding: 0px 32px
+
+    &:after
+      content: ""
+      +pie-clearfix
+
+  .content
+    +box-sizing(border-box)
+    padding: 0
+    +span-columns(6 omega, $total_columns)
+
+  .open-menu
+    .page
+      overflow: visible
+
+    .main
+      +translateX(0)
+
+    .off-canvas-mask
+      display: none
+
+.lte-ie9
+
+  .header-family
+    .search-pts
+      float: right
+      margin-right: 50px
+
+    .nav-item
+      display: block
+      float: left
+      margin-right: 24px
+
+
+  .header-news
+    .search-news
+      width: 240px
+      border: 1px solid $line-color-gray-light
+
+      #search-news
+        margin-top: 6px
+        width: auto
+
+      .ic-search-news
+        top: 3px
+
+  .hero
+    .program-item.is-active
+      background-color: $color-blue-pts
+
+    .video-list.is-active
+      margin-right: -24px
+
+  .list-news
+    padding-left: 20px
+    padding-right: 20px
+
+    .list-news-description
+      +span-columns(4 , 6)
+
+    .list-news-media
+      +span-columns(2 omega, 6)
+
+    .list-news-media
+      margin-top: -61px
+      img
+        float: right
+        width: auto
+
+    .ad-news
+      margin-top: -40px
+
+  .article-news
+    .article-content
+      width: 80%
+
+  .footer
+    input#e-newsletter
+      padding: 0px 0px 10px 12px
+
+    .footer-nav-item
+      margin-right: 40px
