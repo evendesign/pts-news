@@ -117,6 +117,20 @@ if ($(window).width() < 960){
   }).init();
 };
 
+// when > 960 remove sly //
+var win_resize = function (){
+  var win = $(this);
+  if (win.width() > 960 ) {
+    $('.frame').sly(false);
+    $('.hero').find(".frame").sly(false);
+  }
+};
+
+$( window ).resize(function() {
+  win_resize();
+});
+
+// IE hide clock //
 if (document.all && document.querySelector && !document.addEventListener) {
   $(".clock").hide();
-}
+};
