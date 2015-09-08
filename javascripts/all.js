@@ -134,3 +134,11 @@ $( window ).resize(function() {
 if (document.all && document.querySelector && !document.addEventListener) {
   $(".clock").hide();
 };
+
+// 修正 IE8 無視 z-index //
+$(document).ready(function (){
+  $('iframe').each(function(){
+    var url = $(this).attr("src");
+    $(this).attr("src",url+"?wmode=transparent");
+  });
+});
