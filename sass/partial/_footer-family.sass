@@ -18,13 +18,11 @@
   .footer-nav-group
     width: 100vw
     height: auto
-    margin-top: 40px
-    margin-left: 12px
+    margin: 40px 0px 0px 12px
 
   .footer-nav-item
     float: left
-    margin-right: 26px
-    margin-bottom: 36px
+    margin: 0px 26px 36px 0px
 
   .footer-nav-title
     +adjust-font-size-to(18px)
@@ -44,14 +42,13 @@
   label.e-newsletter
     float: left
     width: 100vw
-    margin-left: 12px
+    margin: 0px 24px 0px 12px
 
   label.footer-nav-title
     display: block
 
     &:after
       display: none
-
 
   input#e-newsletter
     width: 160px
@@ -68,8 +65,8 @@
   button
     height: 26px
     margin: 0px 0px 0px -2px
-    border: none
     padding: 0px 24px
+    border: none
     border: $color-blue-pts 1px solid
     +border-radius(0 2px 2px 0)
     +adjust-font-size-to(14px)
@@ -79,8 +76,7 @@
   .social-icons
     float: left
     width: 100vw
-    margin-top: 24px
-    margin-left: 12px
+    margin: 24px 0px 0px 12px
 
     li
       display: inline-block
@@ -102,21 +98,22 @@
 
   .company-info
     float: left
-    margin-top: 12px
-    margin-left: 12px
+    margin: 12px 16px 0px 12px
     +adjust-font-size-to(13px)
     line-height: 20px
 
   .copyright
     float: left
     width: 100%
-    margin: 60px 0px
-    text-align: center
+    margin: 60px 0px 60px 12px
     +adjust-font-size-to(13px)
 
   +at-breakpoint($phone)
     .footer-nav-group, label.e-newsletter, .social-icons, .company-info
       margin-left: 36px
+
+    .copyright
+      text-align: center
 
   +at-breakpoint($pad)
     width: 100%
