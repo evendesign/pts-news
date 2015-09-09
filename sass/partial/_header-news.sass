@@ -68,48 +68,56 @@
 
   .search-news
     position: absolute
-    top: 14px
     right: rhythm(0.5)
+    margin-top: 8px
     white-space: nowrap
     transform: translate(0,0)
-    transition: width .55s ease
+
+  .ic-search-close
+    position: absolute
+    top: -10px
+    right: 0px
+    margin: 24px 10px 0px 0px
+    border: none
+    background: transparent
+    +replace-text-with-svg("ic_X_small")
+    height: 24px
+    width: 24px
+    z-index: 3
+    display: none
+
+  .ic-search-news
+    position: absolute
+    right: 0px
+    margin: 12px 10px 0px 0px
+    background: transparent
+    +replace-text-with-svg("ic-search-blue-large")
+    z-index: 1
+
+  #search-news
+    position: absolute
+    top: 4px
+    right: 0px
+    -webkit-appearance: none
+    appearance: none
     width: 30px
     height: 34px
     padding-left: 20px
     border: 1px solid #fff
     +border-radius(2px)
-    overflow: hidden
-    background-color: #fff
-
-    &:hover
-      height: 34px
-      width: 270px
-      border: 1px solid $line-color-gray-light
-
-      #search-news
-        +input-placeholder-color($text-gray)
-
-    input
-      float: left
-      -webkit-appearance: none
-      appearance: none
-      width: 230px
-      height: 30px
-      padding: 0px
-      border: 1px solid #fff
-      +border-radius(2px)
-      +input-placeholder-color(#fff)
-      transition: width .55s ease
-
-      &:hover, &:focus, &:active
-        outline: none
-
-  .ic-search-news
-    position: absolute
-    right: 0px
-    margin: 3px 10px 0px 0px
+    opacity: 0.05
+    transition: width .55s ease
     background: transparent
-    +replace-text-with-svg("ic-search-blue-large")
+    z-index: 2
+
+    &:focus, &:active
+      width: 270px
+      padding-left: 20px
+      outline: none
+      opacity: 1
+      border: 1px solid $line-color-gray-light
+      +input-placeholder-color($text-gray)
+      background: #fff
 
   +at-breakpoint($desktop)
     position: relative
@@ -160,15 +168,14 @@
         bottom: -8px
 
     .search-news
-      margin-top: 12px
+      margin-top: -3px
 
     .ic-search-news
-      margin-top: 5px
+      z-index: 3
 
   +at-breakpoint($wide-desktop)
 
-    .search-news
+    #search-news
       width: 140px
-
-      #search-news
-        +input-placeholder-color($text-gray)
+      opacity: 1
+      +input-placeholder-color($text-gray)

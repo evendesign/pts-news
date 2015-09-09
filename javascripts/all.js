@@ -18,6 +18,16 @@ var TVprogram_show = function (){
 
 TVprogram_show();
 
+// header-news search 關閉 //
+if ($(window).width() < 960){
+  $("#search-news").focus(function(){
+    $(".ic-search-close").show();
+  });
+
+  $(".ic-search-close").on("click", function() {
+    $(".ic-search-close").hide();
+  });
+}
 // hero video select //
 var video_select = function (){
   $(".slidee").find("li").each(function(){
