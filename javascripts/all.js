@@ -143,6 +143,9 @@ $( window ).resize(function() {
 // IE hide clock //
 if (document.all && document.querySelector && !document.addEventListener) {
   $(".clock").hide();
+  $(".ic-search-close").remove();
+  $('.frame').sly(false);
+  $('.hero').find(".frame").sly(false);
 };
 
 // 修正 IE8 無視 z-index //

@@ -9,8 +9,10 @@ body
     display: inline-block
     +stretch (0px, 0px, 0px, 0px)
     z-index: -1
-    width: 100%
+    min-width: 1220px
     height: 110px
+    margin: 0px
+    overflow: hidden
     border-bottom: 3px solid $color-blue-pts
     background-color: $background-color-gray-light
 
@@ -51,18 +53,15 @@ body
       float: left
       margin-right: 24px
 
-
   .header-news
+    .frame
+      min-width: 815px
+
     .search-news
-      width: 240px
-      border: 1px solid $line-color-gray-light
-
       #search-news
-        margin-top: 6px
-        width: auto
-
-      .ic-search-news
-        top: 3px
+        width: 240px
+        padding: 0px 0px 0px 12px
+        border: 1px solid $line-color-gray-light
 
   .hero
     .program-item.is-active
