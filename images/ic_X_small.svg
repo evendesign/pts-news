@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_X_small</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="news_page_index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="PTSNews-Index_4_24px" sketch:type="MSArtboardGroup" transform="translate(-1174.000000, -157.000000)" fill="#393333">
+            <g id="news_nwtwork_header" sketch:type="MSLayerGroup" transform="translate(50.000000, 19.000000)">
+                <g id="search" transform="translate(855.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <g id="ic_X_small" transform="translate(261.000000, 130.000000)">
+                        <path d="M18.3045977,16.6350575 L18.3045977,6.17380182 C18.3045977,5.73063866 17.944367,5.37068966 17.5,5.37068966 C17.0525349,5.37068966 16.6954023,5.73025522 16.6954023,6.17380182 L16.6954023,16.6350575 L6.23414664,16.6350575 C5.79098349,16.6350575 5.43103448,16.9952881 5.43103448,17.4396552 C5.43103448,17.8871203 5.79060005,18.2442529 6.23414664,18.2442529 L16.6954023,18.2442529 L16.6954023,28.7055085 C16.6954023,29.1486717 17.055633,29.5086207 17.5,29.5086207 C17.9474651,29.5086207 18.3045977,29.1490551 18.3045977,28.7055085 L18.3045977,18.2442529 L28.7658534,18.2442529 C29.2090165,18.2442529 29.5689655,17.8840222 29.5689655,17.4396552 C29.5689655,16.9921901 29.2094,16.6350575 28.7658534,16.6350575 L18.3045977,16.6350575 Z" id="X" transform="translate(17.500000, 17.439655) rotate(-315.000000) translate(-17.500000, -17.439655) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
