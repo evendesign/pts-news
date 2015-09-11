@@ -9,9 +9,11 @@ html lang="zh-TW"
       .container
         = render "/partial/header-family"
         = render "/partial/tv-program"
+        /! main
         .main
           = render "/partial/header-news"
           = yield
+        /! main end
         = render "/partial/footer-family"
       .off-canvas-mask
     = render "/layout_foot"

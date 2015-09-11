@@ -1,9 +1,13 @@
+/! 新聞列表
 .list-news
+  /! 麵包屑
   .breadcrumb
     span.site
       a href="/" 公視新聞網
     span.aarow
     span.category 政治
+  /! 麵包屑 end
+  /! 新聞列表內容
   .list-news-content
     ul.list-news
       - 8.times
@@ -19,4 +23,6 @@
             = zh_lorem_paragraph
           .list-news-media
             = image_tag(lorem_image("210x160"))
+  /! 新聞列表內容 end
   = render "/partial/ad-news"
+/! 新聞列表 end

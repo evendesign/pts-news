@@ -1,7 +1,9 @@
+/! 全站 header
 .header-family
   .pts-logo
     a href="#" 公視
   .tv-program 節目表
+  /! 頻道列表
   ul.channel-list
     li.channel-item.is-active
       = link_to "公視", "連結"
@@ -9,9 +11,13 @@
       = link_to "公視2台", "連結"
     li.channel-item
       = link_to "公視HD", "連結"
+  /! 頻道列表 end
+  /! 搜尋公視
   form.search-pts
     input placeholder="搜尋公視" type="search"
     input type="button"
+  /! 搜尋公視 end
+  /! 導覽列
   ul.navigation-list
     li.nav-item.is-active
       = link_to "公視新聞網", "連結"
@@ -31,8 +37,12 @@
       = link_to "企業贊助", "連結"
     li.nav-item
       = link_to "英文網 English", "連結"
+  /! 導覽列 end
+  /! 時鐘
   .clock
     .hours-container
       .hours
     .minutes-container
       .minutes
+  /! 時鐘 end
+/! 全站 header end
