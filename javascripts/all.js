@@ -63,9 +63,43 @@ video_select();
 
 
 // video select dropdown //
+// if ($(window).width() < 960){
+//   $(".select").find("ul").on("click", ".init", function() {
+//       $(this).closest("ul").children('li:not(.init)').toggle();
+//   });
+
+//   $(".select").find("ul").on("click", function() {
+//       $(".select").find(".ic-drop-down").toggleClass("up");
+//   });
+
+//   var allOptions = $(".select").find("ul").children('li:not(.init)');
+//   $(".select").find("ul").on("click", "li:not(.init)", function() {
+//       allOptions.removeClass('selected');
+//       $(this).addClass('selected');
+//       $(".select").find("ul").children('.init').html($(this).html());
+//       allOptions.toggle();
+//   });
+// };
+
+// $(".select").find("ul").on("click", ".init", function() {
+//     $(this).closest("ul").children('li:not(.init)').toggle();
+// });
+
+// $(".select").find("ul").on("click", function() {
+//     $(".select").find(".ic-drop-down").toggleClass("up");
+// });
+
+// var allOptions = $(".select").find("ul").children('li:not(.init)');
+// $(".select").find("ul").on("click", "li:not(.init)", function() {
+//     allOptions.removeClass('selected');
+//     $(this).addClass('selected');
+//     $(".select").find("ul").children('.init').html($(this).html());
+//     allOptions.toggle();
+// });
+
 var select_dropdown = function (){
   $(".select").find("ul").on("click", ".init", function() {
-    $(this).closest("ul").children('li:not(.init)').toggle();
+      $(this).closest("ul").children('li:not(.init)').toggle();
   });
 
   $(".select").find("ul").on("click", function() {
@@ -81,20 +115,20 @@ var select_dropdown = function (){
   });
 };
 
-if ($(window).width() < 960){
+if ($(window).width() <= 960){
   select_dropdown();
 };
 
 var select_resize = function (){
   var win = $(this);
-  if (win.width() > 960 ) {
-    $(".select.is-active").find("li:not(.init)").show();
-  } else {
+  if (win.width() <= 960 ) {
     select_dropdown();
+  } else if ((win.width() > 960 )) {
+    $(".select").find("ul").children('li:not(.init)').show();
   }
 };
 
-$( window ).resize(function() {
+$(window).resize(function() {
   select_resize();
 });
 

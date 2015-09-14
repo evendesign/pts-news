@@ -413,7 +413,7 @@ html, body, .page, .page { height: 100%; }
 .lte-ie9 .hero .select li { white-space: normal; }
 .lte-ie9 .hero .select .init { display: none; }
 .lte-ie9 .hero .video-topic-item:not(.init) { width: 335px; height: 96px; padding: 0px; border-bottom: 1px solid #414141; line-height: 96px; background: #272727; display: block; }
-.lte-ie9 .hero .video-topic-item:not(.init):hover, .lte-ie9 .hero .video-topic-item:not(.init).selected { background: #414141; }
+.lte-ie9 .hero .video-topic-item:not(.init):hover, .lte-ie9 .hero .video-topic-item:not(.init).selected, .lte-ie9 .hero .video-topic-item:not(.init).selected:not(.init) { background: #414141; }
 .lte-ie9 .hero .video-topic-item:not(.init).is-active { display: block; }
 .lte-ie9 .hero .screen-shot { display: block; }
 .lte-ie9 .hero .video-topic-item.is-active { background: #414141; }
