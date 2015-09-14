@@ -7728,3 +7728,21 @@ Load paths:
 2015-09-14 15:58:38 overwrite stylesheets/lte-ie9.css 
 2015-09-14 15:59:01 overwrite stylesheets/all.css 
 2015-09-14 15:59:03 overwrite stylesheets/lte-ie9.css 
+2015-09-14 16:39:27 overwrite stylesheets/all.css 
+2015-09-14 16:39:29 overwrite stylesheets/lte-ie9.css 
+2015-09-14 16:40:14 overwrite stylesheets/all.css 
+2015-09-14 16:40:16 overwrite stylesheets/lte-ie9.css 
+2015-09-14 16:44:42     error sass/all.scss (Line 104 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-09-14 16:44:42 overwrite stylesheets/all.css 
+2015-09-14 16:44:42     error sass/lte-ie9.scss (Line 104 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-09-14 16:44:42 overwrite stylesheets/lte-ie9.css 
+2015-09-14 16:44:43     error sass/all.scss (Line 104 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-09-14 16:44:43 identical stylesheets/all.css 
+2015-09-14 16:44:44     error sass/lte-ie9.scss (Line 104 of sass/partial/_hero.sass: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.)
+2015-09-14 16:44:44 identical stylesheets/lte-ie9.css 
+2015-09-14 16:44:46 overwrite stylesheets/all.css 
+2015-09-14 16:44:47 overwrite stylesheets/lte-ie9.css 
+2015-09-14 16:47:13 overwrite stylesheets/all.css 
+2015-09-14 16:47:15 overwrite stylesheets/lte-ie9.css 
+2015-09-14 16:47:35 overwrite stylesheets/all.css 
+2015-09-14 16:47:36 overwrite stylesheets/lte-ie9.css 

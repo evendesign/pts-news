@@ -61,10 +61,11 @@ var video_select = function (){
 
 video_select();
 
+
 // video select dropdown //
-if ($(window).width() < 960){
+var select_dropdown = function (){
   $(".select").find("ul").on("click", ".init", function() {
-      $(this).closest("ul").children('li:not(.init)').toggle();
+    $(this).closest("ul").children('li:not(.init)').toggle();
   });
 
   $(".select").find("ul").on("click", function() {
@@ -78,7 +79,24 @@ if ($(window).width() < 960){
       $(".select").find("ul").children('.init').html($(this).html());
       allOptions.toggle();
   });
-}
+};
+
+if ($(window).width() < 960){
+  select_dropdown();
+};
+
+var select_resize = function (){
+  var win = $(this);
+  if (win.width() > 960 ) {
+    $(".select.is-active").find("li:not(.init)").show();
+  } else {
+    select_dropdown();
+  }
+};
+
+$( window ).resize(function() {
+  select_resize();
+});
 
 // fitVids.js //
 $(document).ready(function(){

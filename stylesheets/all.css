@@ -432,6 +432,7 @@ body { width: 100vw; }
   .hero .select .init { display: none; }
   .hero .video-topic-item:not(.init) { width: 335px; height: 96px; padding: 0px; border-bottom: 1px solid #414141; line-height: 96px; background: #272727; display: block; }
   .hero .video-topic-item:not(.init):hover, .hero .video-topic-item:not(.init).selected { background: #414141; }
+  .hero .video-topic-item:not(.init).is-active { display: block; }
   .hero .screen-shot { display: block; }
   .hero .video-topic-item.is-active { background: #414141; }
   .hero .video-name { width: 173px; height: 74px; margin: 10px 0px; padding: 0px 12px; font-size: 16px; line-height: 24px; word-break: normal; overflow: hidden; }
