@@ -63,40 +63,6 @@ video_select();
 
 
 // video select dropdown //
-// if ($(window).width() < 960){
-//   $(".select").find("ul").on("click", ".init", function() {
-//       $(this).closest("ul").children('li:not(.init)').toggle();
-//   });
-
-//   $(".select").find("ul").on("click", function() {
-//       $(".select").find(".ic-drop-down").toggleClass("up");
-//   });
-
-//   var allOptions = $(".select").find("ul").children('li:not(.init)');
-//   $(".select").find("ul").on("click", "li:not(.init)", function() {
-//       allOptions.removeClass('selected');
-//       $(this).addClass('selected');
-//       $(".select").find("ul").children('.init').html($(this).html());
-//       allOptions.toggle();
-//   });
-// };
-
-// $(".select").find("ul").on("click", ".init", function() {
-//     $(this).closest("ul").children('li:not(.init)').toggle();
-// });
-
-// $(".select").find("ul").on("click", function() {
-//     $(".select").find(".ic-drop-down").toggleClass("up");
-// });
-
-// var allOptions = $(".select").find("ul").children('li:not(.init)');
-// $(".select").find("ul").on("click", "li:not(.init)", function() {
-//     allOptions.removeClass('selected');
-//     $(this).addClass('selected');
-//     $(".select").find("ul").children('.init').html($(this).html());
-//     allOptions.toggle();
-// });
-
 var select_dropdown = function (){
   $(".select").find("ul").on("click", ".init", function() {
       $(this).closest("ul").children('li:not(.init)').toggle();
@@ -138,8 +104,8 @@ $(document).ready(function(){
   $(".article-video").fitVids();
 });
 
-// sly.js //
-if ($(window).width() < 960){
+// add sly //
+var add_sly = function (){
   var $frame = $('.frame'); window.frr = $frame;
   var sly = new Sly($frame, {
     horizontal: 1,
@@ -179,25 +145,36 @@ if ($(window).width() < 960){
   }).init();
 };
 
-// when > 960 remove sly //
-var win_resize = function (){
+if ($(window).width() < 960){
+  add_sly();
+};
+
+// remove sly //
+var remove_sly = function (){
+  $('.frame').sly(false);
+  $('.hero').find(".frame").sly(false);
+};
+
+// resize sly //
+var sly_resize = function (){
   var win = $(this);
   if (win.width() > 960 ) {
-    $('.frame').sly(false);
-    $('.hero').find(".frame").sly(false);
+    remove_sly();
+  } else {
+    remove_sly();
+    add_sly();
   }
 };
 
 $( window ).resize(function() {
-  win_resize();
+  sly_resize();
 });
 
 // IE hide clock //
 if (document.all && document.querySelector && !document.addEventListener) {
   $(".clock").hide();
   $(".ic-search-close").remove();
-  $('.frame').sly(false);
-  $('.hero').find(".frame").sly(false);
+  remove_sly();
 };
 
 // 修正 IE8 無視 z-index //
