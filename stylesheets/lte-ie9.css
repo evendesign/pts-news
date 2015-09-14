@@ -282,8 +282,9 @@ html, body, .page, .page { height: 100%; }
 .header-family .tv-program:before { content: ""; display: inline-block; position: absolute; top: 3px; left: 10px; text-indent: -119988px; overflow: hidden; text-align: left; background-image: url('/images/ic-tv.png?1441956800'); background-repeat: no-repeat; background-position: 50% 50%; width: 18px; height: 17px; background-image: none, url('/images/ic-tv.svg?1441956800'); background-position: center center; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
 .header-family ul { left: 0px; width: 260px; margin: 0px; list-style-type: none; }
 .header-family .channel-list { position: absolute; top: 60px; padding: 0px; background-color: #04519c; }
-.header-family .channel-item { float: left; margin: 0px; padding: 0 19px; width: auto; height: 60px; line-height: 60px; }
+.header-family .channel-item { float: left; margin: 0px; padding: 0 18px; width: auto; height: 60px; line-height: 60px; }
 .header-family .channel-item:nth-child(2) { border-left: white 1px solid; border-right: white 1px solid; }
+.header-family .channel-item:last-child { padding: 0 20px; }
 .header-family .channel-item:hover { background-color: #03376a; }
 .header-family .channel-item.is-active { background-color: #056bce; }
 .header-family .channel-item a { color: white; text-decoration: none; }
