@@ -90,6 +90,7 @@ var select_resize = function (){
   if (win.width() <= 960 ) {
     select_dropdown();
   } else if ((win.width() > 960 )) {
+    $(".select").find("ul").children('li:not(.init)').toggle(false);
     $(".select").find("ul").children('li:not(.init)').show();
   }
 };
