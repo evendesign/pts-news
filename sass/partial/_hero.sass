@@ -3,13 +3,6 @@
   margin-bottom: 40px
   width: 100vw
 
-  video
-    max-width: 100%
-    height: auto
-
-  iframe,embed,object
-    max-width: 100%
-
   img
     margin: 0px
 
@@ -115,9 +108,22 @@
 
   .video-item
     display: none
+    position: relative
 
     &.is-active
       display: block
+
+    iframe
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+
+  .placehold
+    display: block
+    width: 100%
+    height: 100%
 
   +at-breakpoint($desktop)
     float: left
@@ -205,6 +211,9 @@
       height: 475px
       margin: 0px 0px 0px -152px
       background-color: #000
+
+    .placehold
+      height: 475px
 
   +at-breakpoint($wide-desktop)
     padding-right: 64px

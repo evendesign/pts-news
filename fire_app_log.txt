@@ -7831,3 +7831,33 @@ Load paths:
 2015-09-14 18:46:53      Copy /vender/sly.min.js
 2015-09-21 13:54:04 overwrite stylesheets/all.css 
 2015-09-21 13:54:08 overwrite stylesheets/lte-ie9.css 
+2015-09-21 14:46:12 overwrite stylesheets/all.css 
+2015-09-21 14:46:15 overwrite stylesheets/lte-ie9.css 
+2015-09-21 14:47:03 overwrite stylesheets/all.css 
+2015-09-21 14:47:05 overwrite stylesheets/lte-ie9.css 
+2015-09-21 14:48:21 overwrite stylesheets/all.css 
+2015-09-21 14:48:23 overwrite stylesheets/lte-ie9.css 
+2015-09-21 14:56:12 overwrite stylesheets/all.css 
+2015-09-21 14:56:14 overwrite stylesheets/lte-ie9.css 
+2015-09-21 14:56:58 overwrite stylesheets/all.css 
+2015-09-21 14:57:01 overwrite stylesheets/lte-ie9.css 
+2015-09-21 14:58:41 overwrite stylesheets/all.css 
+2015-09-21 14:58:45 overwrite stylesheets/lte-ie9.css 
+2015-09-21 15:03:36 overwrite stylesheets/all.css 
+2015-09-21 15:03:38 overwrite stylesheets/lte-ie9.css 
+2015-09-21 15:13:45 overwrite stylesheets/all.css 
+2015-09-21 15:13:46 overwrite stylesheets/lte-ie9.css 
+2015-09-21 15:14:19 overwrite stylesheets/all.css 
+2015-09-21 15:14:21 overwrite stylesheets/lte-ie9.css 
+2015-09-21 15:14:56     error sass/all.scss (Line 128 of sass/partial/_hero.sass: Invalid CSS after "height:": expected pseudoclass or pseudoelement, was "100%")
+2015-09-21 15:14:56 overwrite stylesheets/all.css 
+2015-09-21 15:14:57     error sass/lte-ie9.scss (Line 128 of sass/partial/_hero.sass: Invalid CSS after "height:": expected pseudoclass or pseudoelement, was "100%")
+2015-09-21 15:14:57 overwrite stylesheets/lte-ie9.css 
+2015-09-21 15:15:06 overwrite stylesheets/all.css 
+2015-09-21 15:15:07 overwrite stylesheets/lte-ie9.css 
+2015-09-21 15:25:45 overwrite stylesheets/all.css 
+2015-09-21 15:25:47 overwrite stylesheets/lte-ie9.css 
+2015-09-21 15:29:39 overwrite stylesheets/all.css 
+2015-09-21 15:29:41 overwrite stylesheets/lte-ie9.css 
+2015-09-21 15:42:22 overwrite stylesheets/all.css 
+2015-09-21 15:42:24 overwrite stylesheets/lte-ie9.css 

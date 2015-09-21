@@ -381,8 +381,6 @@ html, body, .page, .page { height: 100%; }
 .lte-ie9 .header-news #search-news:-ms-input-placeholder { /* Internet Explorer 10+ */ color: #999999; }
 
 .hero { padding-top: 132px; margin-bottom: 40px; width: 100vw; }
-.hero video { max-width: 100%; height: auto; }
-.hero iframe, .hero embed, .hero object { max-width: 100%; }
 .hero img { margin: 0px; }
 .hero .frame { float: left; width: 100vw; height: 45px; padding: 0px; border-bottom: 3px solid #04519c; background: #272727; }
 .hero .slidee { margin: 0px; padding: 0px; height: 100%; list-style: none; background: #272727; }
@@ -401,8 +399,10 @@ html, body, .page, .page { height: 100%; }
 .hero .screen-shot { display: none; }
 .hero .video-list { margin-top: 96px; padding: 0px; list-style: none; display: none; }
 .hero .video-list.is-active { display: block; }
-.hero .video-item { display: none; }
+.hero .video-item { display: none; position: relative; }
 .hero .video-item.is-active { display: block; }
+.hero .video-item iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.hero .placehold { display: block; width: 100%; height: 100%; }
 .lte-ie9 .hero { float: left; position: relative; width: 100%; margin-left: -32px; padding-right: 64px; padding-top: 0px; background: black; }
 .lte-ie9 .hero .frame { position: relative; width: 100%; padding-right: 64px; }
 .lte-ie9 .hero .frame:after { content: ""; display: inline-block; position: absolute; top: 0px; right: 0px; width: 64px; height: 45px; background: #272727; }
@@ -419,6 +419,7 @@ html, body, .page, .page { height: 100%; }
 .lte-ie9 .hero .video-topic-item.is-active { background: #414141; }
 .lte-ie9 .hero .video-name { width: 173px; height: 74px; margin: 10px 0px; padding: 0px 12px; font-size: 16px; line-height: 24px; word-break: normal; overflow: hidden; }
 .lte-ie9 .hero .video-list { position: absolute; top: 48px; left: 50%; width: 640px; height: 475px; margin: 0px 0px 0px -152px; background-color: black; }
+.lte-ie9 .hero .placehold { height: 475px; }
 .lte-ie9 .hero { padding-right: 64px; }
 .lte-ie9 .hero .frame { float: left; width: 110px; height: 475px; padding: 0px; border: none; border-right: 3px solid #04519c; }
 .lte-ie9 .hero .frame:after { display: none; }

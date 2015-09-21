@@ -98,12 +98,6 @@ $(window).resize(function() {
   select_resize();
 });
 
-// fitVids.js //
-$(document).ready(function(){
-  $(".video-list").fitVids();
-  $(".article-video").fitVids();
-});
-
 // add sly //
 var add_sly = function (){
   var $frame = $('.frame'); window.frr = $frame;
