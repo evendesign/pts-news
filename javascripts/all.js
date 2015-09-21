@@ -81,17 +81,20 @@ var select_dropdown = function (){
   });
 };
 
-if ($(window).width() <= 960){
+if ($(window).width() <= 1024){
   select_dropdown();
 };
 
 var select_resize = function (){
   var win = $(this);
-  if (win.width() <= 960 ) {
+  if (win.width() < 1024 ) {
+    $(".select").find("ul").children('li:not(.init)').hide();
     select_dropdown();
-  } else if ((win.width() > 960 )) {
-    $(".select").find("ul").children('li:not(.init)').toggle(false);
+  } else if ((win.width() > 1024 )) {
     $(".select").find("ul").children('li:not(.init)').show();
+    $(".select").find("ul").on("click", "li:not(.init)", function() {
+      $(".select").find("ul").children('li:not(.init)').show();
+    });
   }
 };
 
