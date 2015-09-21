@@ -178,9 +178,16 @@ if (document.all && document.querySelector && !document.addEventListener) {
 };
 
 // 修正 IE8 無視 z-index //
-$(document).ready(function (){
-  $('iframe').each(function(){
-    var url = $(this).attr("src");
-    $(this).attr("src",url+"?wmode=transparent");
+$(function(){
+  $("iframe").each(function(){
+    var ifr_source = $(this).attr('src');
+    var wmode = "wmode=opaque";
+    if(ifr_source.indexOf('?') != -1) {
+        var getQString = ifr_source.split('?');
+        var oldString = getQString[1];
+        var newString = getQString[0];
+        $(this).attr('src',newString+'?'+wmode+'&'+oldString);
+    }
+    else $(this).attr('src',ifr_source+'?'+wmode);
   });
 });
