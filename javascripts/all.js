@@ -61,8 +61,9 @@ var video_select = function (){
 
 video_select();
 
+
 // video select dropdown //
-if ($(window).width() < 960){
+var select_dropdown = function (){
   $(".select").find("ul").on("click", ".init", function() {
       $(this).closest("ul").children('li:not(.init)').toggle();
   });
@@ -78,16 +79,31 @@ if ($(window).width() < 960){
       $(".select").find("ul").children('.init').html($(this).html());
       allOptions.toggle();
   });
-}
+};
 
-// fitVids.js //
-$(document).ready(function(){
-  $(".video-list").fitVids();
-  $(".article-video").fitVids();
+if ($(window).width() <= 1024){
+  select_dropdown();
+};
+
+var select_resize = function (){
+  var win = $(this);
+  if (win.width() < 1024 ) {
+    $(".select").find("ul").children('li:not(.init)').hide();
+    select_dropdown();
+  } else if ((win.width() > 1024 )) {
+    $(".select").find("ul").children('li:not(.init)').show();
+    $(".select").find("ul").on("click", "li:not(.init)", function() {
+      $(".select").find("ul").children('li:not(.init)').show();
+    });
+  }
+};
+
+$(window).resize(function() {
+  select_resize();
 });
 
-// sly.js //
-if ($(window).width() < 960){
+// add sly //
+var add_sly = function (){
   var $frame = $('.frame'); window.frr = $frame;
   var sly = new Sly($frame, {
     horizontal: 1,
@@ -127,31 +143,49 @@ if ($(window).width() < 960){
   }).init();
 };
 
-// when > 960 remove sly //
-var win_resize = function (){
+if ($(window).width() < 960){
+  add_sly();
+};
+
+// remove sly //
+var remove_sly = function (){
+  $('.frame').sly(false);
+  $('.hero').find(".frame").sly(false);
+};
+
+// resize sly //
+var sly_resize = function (){
   var win = $(this);
   if (win.width() > 960 ) {
-    $('.frame').sly(false);
-    $('.hero').find(".frame").sly(false);
+    remove_sly();
+  } else {
+    remove_sly();
+    add_sly();
   }
 };
 
 $( window ).resize(function() {
-  win_resize();
+  sly_resize();
 });
 
 // IE hide clock //
 if (document.all && document.querySelector && !document.addEventListener) {
   $(".clock").hide();
   $(".ic-search-close").remove();
-  $('.frame').sly(false);
-  $('.hero').find(".frame").sly(false);
+  remove_sly();
 };
 
 // 修正 IE8 無視 z-index //
-$(document).ready(function (){
-  $('iframe').each(function(){
-    var url = $(this).attr("src");
-    $(this).attr("src",url+"?wmode=transparent");
+$(function(){
+  $("iframe").each(function(){
+    var ifr_source = $(this).attr('src');
+    var wmode = "wmode=opaque";
+    if(ifr_source.indexOf('?') != -1) {
+        var getQString = ifr_source.split('?');
+        var oldString = getQString[1];
+        var newString = getQString[0];
+        $(this).attr('src',newString+'?'+wmode+'&'+oldString);
+    }
+    else $(this).attr('src',ifr_source+'?'+wmode);
   });
 });
