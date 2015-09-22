@@ -2,13 +2,6 @@
   padding: 36px 12px
   +padding-leader(5.5)
 
-  video
-    max-width: 100%
-    height: auto
-
-  iframe,embed,object
-    max-width: 100%
-
   .breadcrumb:after
     display: none
 
@@ -46,9 +39,24 @@
   .facebook-comments
     margin-top: 12px
 
+  .article-video
+    position: relative
+
   .latest-news
     margin: 36px 0px
     padding: 0px
+
+  .placehold
+    display: block
+    width: 100%
+    height: 100%
+
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
 
   +at-breakpoint($pad)
     .article-content
@@ -72,6 +80,10 @@
 
       .news-item-topic
         width: 300px
+
+    .placehold
+      height: 475px
+      overflow: hidden
 
   +at-breakpoint($wide-desktop)
     .breadcrumb, .article-item
