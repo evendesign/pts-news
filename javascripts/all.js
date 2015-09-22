@@ -61,7 +61,6 @@ var video_select = function (){
 
 video_select();
 
-
 // video select dropdown //
 var select_dropdown = function (){
   $(".select").find("ul").on("click", ".init", function() {
@@ -77,7 +76,8 @@ var select_dropdown = function (){
       allOptions.removeClass('selected');
       $(this).addClass('selected');
       $(".select").find("ul").children('.init').html($(this).html());
-      allOptions.toggle();
+      allOptions.hide();
+      event.preventDefault();
   });
 };
 
@@ -88,12 +88,12 @@ if ($(window).width() <= 1024){
 var select_resize = function (){
   var win = $(this);
   if (win.width() < 1024 ) {
-    $(".select").find("ul").children('li:not(.init)').hide();
     select_dropdown();
   } else if ((win.width() > 1024 )) {
     $(".select").find("ul").children('li:not(.init)').show();
     $(".select").find("ul").on("click", "li:not(.init)", function() {
       $(".select").find("ul").children('li:not(.init)').show();
+      event.preventDefault();
     });
   }
 };
@@ -164,15 +164,15 @@ var sly_resize = function (){
   }
 };
 
-$( window ).resize(function() {
-  sly_resize();
-});
-
-// IE hide clock //
+// IE hide clock && sly //
 if (document.all && document.querySelector && !document.addEventListener) {
   $(".clock").hide();
   $(".ic-search-close").remove();
   remove_sly();
+} else {
+  $( window ).resize(function() {
+    sly_resize();
+  });
 };
 
 // 修正 IE8 無視 z-index //

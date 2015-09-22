@@ -414,6 +414,7 @@ body { width: 100vw; }
 .hero .select li { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 24px; color: white; font-size: 18px; line-height: 24px; font-weight: bold; line-height: 44px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; z-index: 2; }
 .hero .video-topic-item:not(.init) { float: left; width: 100vw; height: 48px; border-bottom: 1px white solid; background: #04519c; display: none; }
 .hero .video-topic-item:not(.init):hover, .hero .video-topic-item:not(.init).selected:not(.init) { background: #056bce; }
+.hero .video-topic-item:not(.init).hide { display: none; }
 .hero .screen-shot { display: none; }
 .hero .video-list { margin-top: 96px; padding: 0px; list-style: none; display: none; }
 .hero .video-list.is-active { display: block; }
