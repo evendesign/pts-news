@@ -28,6 +28,7 @@ if ($(window).width() < 960){
     $(".ic-search-close").hide();
   });
 }
+
 // hero video select //
 var video_select = function (){
   $(".slidee").find("li").each(function(){
@@ -42,6 +43,7 @@ var video_select = function (){
       var video_list = $(".video-list[data-value="+ this_program +"]");
       video_list.addClass("is-active");
       video_list.siblings("ul").removeClass("is-active");
+      $(".select").find("ul").children('.init').html("請選擇影片");
       event.preventDefault();
     })
   })
@@ -61,45 +63,18 @@ var video_select = function (){
 
 video_select();
 
-// video select dropdown //
-var select_dropdown = function (){
-  $(".select").find("ul").on("click", ".init", function() {
-      $(this).closest("ul").children('li:not(.init)').toggle();
-  });
-
-  $(".select").find("ul").on("click", function() {
-      $(".select").find(".ic-drop-down").toggleClass("up");
-  });
-
-  var allOptions = $(".select").find("ul").children('li:not(.init)');
+// video list select init //
+var select_init = function (){
   $(".select").find("ul").on("click", "li:not(.init)", function() {
-      allOptions.removeClass('selected');
-      $(this).addClass('selected');
-      $(".select").find("ul").children('.init').html($(this).html());
-      allOptions.hide();
-      event.preventDefault();
+    $(".select").find("ul").children('.init').html($(this).html());
+    event.preventDefault();
   });
 };
 
-if ($(window).width() <= 1024){
-  select_dropdown();
-};
-
-var select_resize = function (){
-  var win = $(this);
-  if (win.width() < 1024 ) {
-    select_dropdown();
-  } else if ((win.width() > 1024 )) {
-    $(".select").find("ul").children('li:not(.init)').show();
-    $(".select").find("ul").on("click", "li:not(.init)", function() {
-      $(".select").find("ul").children('li:not(.init)').show();
-      event.preventDefault();
-    });
-  }
-};
-
-$(window).resize(function() {
-  select_resize();
+// video list select open toggle //
+$(".select").on('click', function () {
+  event.preventDefault();
+  $(this).toggleClass('is-open');
 });
 
 // add sly //
@@ -143,35 +118,39 @@ var add_sly = function (){
   }).init();
 };
 
-if ($(window).width() < 960){
-  add_sly();
-};
-
 // remove sly //
 var remove_sly = function (){
   $('.frame').sly(false);
   $('.hero').find(".frame").sly(false);
 };
 
-// resize sly //
-var sly_resize = function (){
+// mobile init sly && select_init //
+if ($(window).width() < 1024){
+  add_sly();
+  select_init();
+};
+
+// resize sly && select_init //
+var sly_select_init_resize = function (){
   var win = $(this);
-  if (win.width() > 960 ) {
+  if (win.width() > 1024 ) {
     remove_sly();
+    select_init(false);
   } else {
     remove_sly();
     add_sly();
+    select_init();
   }
 };
 
-// IE hide clock && sly //
+// IE hide clock && sly, select resize %% < select dropdwn //
 if (document.all && document.querySelector && !document.addEventListener) {
   $(".clock").hide();
   $(".ic-search-close").remove();
   remove_sly();
 } else {
   $( window ).resize(function() {
-    sly_resize();
+    sly_select_init_resize();
   });
 };
 

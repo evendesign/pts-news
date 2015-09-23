@@ -55,13 +55,11 @@
     &.is-active
       display: block
 
-    .ic-drop-down
-      position: absolute
-      top: 14px
-      right: 24px
-      +replace-text-with-svg("ic_drop_down")
+    &.is-open
+      li, .video-topic-item:not(.init)
+        display: block
 
-      &.up
+      .init:after
         +replace-text-with-svg("ic_drop_up")
 
     ul
@@ -83,6 +81,16 @@
       overflow: hidden
       z-index: 2
 
+  .init
+    position: relative
+
+    &:after
+      content: ''
+      position: absolute
+      top: 14px
+      right: 24px
+      +replace-text-with-svg("ic_drop_down")
+
   .video-topic-item:not(.init)
     float: left
     width: 100vw
@@ -94,8 +102,6 @@
     &:hover, &.selected:not(.init)
       background: lighten($color-blue-pts, 10%)
 
-    &.hide
-      display: none
 
   .screen-shot
     display: none
@@ -160,9 +166,6 @@
       overflow-y: auto
       background: $background-color-gray-dark
 
-      .ic-drop-down
-        display: none
-
       ul
         width: 335px
 
@@ -173,8 +176,12 @@
       li
         white-space: normal
 
-      .init
-        display: none
+      &.is-open
+        .init
+          display: none
+
+    .init, .init:after
+      display: none
 
     .video-topic-item:not(.init)
       width: 335px
