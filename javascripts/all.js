@@ -16,8 +16,6 @@ var TVprogram_show = function (){
   });
 };
 
-TVprogram_show();
-
 // header-news search 關閉 //
 if ($(window).width() < 960){
   $("#search-news").focus(function(){

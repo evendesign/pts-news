@@ -18,7 +18,6 @@
     cursor: pointer
     font-size: $base-font-size - 2
     font-weight: bold
-    color: #fff
     background-color: $color-blue-pts
     display: none
 
@@ -32,6 +31,10 @@
       top: 3px
       left: 10px
       +replace-text-with-svg("ic-tv")
+
+    a
+      +link-colors(#fff)
+      text-decoration: none
 
   ul
     left: 0px
