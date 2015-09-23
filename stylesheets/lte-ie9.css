@@ -584,6 +584,7 @@ body .open-menu .off-canvas-mask { display: none; }
 
 .lte-ie9 .header-family .search-pts { float: right; margin-right: 50px; }
 .lte-ie9 .header-family .nav-item { display: block; float: left; margin-right: 24px; }
+.lte-ie9 .clock, .lte-ie9 .ic-search-close { display: none; }
 .lte-ie9 .header-news .frame { min-width: 815px; }
 .lte-ie9 .header-news .search-news #search-news { width: 240px; padding: 0px 0px 0px 12px; border: 1px solid #d8d8d8; }
 .lte-ie9 .hero .program-item.is-active { background-color: #04519c; }

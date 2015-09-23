@@ -145,8 +145,6 @@ var sly_select_init_resize = function (){
 
 // IE hide clock && sly, select resize %% < select dropdwn //
 if (document.all && document.querySelector && !document.addEventListener) {
-  $(".clock").hide();
-  $(".ic-search-close").remove();
   remove_sly();
 } else {
   $( window ).resize(function() {
