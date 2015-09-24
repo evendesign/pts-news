@@ -8229,3 +8229,5 @@ Load paths:
 2015-09-24 13:56:14      Copy /vender/clocks.js
 2015-09-24 13:56:14      Copy /vender/selectivizr-min.js
 2015-09-24 13:56:14      Copy /vender/sly.min.js
+2015-09-24 14:02:53 overwrite stylesheets/all.css 
+2015-09-24 14:02:55 overwrite stylesheets/lte-ie9.css 
