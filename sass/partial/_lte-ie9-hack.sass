@@ -18,6 +18,7 @@ body
 
   .main
     float: left
+    width: 90%
     margin: 40px 24px
     background-color: #fff
     padding: 0px 32px
@@ -94,6 +95,15 @@ body
   .article-news
     .article-content
       width: 80%
+
+  .search-result-news
+    padding: 0px
+
+    .search-result-news-content
+      +span-columns(9 , 12)
+
+    .ad-news
+      +span-columns(3 omega, 12)
 
   .footer
     input#e-newsletter

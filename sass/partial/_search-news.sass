@@ -1,0 +1,29 @@
+.search-result-news
+  padding: 0 12px
+  +padding-leader(5.5)
+
+  .search-result-news-content
+    margin: 10px 0px 40px 0px
+
+  +at-breakpoint($phone)
+    padding-left: 20px
+    padding-right: 20px
+
+  +at-breakpoint($desktop)
+    padding: 0px
+
+    .search-result-news-content
+      +span-columns(8 , 10)
+      +box-sizing(border-box)
+      padding-right: 25px
+
+    .ad-news
+      +span-columns(2 omega, 10)
+      margin-top: -40px
+
+  +at-breakpoint($wide-desktop)
+    .search-result-news-content
+      +span-columns(9 , 12)
+
+    .ad-news
+      +span-columns(3 omega, 12)
