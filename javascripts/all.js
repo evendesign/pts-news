@@ -71,8 +71,8 @@ var select_init = function (){
 
 // video list select open toggle //
 $(".select").on('click', function () {
-  event.preventDefault();
   $(this).toggleClass('is-open');
+  event.preventDefault();
 });
 
 // add sly //
