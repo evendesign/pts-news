@@ -141,25 +141,28 @@ var sly_select_init_resize = function (){
   }
 };
 
-// IE hide clock && sly, select resize %% < select dropdwn //
+// IE hide clock && sly, select resize && < select dropdwn //
 if (document.all && document.querySelector && !document.addEventListener) {
   remove_sly();
-  // 修正 IE8 無視 z-index //
+} else {
+  $( window ).resize(function() {
+    sly_select_init_resize();
+  });
+};
+
+// 修正 IE8, IE11 18XXX以下版本 無視 z-index //
+if(navigator.userAgent.indexOf('Trident') != -1){
   $(function(){
     $("iframe").each(function(){
       var ifr_source = $(this).attr('src');
       var wmode = "wmode=opaque";
       if(ifr_source.indexOf('?') != -1) {
-          var getQString = ifr_source.split('?');
-          var oldString = getQString[1];
-          var newString = getQString[0];
-          $(this).attr('src',newString+'?'+wmode+'&'+oldString);
+        var getQString = ifr_source.split('?');
+        var oldString = getQString[1];
+        var newString = getQString[0];
+        $(this).attr('src',newString+'?'+wmode+'&'+oldString);
       }
       else $(this).attr('src',ifr_source+'?'+wmode);
     });
-  });
-} else {
-  $( window ).resize(function() {
-    sly_select_init_resize();
   });
 };
