@@ -29,7 +29,7 @@ if ($(window).width() < 960){
 
 // hero video select //
 var video_select = function (){
-  $(".slidee").find("li").each(function(){
+  $(".program-item").each(function(){
     var li = $(this);
     li.on("click", function(event){
       li.addClass("is-active");
