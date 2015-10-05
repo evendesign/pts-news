@@ -1,0 +1,28 @@
+.ad-news
+  .google-ad, .facebook
+    display: none
+
+  .banner
+    float: left
+    margin-right: 20px
+
+    img
+      height: 60px
+
+  +at-breakpoint($desktop)
+    +span-columns(2 omega, 10)
+    .google-ad
+      display: block
+
+    .banner
+      margin: 0px
+
+    .facebook
+      display: block
+      +span-columns(10 omega, 10)
+
+  +at-breakpoint($wide-desktop)
+    +span-columns(3 omega, 12)
+
+    .facebook
+      +span-columns(12 omega, 12)
