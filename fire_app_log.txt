@@ -8552,3 +8552,151 @@ Load paths:
 2015-10-02 16:56:05      Copy /vender/clocks.js
 2015-10-02 16:56:05      Copy /vender/selectivizr-min.js
 2015-10-02 16:56:05      Copy /vender/sly.min.js
+2015-10-02 17:04:27 overwrite stylesheets/all.css 
+2015-10-02 17:04:29 overwrite stylesheets/lte-ie9.css 
+2015-10-05 14:58:43 overwrite stylesheets/all.css 
+2015-10-05 14:58:44 overwrite stylesheets/lte-ie9.css 
+2015-10-05 14:59:17 overwrite stylesheets/all.css 
+2015-10-05 14:59:18 overwrite stylesheets/lte-ie9.css 
+2015-10-05 15:00:02 overwrite stylesheets/all.css 
+2015-10-05 15:00:03 overwrite stylesheets/lte-ie9.css 
+2015-10-05 15:01:35 overwrite stylesheets/all.css 
+2015-10-05 15:01:36 overwrite stylesheets/lte-ie9.css 
+2015-10-05 15:02:44 overwrite stylesheets/all.css 
+2015-10-05 15:02:45 identical stylesheets/lte-ie9.css 
+2015-10-05 15:03:31     error sass/all.scss (Line 35: File to import not found or unreadable: partial/_search-news.
+Load paths:
+  /Users/yayared/Dropbox/project/unfold/pts-news/sass
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /vendor/assets/stylesheets)
+2015-10-05 15:03:31 overwrite stylesheets/all.css 
+2015-10-05 15:03:32 identical stylesheets/lte-ie9.css 
+2015-10-05 15:03:33     error sass/all.scss (Line 35: File to import not found or unreadable: partial/_search-news.
+Load paths:
+  /Users/yayared/Dropbox/project/unfold/pts-news/sass
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /vendor/assets/stylesheets)
+2015-10-05 15:03:33 identical stylesheets/all.css 
+2015-10-05 15:03:34 identical stylesheets/lte-ie9.css 
+2015-10-05 15:03:35     error sass/all.scss (Line 35: File to import not found or unreadable: partial/_search-news.
+Load paths:
+  /Users/yayared/Dropbox/project/unfold/pts-news/sass
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /vendor/assets/stylesheets)
+2015-10-05 15:03:35 identical stylesheets/all.css 
+2015-10-05 15:03:37 identical stylesheets/lte-ie9.css 
+2015-10-05 15:03:38     error sass/all.scss (Line 35: File to import not found or unreadable: partial/_search-news.
+Load paths:
+  /Users/yayared/Dropbox/project/unfold/pts-news/sass
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /vendor/assets/stylesheets)
+2015-10-05 15:03:38 identical stylesheets/all.css 
+2015-10-05 15:03:39 identical stylesheets/lte-ie9.css 
+2015-10-05 15:03:49 overwrite stylesheets/all.css 
+2015-10-05 15:03:50 identical stylesheets/lte-ie9.css 
+2015-10-05 15:19:16    Create index.html
+2015-10-05 15:19:16    Create article-news/index.html
+2015-10-05 15:19:16    Create list-news/index.html
+2015-10-05 15:19:16    Create page-name/index.html
+2015-10-05 15:19:16    Create search-result-news/index.html
+2015-10-05 15:19:16      Copy /images/.DS_Store
+2015-10-05 15:19:16      Copy /javascripts/.DS_Store
+2015-10-05 15:19:16      Copy /sass/.DS_Store
+2015-10-05 15:19:16      Copy /sass/component/.DS_Store
+2015-10-05 15:19:16      Copy /stylesheets/.DS_Store
+2015-10-05 15:19:16      Copy /vender/.DS_Store
+2015-10-05 15:19:16      Copy /data.yml
+2015-10-05 15:19:16      Copy /fire_app_log (與 YayaRed的MacBook Pro 衝突的複本 2015-08-12).txt
+2015-10-05 15:19:16      Copy /images/category-title.png
+2015-10-05 15:19:16      Copy /images/category-title.svg
+2015-10-05 15:19:16      Copy /images/clock.svg
+2015-10-05 15:19:17      Copy /images/ic-search-blue-large.png
+2015-10-05 15:19:17      Copy /images/ic-search-blue-large.svg
+2015-10-05 15:19:17      Copy /images/ic-search-white-small.png
+2015-10-05 15:19:17      Copy /images/ic-search-white-small.svg
+2015-10-05 15:19:17      Copy /images/ic-tv.png
+2015-10-05 15:19:17      Copy /images/ic-tv.svg
+2015-10-05 15:19:17      Copy /images/ic_aarow_right.png
+2015-10-05 15:19:17      Copy /images/ic_aarow_right.svg
+2015-10-05 15:19:17      Copy /images/ic_drop_down.png
+2015-10-05 15:19:17      Copy /images/ic_drop_down.svg
+2015-10-05 15:19:17      Copy /images/ic_drop_up.png
+2015-10-05 15:19:17      Copy /images/ic_drop_up.svg
+2015-10-05 15:19:17      Copy /images/ic_fb.png
+2015-10-05 15:19:17      Copy /images/ic_fb.svg
+2015-10-05 15:19:17      Copy /images/ic_googleplus.png
+2015-10-05 15:19:17      Copy /images/ic_googleplus.svg
+2015-10-05 15:19:17      Copy /images/ic_line.png
+2015-10-05 15:19:17      Copy /images/ic_line.svg
+2015-10-05 15:19:17      Copy /images/ic_linkedin.png
+2015-10-05 15:19:17      Copy /images/ic_linkedin.svg
+2015-10-05 15:19:17      Copy /images/ic_mail.png
+2015-10-05 15:19:17      Copy /images/ic_mail.svg
+2015-10-05 15:19:17      Copy /images/ic_menu.png
+2015-10-05 15:19:17      Copy /images/ic_menu.svg
+2015-10-05 15:19:17      Copy /images/ic_more.png
+2015-10-05 15:19:17      Copy /images/ic_more.svg
+2015-10-05 15:19:17      Copy /images/ic_pinterest.png
+2015-10-05 15:19:17      Copy /images/ic_pinterest.svg
+2015-10-05 15:19:17      Copy /images/ic_play.png
+2015-10-05 15:19:17      Copy /images/ic_play.svg
+2015-10-05 15:19:17      Copy /images/ic_twitter.png
+2015-10-05 15:19:17      Copy /images/ic_twitter.svg
+2015-10-05 15:19:17      Copy /images/ic_X.png
+2015-10-05 15:19:17      Copy /images/ic_X.svg
+2015-10-05 15:19:17      Copy /images/ic_X_small.png
+2015-10-05 15:19:17      Copy /images/ic_X_small.svg
+2015-10-05 15:19:17      Copy /images/ic_youtube.png
+2015-10-05 15:19:17      Copy /images/ic_youtube.svg
+2015-10-05 15:19:17      Copy /images/latest-title.png
+2015-10-05 15:19:17      Copy /images/latest-title.svg
+2015-10-05 15:19:17      Copy /images/logo-news-mobile.png
+2015-10-05 15:19:17      Copy /images/logo-news-mobile.svg
+2015-10-05 15:19:17      Copy /images/logo-news.png
+2015-10-05 15:19:17      Copy /images/logo-news.svg
+2015-10-05 15:19:17      Copy /images/logo-pts.png
+2015-10-05 15:19:17      Copy /images/logo-pts.svg
+2015-10-05 15:19:17      Copy /images/long_hand.svg
+2015-10-05 15:19:17      Copy /images/placehold.png
+2015-10-05 15:19:17      Copy /images/program-title.png
+2015-10-05 15:19:17      Copy /images/program-title.svg
+2015-10-05 15:19:17      Copy /images/short_hand.svg
+2015-10-05 15:19:17      Copy /javascripts/all.js
+2015-10-05 15:19:17      Copy /stylesheets/all.css
+2015-10-05 15:19:17      Copy /stylesheets/lte-ie9.css
+2015-10-05 15:19:17      Copy /vender/backgroundsize.min.htc
+2015-10-05 15:19:17      Copy /vender/clocks.js
+2015-10-05 15:19:17      Copy /vender/selectivizr-min.js
+2015-10-05 15:19:18      Copy /vender/sly.min.js
