@@ -1,28 +1,29 @@
 /! 新聞列表
 .list-news
-  /! 麵包屑
-  .breadcrumb
-    span.site
-      a href="/" 公視新聞網
-    span.aarow
-    span.category 政治
-  /! 麵包屑 end
   /! 新聞列表內容
   .list-news-content
-    ul.list-news
-      - 20.times
-        li.list-news-itme
-          h2.list-news-title
-            a href="#" = zh_lorem_words(18+rand(4))
-          .list-news-program
-            | 中晝新聞
-          .list-news-time
-            = lorem_date.to_date
-            |&nbsp 12:00
-          .list-news-description
-            = zh_lorem_paragraph
-          .list-news-media
-            = image_tag(lorem_image("210x160"))
+    .content-inner
+      /! 麵包屑
+      .breadcrumb
+        span.site
+          a href="/" 公視新聞網
+        span.aarow
+        span.category 政治
+      /! 麵包屑 end
+      ul.list-news
+        - 20.times
+          li.list-news-item
+            h2.list-news-title
+              a href="#" = zh_lorem_words(18+rand(4))
+            .list-news-program
+              | 中晝新聞
+            .list-news-time
+              = lorem_date.to_date
+              |&nbsp 12:00
+            .list-news-description
+              = zh_lorem_paragraph
+            .list-news-media
+              = image_tag(lorem_image("210x160"))
   /! 新聞列表內容 end
   = render "/partial/ad-news"
 /! 新聞列表 end

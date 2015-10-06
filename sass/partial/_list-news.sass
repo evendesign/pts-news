@@ -7,9 +7,9 @@
     margin: 0px 0px 60px 0px
     padding: 0px
 
-  .list-news-itme
+  .list-news-item
 
-    & + .list-news-itme
+    & + .list-news-item
       border-top: 1px solid $line-color-gray-light
 
 
@@ -74,14 +74,12 @@
     padding: 0px
 
     .list-news-content
-      +span-columns(8 , 10)
+      float: left
+      width: 100%
+      margin-right: -240px
 
-    .ad-news
-      margin-top: -40px
+    .content-inner
+      margin-right: 240px
 
-    .list-news-itme
+    .list-news-item
       margin-right: 24px
-
-  +at-breakpoint($wide-desktop)
-    .list-news-content
-      +span-columns(9 , 12)

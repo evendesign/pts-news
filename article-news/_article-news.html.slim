@@ -1,59 +1,60 @@
 /! 新聞文章
 .article-news
-  /! 麵包屑
-  .breadcrumb
-    span.site
-      a href="/" 公視新聞網
-    span.aarow
-    span.category
-      a href="/" 政治
-    span.aarow
-  /! 麵包屑 end
   /! 左側區塊
   .article-item
-    h1.article-title = zh_lorem_words(18+rand(4))
-    .list-news-program
-      | 中晝新聞
-    .list-news-time
-      = lorem_date.to_date
-      |&nbsp 12:00
-    /! 新聞影片
-    .article-video
-      img.placehold src="/images/placehold.png"
-      <iframe width="640" height="475" src="https://www.youtube.com/embed/I7FJakVCyZM" frameborder="0" allowfullscreen></iframe>
-    /! 新聞影片 end
-    = render "social-icons"
-    /! 新聞內文
-    .article-content
-      = zh_lorem_paragraph
-      br
-      br
-      = zh_lorem_paragraph
-      br
-      br
-      = zh_lorem_paragraph
-      br
-      br
-      = zh_lorem_paragraph
-      br
-      br
-      = zh_lorem_paragraph
-      br
-      br
-      = zh_lorem_paragraph
-      br
-      br
-      = zh_lorem_paragraph
-      br
-      br
-      = zh_lorem_paragraph
-    /! 新聞內文 end
-    = render "social-icons"
-    /! facebook 留言
-    .facebook-comments
-      = image_tag(lorem_image("500x240"))
-    /! facebook 留言 end
-    = render "/partial/latest-news"
+    .item-inner
+      /! 麵包屑
+      .breadcrumb
+        span.site
+          a href="/" 公視新聞網
+        span.aarow
+        span.category
+          a href="/" 政治
+        span.aarow
+      /! 麵包屑 end
+      h1.article-title = zh_lorem_words(18+rand(4))
+      .list-news-program
+        | 中晝新聞
+      .list-news-time
+        = lorem_date.to_date
+        |&nbsp 12:00
+      /! 新聞影片
+      .article-video
+        img.placehold src="/images/placehold.png"
+        <iframe width="640" height="475" src="https://www.youtube.com/embed/I7FJakVCyZM" frameborder="0" allowfullscreen></iframe>
+      /! 新聞影片 end
+      = render "social-icons"
+      /! 新聞內文
+      .article-content
+        = zh_lorem_paragraph
+        br
+        br
+        = zh_lorem_paragraph
+        br
+        br
+        = zh_lorem_paragraph
+        br
+        br
+        = zh_lorem_paragraph
+        br
+        br
+        = zh_lorem_paragraph
+        br
+        br
+        = zh_lorem_paragraph
+        br
+        br
+        = zh_lorem_paragraph
+        br
+        br
+        = zh_lorem_paragraph
+      /! 新聞內文 end
+      = render "social-icons"
+      /! facebook 留言
+      .facebook-comments
+        = image_tag(lorem_image("500x240"))
+      /! facebook 留言 end
+      = render "/partial/latest-news"
   /! 左側區塊 end
   = render "/partial/ad-news"
 /! 新聞文章 end

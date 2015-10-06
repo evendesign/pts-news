@@ -65,11 +65,13 @@
   +at-breakpoint($desktop)
     padding: 0px
 
-    .breadcrumb, .article-item
-      +span-columns(8 , 10)
+    .article-item
+      float: left
+      width: 100%
+      margin-right: -240px
 
-    .ad-news
-      margin-top: -16px
+    .item-inner
+      margin-right: 240px
 
     .article-title, .article-video
       margin-right: 24px
@@ -83,7 +85,3 @@
     .placehold
       height: 475px
       overflow: hidden
-
-  +at-breakpoint($wide-desktop)
-    .breadcrumb, .article-item
-      +span-columns(9 , 12)

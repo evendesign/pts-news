@@ -10,7 +10,9 @@
       height: 60px
 
   +at-breakpoint($desktop)
-    +span-columns(2 omega, 10)
+    width: 240px
+    float: left
+
     .google-ad
       display: block
 
@@ -19,10 +21,3 @@
 
     .facebook
       display: block
-      +span-columns(10 omega, 10)
-
-  +at-breakpoint($wide-desktop)
-    +span-columns(3 omega, 12)
-
-    .facebook
-      +span-columns(12 omega, 12)

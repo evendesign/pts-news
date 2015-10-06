@@ -57,7 +57,6 @@ body
   .clock, .ic-search-close
     display: none
 
-
   .header-news
     .frame
       min-width: 815px
@@ -75,6 +74,13 @@ body
     .video-list.is-active
       margin-right: -24px
 
+  .ad-news
+    float: left
+    width: 240px
+
+    .banner
+      float: left
+
   .list-news
 
     .list-news-description
@@ -89,28 +95,27 @@ body
         float: right
         width: auto
 
-    .ad-news
-      margin-top: 0px
-
   .google-ad, .facebook
     display: block
 
   .article-news
+
+    .breadcrumb
+      display: inline-block
+
     .article-content
       width: 80%
-
-    .ad-news
-      margin-top: 0px
 
   .search-result-news
     padding: 0px
 
     .search-result-news-content
-      +span-columns(9 , 12)
+      float: left
+      width: 100%
+      margin-right: -240px
 
-    .ad-news
-      +span-columns(3 omega, 12)
-      margin-top: -50px
+    .content-inner
+      margin-right: 240px
 
   .footer
     input#e-newsletter
