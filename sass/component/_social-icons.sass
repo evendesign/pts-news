@@ -12,6 +12,7 @@
     margin-bottom: 8px
     text-indent: -1999999px
     overflow: hidden
+    cursor: pointer
 
   a
     display: inline-block
@@ -36,3 +37,7 @@
 
   .line
     +replace-text-with-svg("ic_line")
+
+  +at-breakpoint($pad)
+    .line
+      display: none
