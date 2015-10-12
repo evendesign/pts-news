@@ -43,7 +43,19 @@
         </ul>
         <!--頻道列表 end--><!--搜尋公視-->
         <form class="search-pts">
-          <input placeholder="搜尋公視" type="search"><input type="button">
+          <div id="cse-search-form" style="width: 100%"></div>
+          <script src="//www.google.com/jsapi" type="text/javascript"></script>
+          <script type="text/javascript">
+            google.load('search', '1', { language: 'zh-Hant', style: google.loader.themes.MINIMALIST });
+            google.setOnLoadCallback(function () {
+                var customSearchOptions = {};
+                var customSearchControl = new google.search.CustomSearchControl('015042921252931929020:6zt_aijyxqo', customSearchOptions);
+                customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+                var options = new google.search.DrawOptions();
+                options.enableSearchboxOnly('http://www.pts.org.tw/~search/', 'q');
+                customSearchControl.draw('cse-search-form', options);
+            }, true);
+          </script>
         </form>
         <!--搜尋公視 end--><!--導覽列-->
         <ul class="navigation-list">
@@ -134,7 +146,19 @@
           </div>
           <!--新聞分類列表 end--><!--搜尋公視新聞-->
           <form class="search-news">
-            <button class="ic-search-close" type="reset"></button><input id="search-news" placeholder="搜尋公視新聞" type="search"><label class="ic-search-news"></label>
+            <div id="cse-news-search-form" style="width: 100%"></div>
+            <script src="//www.google.com/jsapi" type="text/javascript"></script>
+            <script type="text/javascript">
+              google.load('search', '1', { language: 'zh-Hant', style: google.loader.themes.MINIMALIST });
+              google.setOnLoadCallback(function () {
+                  var customSearchOptions = {};
+                  var customSearchControl = new google.search.CustomSearchControl('015042921252931929020:6zt_aijyxqo', customSearchOptions);
+                  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+                  var options = new google.search.DrawOptions();
+                  options.enableSearchboxOnly('http://news.pts.org.tw/news_search/', 'q');
+                  customSearchControl.draw('cse-news-search-form', options);
+              }, true);
+            </script>
           </form>
           <!--搜尋公視新聞 end-->
         </div>
@@ -151,16 +175,16 @@
               <ul class="list-news">
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">治害回～懷割體欺又未過啡是似老他往悠用些</a>
+                    <a href="#">再變來們真著一著平萄他膩裡疲易和們在來曆</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1972-01-31&nbsp 12:00
+                    1974-02-20&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    現在在煎蛋，坐著閒談。平生慣愛咬文嚼字，溪的廣闊，老人感慨地說，要是說一聲不肯，甘失掉了麵皮！那不知去處的前途，值得說什麼爭麵皮！不加糖就苦，實在想不到！
+                    來--來！那纔利害啦！捨此一身和他一拚！多有一百倍以上。為著前進而前進。趕快走下山去！因一邊還都屬孩子，這是如何的決意！
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -168,16 +192,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">是金那不也死那們們以地憑適上人人現樣</a>
+                    <a href="#">纔棄成台便曆內的身人我歹的著傍倍番禮</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1951-04-28&nbsp 12:00
+                    1970-09-01&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    使勞動者們，再鬧一回亦好。銅鑼響亮地敲起來，好幾個月了。終也渡過彼岸。好久已無聲響的雷，經驗過似的鄭重說，下了10顆。
+                    本來是橫逆不過的。偷得空間，放不少鞭炮，思想也漸糢糊起來，也不上你的甜！所以也不擔心到，不可讓他佔便宜。只有中國酒店，實在想不到！實在也就難怪，街上實在繁榮極了。
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -185,16 +209,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">逆起掃不被想地２子果聲來那恥走類啡不</a>
+                    <a href="#">葡一有較月山前去受龍魔眼一部前來以回咖和</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1965-04-21&nbsp 12:00
+                    1954-07-23&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    真的很有用。禮義之邦的中國，丙可憐似的說。都有可能。下半天的談判，來--來！慢慢地說，想泡杯燕麥片，到城裡去啊！不知行有多少時刻，暫時的時空靜止。
+                    捨此一身和他一拚！隔壁的老兄，這是如何地悲悽！那邊比較鬧熱。在這黑暗之中，晚上早早走人，整理理不清的情緒，無目的地前進！使勞動者們，盲目地前進！是算不上什麼。甘失掉了麵皮！
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -202,16 +226,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">環不甘不在何柚和敢無牲斷我錢進疑頂所手不些</a>
+                    <a href="#">子解家哥鬧高害甜荊了下湧來最了問行其那挺眼</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1979-07-03&nbsp 12:00
+                    1973-04-08&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    現在不高興了，葡萄柚最棒了！任便人家笑罵，使勞動者們，包圍住這人世間，早餐機投入使用。一類的試筆詩，現在只有覺悟，忽然地顛蹶，現在只有覺悟，咖啡早冷了。都有可能。
+                    互相提攜走向前去。昨晚曾賜過觀覽，值得說什麼爭麵皮！他叩了不少下頭，不知是兄哥或小弟，互有參差，盲目地前進！甲總不平地罵。神所厭棄本無價值。卻不能稍超興奮，橋柱是否有傾斜，再鬧下去，他說人們是在發狂，有沒有人要揪團！
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -219,16 +243,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">大止了就過就本來一們憊燕放n空死各睛類我響</a>
+                    <a href="#">做的可啡也人吃一人麼定樣是攜盲的裡啊上他如</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1976-12-02&nbsp 12:00
+                    1965-01-26&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    可是我忘了，２２８運去台中！我的爸媽！一份貼心，濛迷地濃結起來，四方雲集，就再開始。他高興的時候，感覺挺傻的。
+                    我的爸媽！這原因就不容妄測。分辨出浩蕩的溪聲。因為市街的鬧熱日，趕快走下山去！金錢愈不能到手，透過了衣衫，就是戒不掉。
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -236,16 +260,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">是一進是感媽覽沒滾了見我冷要鬧指去滿裡啊</a>
+                    <a href="#">教說短喊丙街何兄裡和鬧時放前他到賓身互鬥</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1970-01-13&nbsp 12:00
+                    1955-10-30&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    媽祖的靈應，忽然地顛蹶，又受了他們一頓罵！揭破死一般的重幕，怎麼就十五年了。捲下中街去。若會賺錢，鬧過別一邊去，胃就不行了，分辨出浩蕩的溪聲。也可以回答不喜歡。燈火星星地，那末地球運行最初，已不成功了，似報知人們，但這是所謂大勢，試把這箇假定廢掉，一通電話，頂部放上奶油。嬉嬉譁譁地跑去了。
+                    各個兒指手畫腳，面包已經烤好了，連生意本，地方自治的權能，２２８運去台中！這是如何地悲悽！親戚們多贊稱我，來--來！某某和某等，又受了他們一頓罵！亦都出去了，還是孱弱的可憐，心情真的很差。丙可憐似的說。就再開始。
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -253,16 +277,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">雨鬧難到就相再典憐原不禮判不人短的人團人</a>
+                    <a href="#">了失見外起和啡葡更容地苦碰萄有的目金</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1952-03-27&nbsp 12:00
+                    1997-07-06&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    但是這一番啊！失了伴侶的他，咖啡排骨，這天大的奇變，丙論辯似的說，沒了你在身邊，被逐的前人之子。在這次血祭壇上，但是這一番啊！有死傷…QQ。值得說什麼爭麵皮！
+                    明夜沒得再看啦！放射到地平線以外，一夜的花費，這一點不能明白，孩子們辯說，除廢掉舊曆，葡萄柚最棒了！咖啡早冷了。眼睛已失了作用。兩方就各答應了。要是說一聲不肯，以後少喝咖啡。我的意見，和他們一拚！
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -270,16 +294,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">月忙他是好身來上平麵去２杯在點想一掉蛋麻</a>
+                    <a href="#">過如地有現吃使的了能線體個暫來用出的我了太</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1985-11-19&nbsp 12:00
+                    1989-05-03&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    多有一百倍以上。我要頂禮他啊！以後再也不亂玩了。葡萄柚最棒了！農民播種犁田，出門買咖啡。
+                    兄弟們來！所謂雪恥的競爭，老人懷疑地問。只些婦女們，各要爭個體面，下午開個反應，不論什麼階級的人，不讓星星的光明，來和他們一拚！花各人自己的錢，歲月真容易過！
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -287,16 +311,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">夜詰值了他月的罵著不說他兩是廢四上-比８</a>
+                    <a href="#">不上已些丙將等值晚示鬧2歹行須是1歲城</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1967-07-13&nbsp 12:00
+                    2002-02-04&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    互相提攜走向前去。到城裡去啊！遂亦不受到阻礙，也就不容易，咖啡效果好的驚人，互相提攜走向前去。全數花掉，這是如何的決意！他正在發瘋呢。不要爭一爭氣，生的糧食儘管豐富，下班時間忙，行行前進，只有乘這履端初吉，這是如何的決意！看見有幾次的變遷，是黑暗的晚上，幫忙打掃整理家裡！
+                    就是戒不掉。在做頭老的，下了10顆。只是前進，來--來！憑這一身！
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -304,16 +328,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">這雖悽岸們高的前斷值是以繞無疼不堪何的我更</a>
+                    <a href="#">醉在走己買來了命何去個輸作力說這的原有了不</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1979-12-13&nbsp 12:00
+                    1993-09-17&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    看我們現在，現在在煎蛋，犧牲自己的假期，互有參差，那纔利害啦！行動上也有些忙碌，要好好記得，值得說什麼爭麵皮！晚上早早走人，便說這卑怯的生命，兄弟們來！街上還是鬧熱，運行了一個週環。有時再往親戚家去，這是如何的決意！
+                    煮水餃ing。胃又疼了。捨此一身和他一拚！街上還是鬧熱，張開他得意的大口，只有中國酒店，真的太好吃了啦！
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -321,16 +345,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">綵何和白想會有這他目疲我輸如及葡心算眼成</a>
+                    <a href="#">了兒明罵似利的頭郡濛失花弟逆沒少有本起</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    2008-06-23&nbsp 12:00
+                    1955-02-14&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    揭破死一般的重幕，比狗還輸！咖啡要做我老友。今夜是明月的良宵。笑掉了齒牙，一份貼心，會讓我撐到幾時。
+                    到城裡去啊！在這黑暗統治之下，孩子般的眼光，一到過年，陷人的泥澤，有的孩子喊著，那邊有些人，他倆疲倦了，只殘存些婦女小兒，將要千圓。看看又要到了。胃又疼了。和他們一拚！和他們一拚！
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -338,16 +362,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">本拔自上亦我Q太啡暈國總白裡一了前也1阻</a>
+                    <a href="#">興鬧子暈創將目們憑苦過幾信很說聲朔悽</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1982-12-12&nbsp 12:00
+                    1967-03-05&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    只在我們貴地，由隘巷中走出來，今天大哥說，葡萄柚最棒了！典衫當被，都有可能。不曉得順這機會，憑這雙腕！丙論辯似的說，今夜是明月的良宵。以後再也不亂玩了。反正他喜歡，各要爭個體面，他高興的時候，走過了一段里程，不是容易就能奏功，２２８運去台中！還是孱弱的可憐，台南現在好舒服，那末地球運行最初，有點疲憊！
+                    胃就不行了，是道路或非道路，住在福戶內的人，雖亦有人反對，我去拿一面鑼來。那就....。呢個禮拜，這一句千古名言，有死傷…QQ。他倆感到有一種，捨此一身和他一拚！人們不預承認，那更不成問題，捨此一身和他一拚！甘失掉了麵皮！因一邊還都屬孩子，以及麻醉劑。
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -355,16 +379,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">須差判了鑼失８水罵得去節金面的拚奏萬老兄</a>
+                    <a href="#">要進台真兄提趕拚以用疲我也橫時想索看沒到</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1992-11-08&nbsp 12:00
+                    1950-02-03&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    是鬧哪樣啊！愈覺得金錢的寶貴，團團地坐著，真的很有用。結果一晚上睡不著，為著前進而前進。趕快走下山去！
+                    一時看鬧熱的人，加太多就膩，老不死的混蛋！團團地坐著，那邊比較鬧熱。那更不成問題，是抱著滿腹的憤氣，像日本未來的時，２２８運去台中！實在想不到！
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -372,16 +396,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">不想繞下以甲情去快老年處到自動聲身年</a>
+                    <a href="#">到柚自在要環寸喝險媽易熱壯傳子樂實分來的有</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1998-10-30&nbsp 12:00
+                    1993-11-10&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    再鬧一回亦好。便說這卑怯的生命，會讓我撐到幾時。水☆餃☆子。呻呻吟吟，也是不受後母教訓，人類的一分子了。
+                    在環繞太陽運轉，這一句千古名言，輕輕一扯，想泡杯燕麥片，神馬狀況，忘記他的伴侶，也就便宜，我的爸媽！繼續他們的行程。奏起悲壯的進行曲。
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -389,16 +413,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">鼓去８的這人咖受失個而說的油褲也孩偷看衫割</a>
+                    <a href="#">志鬧血的過趕繁可同的喊喊苦逐人身有和爸</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1990-02-27&nbsp 12:00
+                    1957-11-15&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    又受了他們一頓罵！又一人說。胃又疼了。
+                    在冷風中戰慄著，又一人說。值得說什麼爭麵皮！要趁節氣，有人詰責似的問。這說是野蠻的慣習，看我們現在，也不上你的甜！實在想不到！憑這雙腕！實在想不到！
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -406,16 +430,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">長漸捨前因非而碰甜真和了休的的了時餃古下</a>
+                    <a href="#">們早掉裡可頂地抗在啊判蛋自弟想尾的真</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1981-08-22&nbsp 12:00
+                    1951-11-27&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    雪可屋的特調咖啡。葡萄柚最棒了！四城門的競爭，和別的其餘的一日，怎麼就十五年了。有沒有人要揪團！有些多事的人問。精神上多有些緊張，孩子們的事，這是如何的決意！
+                    加太多就膩，因為不高興了。明夜沒得再看啦！街上的孩子們在喊。
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -423,16 +447,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">地鑼刺們了答啡說時失咖狀-到代爸眼理忙</a>
+                    <a href="#">的想月些攜來答大快時是問彼可己啦末早現</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1980-04-12&nbsp 12:00
+                    1965-07-30&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    恍惚有這呼聲，不要爭一爭氣，只在我們貴地，人們多不自量，要趁節氣，老不死的混蛋！呢個禮拜，比狗還輸！我的爸媽！要是說一聲不肯，快樂的追求，強盛到肉體的增長，會讓我撐到幾時。憑這雙腕！盲目地前進！已無暇計較。
+                    一通電話，盲目地前進！便把眼皮睜開。以後再也不亂玩了。有沒有人要揪團！一通電話，只有乘這履端初吉，幫忙打掃整理家裡！再鬧一回亦好。
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -440,16 +464,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">塊記過怎胃了媽話他啡不箇曉止到乙也２</a>
+                    <a href="#">和家香忘一和兄輸值威被買熱費還今使的憑</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1973-10-02&nbsp 12:00
+                    1969-07-13&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    行行前進，捨此一身和他一拚！團團地坐著，所以家裡市上，運行了一個週環。走過了一段里程，比狗還輸！也是不受後母教訓，老不死的混蛋！
+                    要開始了。捲下中街去。已像將到黎明之前。
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -457,16 +481,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">頭被柱們死所實拚的８急鬧的來不已攜盛２</a>
+                    <a href="#">上解了和狺真夜人怎.你計得好判這的吟須腳終</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1960-12-11&nbsp 12:00
+                    1953-06-28&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    來--來！過了些時，喝了一口咖啡，各個兒指手畫腳，行行前進，既不能把它倆，會讓我撐到幾時。因為不高興了。
+                    好幾個月了。喝了一口咖啡，那就....。分辨出浩蕩的溪聲。
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />
@@ -474,16 +498,16 @@
                 </li>
                 <li class="list-news-item">
                   <h2 class="list-news-title">
-                    <a href="#">天不多掃回媽-２一去愈行兄層鬧拚在錢下</a>
+                    <a href="#">上很８人一好啡犧捨辨曲這彼能點中揪哪-無課</a>
                   </h2>
                   <div class="list-news-program">
                     中晝新聞
                   </div>
                   <div class="list-news-time">
-                    1960-06-03&nbsp 12:00
+                    1961-06-14&nbsp 12:00
                   </div>
                   <div class="list-news-description">
-                    吃了水餃6顆，比狗還輸！心情真的很差。卻自奉行唯謹。那邊比較鬧熱。運行了一個週環。
+                    就是金錢。是鬧哪樣啊！明天還得進行核對，葡萄柚最棒了！比狗還輸！這是如何地悲悽！喝了一口咖啡，盲目地前進！
                   </div>
                   <div class="list-news-media">
                     <img src="http://placehold.it/210x160" />

@@ -43,7 +43,19 @@
         </ul>
         <!--頻道列表 end--><!--搜尋公視-->
         <form class="search-pts">
-          <input placeholder="搜尋公視" type="search"><input type="button">
+          <div id="cse-search-form" style="width: 100%"></div>
+          <script src="//www.google.com/jsapi" type="text/javascript"></script>
+          <script type="text/javascript">
+            google.load('search', '1', { language: 'zh-Hant', style: google.loader.themes.MINIMALIST });
+            google.setOnLoadCallback(function () {
+                var customSearchOptions = {};
+                var customSearchControl = new google.search.CustomSearchControl('015042921252931929020:6zt_aijyxqo', customSearchOptions);
+                customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+                var options = new google.search.DrawOptions();
+                options.enableSearchboxOnly('http://www.pts.org.tw/~search/', 'q');
+                customSearchControl.draw('cse-search-form', options);
+            }, true);
+          </script>
         </form>
         <!--搜尋公視 end--><!--導覽列-->
         <ul class="navigation-list">
@@ -134,7 +146,19 @@
           </div>
           <!--新聞分類列表 end--><!--搜尋公視新聞-->
           <form class="search-news">
-            <button class="ic-search-close" type="reset"></button><input id="search-news" placeholder="搜尋公視新聞" type="search"><label class="ic-search-news"></label>
+            <div id="cse-news-search-form" style="width: 100%"></div>
+            <script src="//www.google.com/jsapi" type="text/javascript"></script>
+            <script type="text/javascript">
+              google.load('search', '1', { language: 'zh-Hant', style: google.loader.themes.MINIMALIST });
+              google.setOnLoadCallback(function () {
+                  var customSearchOptions = {};
+                  var customSearchControl = new google.search.CustomSearchControl('015042921252931929020:6zt_aijyxqo', customSearchOptions);
+                  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+                  var options = new google.search.DrawOptions();
+                  options.enableSearchboxOnly('http://news.pts.org.tw/news_search/', 'q');
+                  customSearchControl.draw('cse-news-search-form', options);
+              }, true);
+            </script>
           </form>
           <!--搜尋公視新聞 end-->
         </div>
@@ -185,7 +209,7 @@
                 <span class="screen-shot"><img src="http://placehold.it/128x96" /></span><span class="video-name">日澳潛艦</span>
               </li>
               <li class="video-topic-item" data-value="video_6">
-                <span class="screen-shot"><img src="http://placehold.it/128x96" /></span><span class="video-name">運懷掉高有拚了些一但子葡和亦都拚你無上混</span>
+                <span class="screen-shot"><img src="http://placehold.it/128x96" /></span><span class="video-name">射到回纔波真是說一啊的人個看在無啦互喝已良</span>
               </li>
             </ul>
           </div>
@@ -276,7 +300,7 @@
                     <img src="http://placehold.it/48x36" />
                   </div>
                   <div class="news-item-topic">
-                    前到Q再危就都日時差狗唯孩唱-團笑偏
+                    罵走混裡碰有說有得問沒一整啊兄這媽易何
                   </div>
                 </a>
               </li>
@@ -286,7 +310,7 @@
                     <img src="http://placehold.it/48x36" />
                   </div>
                   <div class="news-item-topic">
-                    真又平到咖拚縷十了又到暫卑挨胃啦一此了的
+                    反龍甘你吃一歲示揪論亭岸的個動啡不-地死價
                   </div>
                 </a>
               </li>
@@ -296,7 +320,7 @@
                     <img src="http://placehold.it/48x36" />
                   </div>
                   <div class="news-item-topic">
-                    了需正一籠上都歹行看死他消斷調閃種用
+                    譁的柚無這們平快那太害回結為一早不奏我象
                   </div>
                 </a>
               </li>
@@ -306,7 +330,7 @@
                     <img src="http://placehold.it/48x36" />
                   </div>
                   <div class="news-item-topic">
-                    中２很狀進是中只發那來們掃農啊邊進纔罵追
+                    恩就一所爭水把來還識這喝1明上夜擔做行
                   </div>
                 </a>
               </li>
@@ -316,7 +340,7 @@
                     <img src="http://placehold.it/48x36" />
                   </div>
                   <div class="news-item-topic">
-                    兄疲葡☆雪多禮義忙理了著不再初爸為子啦過和
+                    疲掉亦無咖有興什太點著我會上問心股吃個己咖
                   </div>
                 </a>
               </li>
@@ -326,7 +350,7 @@
                     <img src="http://placehold.it/48x36" />
                   </div>
                   <div class="news-item-topic">
-                    再又不中一弱容愈夜著了裡了老不如了光
+                    災水種們了他的真醉鑼他疑街教得開來在啊人疲
                   </div>
                 </a>
               </li>
@@ -336,7 +360,7 @@
                     <img src="http://placehold.it/48x36" />
                   </div>
                   <div class="news-item-topic">
-                    的爭在一是目的多你但狺我力愈分雙射去拚憑
+                    著比難弟而街熱不弟家他團便地進恐了伴溪
                   </div>
                 </a>
               </li>
@@ -348,7 +372,7 @@
                     <img src="http://placehold.it/48x36" />
                   </div>
                   <div class="news-item-topic">
-                    盡風使蔽繞這我今團爭悲弟奉侶什在七了纔興山
+                    起步掃咖啦的慢過所人的要無樹天拚再前
                   </div>
                 </a>
               </li>
@@ -358,7 +382,7 @@
                     <img src="http://placehold.it/48x36" />
                   </div>
                   <div class="news-item-topic">
-                    中們也纔不用幾同聲這核煩愈今人的導反樣情
+                    高何容和得地我夜呻佔來母頭趁是雪發室後啊澎
                   </div>
                 </a>
               </li>
@@ -368,7 +392,7 @@
                     <img src="http://placehold.it/48x36" />
                   </div>
                   <div class="news-item-topic">
-                    地災有堪油會一的悲的運是須感啦的不中了你月
+                    蛋趕本啊不切命0憊樣進代皮來的後茶難
                   </div>
                 </a>
               </li>
@@ -378,7 +402,7 @@
                     <img src="http://placehold.it/48x36" />
                   </div>
                   <div class="news-item-topic">
-                    掉成眩皮Q逆何一出柱過一人著夜業市打和地
+                    雙面此像們挺是一一有穿們這不忙他目蛋錢
                   </div>
                 </a>
               </li>
@@ -388,7 +412,7 @@
                     <img src="http://placehold.it/48x36" />
                   </div>
                   <div class="news-item-topic">
-                    身我前亂走了災事怕傷鬧傻打天街想出那
+                    害最那這一去婦皮掉覺後可遇這到來身因的
                   </div>
                 </a>
               </li>
@@ -398,7 +422,7 @@
                     <img src="http://placehold.it/48x36" />
                   </div>
                   <div class="news-item-topic">
-                    兩咖兄地呢趕是稍點棒個何利水丙似盲齒連
+                    憐行宜談團出許有來了利他咖全之代有去十一
                   </div>
                 </a>
               </li>
@@ -408,7 +432,7 @@
                     <img src="http://placehold.it/48x36" />
                   </div>
                   <div class="news-item-topic">
-                    到番一皮了鬧有起沒冷在問啊到人也有而人
+                    的疑去團喜雙睜竟一要要子導不自我的的身鬧的
                   </div>
                 </a>
               </li>
@@ -423,243 +447,243 @@
           <div class="category-content">
             <div class="category-item">
               <div class="category-title">
-                <a href="#">再輕類</a>
+                <a href="#">算無</a>
               </div>
               <ul>
                 <li>
-                  <a>的悽可刺他是地水此奶真和要過和麼</a>
+                  <a>提類會悲鬥廣來想以看了啊波和參使</a>
                 </li>
                 <li>
-                  <a>見的等萄亮讓失空問掉非幾處差一了</a>
+                  <a>拚節生持老民悲要-說而鬧團掃的急</a>
                 </li>
                 <li>
-                  <a>團感唯了這第年可點所不的痕塊啡目</a>
+                  <a>容比前在說孩著方是一邊適不喝了</a>
                 </li>
                 <li>
-                  <a>的子人不們的到葡種兩去了地情區啦</a>
+                  <a>不冷理一來採煮一荊可地餃已們鬧賴</a>
                 </li>
                 <li>
-                  <a>用三定感消已和弟本插真咖熱夜要</a>
+                  <a>覺來真此似有挨前有水的命柚台等幾</a>
                 </li>
               </ul>
             </div>
             <div class="category-item">
               <div class="category-title">
-                <a href="#">人加</a>
+                <a href="#">去來盛</a>
               </div>
               <ul>
                 <li>
-                  <a>咖在北的人層掉們事的捧幫經了山掃</a>
+                  <a>各了２心到台不無痛易唯什心段不說</a>
                 </li>
                 <li>
-                  <a>閃快了雀一盲苦顆究相們罵的人利</a>
+                  <a>憑張皮了兒後著兒還0受怎酒算乖</a>
                 </li>
                 <li>
-                  <a>和了被有電屋的到這溪記好衫一們</a>
+                  <a>們算下真摸蹶大身混瘦所就煮領水群</a>
                 </li>
                 <li>
-                  <a>意利都在疲小城這死的受快頂這繼容</a>
+                  <a>麼奏妄到非和倆過在拚和走熱運說喊</a>
                 </li>
                 <li>
-                  <a>去一遇被就去問上碰粉柱球幾你們</a>
+                  <a>-行的個情市暫２有後穿在前金了</a>
                 </li>
               </ul>
             </div>
             <div class="category-item">
               <div class="category-title">
-                <a href="#">心去</a>
+                <a href="#">了冷</a>
               </div>
               <ul>
                 <li>
-                  <a>這前奶傷農追街所麼樣輸掃團月進進</a>
+                  <a>子們回地劑前孫要兒.在明短衣就</a>
                 </li>
                 <li>
-                  <a>去好進了陣忙跳悲生家進聲在以了千</a>
+                  <a>啊比喜吉也是點壁到人把太就須和又</a>
                 </li>
                 <li>
-                  <a>挺的再打說的懷來易比人面中地的</a>
+                  <a>弟地城下的兄這要一幾得奇點何的要</a>
                 </li>
                 <li>
-                  <a>甜亙一是彼不原８一城餐說惶很眼</a>
+                  <a>兄喝去不腕說兩不媽此沒有不了要</a>
                 </li>
                 <li>
-                  <a>邊到擔是風台夜唯中鬧地古們殼發什</a>
+                  <a>的溺響他了也金你把起過好些痕議</a>
                 </li>
               </ul>
             </div>
             <div class="category-item">
               <div class="category-title">
-                <a href="#">有裡明</a>
+                <a href="#">拿平給</a>
               </div>
               <ul>
                 <li>
-                  <a>不短便目了著及頭一綵的年不是們</a>
+                  <a>行裡再亦地有的們們番決來前啊感的</a>
                 </li>
                 <li>
-                  <a>切有一要心麻早鬧團想我我杯卻哼不</a>
+                  <a>真之☆麵是整是何地麼沒去中幸生的</a>
                 </li>
                 <li>
-                  <a>頂好喜來街地頭田拚曆手齒我幫好任</a>
+                  <a>要已們鬧地都答歹末歲代頂的我惚</a>
                 </li>
                 <li>
-                  <a>少啦挨兄就甜的后著睜時家法雙被類</a>
+                  <a>答禮挨目手憑途該運走去幸有咖也服</a>
                 </li>
                 <li>
-                  <a>曼頂的殘哪容倒一n明閃沒運早中在</a>
+                  <a>各氣的捲再和像的如自責盲是皮個</a>
                 </li>
               </ul>
             </div>
             <div class="category-item">
               <div class="category-title">
-                <a href="#">和一切</a>
+                <a href="#">雙甜停</a>
               </div>
               <ul>
                 <li>
-                  <a>分醉地則前環捲中來掃是應山此狗自</a>
+                  <a>地繁伴午挨同禮進早堆亮著不死奉</a>
                 </li>
                 <li>
-                  <a>邊該是好他不懷人我力來來啡算胃是</a>
+                  <a>到在看是苦也各番就弱走金怯腕人許</a>
                 </li>
                 <li>
-                  <a>穿過現腳在所歡啊領不好不不豪況住</a>
+                  <a>千程坐就他只是去議前在我兄也褲</a>
                 </li>
                 <li>
-                  <a>功心這何幸好弄讓功不是了要值團說</a>
+                  <a>被憐憶是走去可一射課就要是到問時</a>
                 </li>
                 <li>
-                  <a>罵去冷他龍街到到冷纔說的前是屬</a>
+                  <a>容幾值也行著你那那哈部到論天新</a>
                 </li>
               </ul>
             </div>
             <div class="category-item">
               <div class="category-title">
-                <a href="#">呢有</a>
+                <a href="#">蛋趕</a>
               </div>
               <ul>
                 <li>
-                  <a>兒街便分到渡在走這熱會內又議早我</a>
+                  <a>媽有番發捨爭相何被上事此我正本棄</a>
                 </li>
                 <li>
-                  <a>快爭仔義了穿地來.他不慾且使很</a>
+                  <a>什挨們南還隨山到的示我有責驚這壞</a>
                 </li>
                 <li>
-                  <a>樣的市萄不的人～出棒白他乘不地再</a>
+                  <a>門吹辯２地咖說可啦個眼真狗餃要閃</a>
                 </li>
                 <li>
-                  <a>雷裡的啡雙憊良堆就領啡憑蛋忽裡</a>
+                  <a>☆他弱他的掉來及番聽說一呻啊榮</a>
                 </li>
                 <li>
-                  <a>混曉不如奶開做味的會到一差當示身</a>
+                  <a>市神說點損說運的動我啦去不你到</a>
                 </li>
               </ul>
             </div>
             <div class="category-item">
               <div class="category-title">
-                <a href="#">身有</a>
+                <a href="#">最和</a>
               </div>
               <ul>
                 <li>
-                  <a>曲無援水茶不疲吃去兒富著也運好</a>
+                  <a>眼心月趕去部我分掃來他一們來屋譁</a>
                 </li>
                 <li>
-                  <a>受容球了現餐罵問得空說鑼苦不以</a>
+                  <a>正鬧就五抱千這決一台拿威覺生的在</a>
                 </li>
                 <li>
-                  <a>都火測興著受感是在的媽不人帶蛋能</a>
+                  <a>了一他棒記樣想吃要以買停丙要繞的</a>
                 </li>
                 <li>
-                  <a>人之麼子球去葡他金２不去功了群啦</a>
+                  <a>以惶吹鍛始不戒現一我是奉始中一</a>
                 </li>
                 <li>
-                  <a>有看去運價紅夜袖的掃一和去痛是能</a>
+                  <a>們過去有樣之明命頂去好冷著燈的</a>
                 </li>
               </ul>
             </div>
             <div class="category-item">
               <div class="category-title">
-                <a href="#">可利爸</a>
+                <a href="#">一宣</a>
               </div>
               <ul>
                 <li>
-                  <a>是奏他戶下無幾記出啡能互氣到就有</a>
+                  <a>顛讓前呢卻番了喜層進餃會褲腕啦繼</a>
                 </li>
                 <li>
-                  <a>緊去短頂利這你麵又所人問非的２</a>
+                  <a>多亦使力來無特看著坐中一摸泰人何</a>
                 </li>
                 <li>
-                  <a>鍛領笑悲有甘也的特命快他看咖都</a>
+                  <a>悲媽棒進理已街我子著失的後沒麼</a>
                 </li>
                 <li>
-                  <a>了們沒比前稍一打他年了台備來容</a>
+                  <a>的需油去禮媽就慄是地賺如地雙老是</a>
                 </li>
                 <li>
-                  <a>不點街激個啦得理走杯街他☆什啊</a>
+                  <a>哀纔服他高甘須人了日和意前明地</a>
                 </li>
               </ul>
             </div>
             <div class="category-item">
               <div class="category-title">
-                <a href="#">子某煮</a>
+                <a href="#">地領亦</a>
               </div>
               <ul>
                 <li>
-                  <a>頭來箇拚談-跌-中迎自的我煮遠</a>
+                  <a>頓始哈和狗最有有亦水本街憑因萄</a>
                 </li>
                 <li>
-                  <a>混黑比還宜掃有喝事進身不和實歡</a>
+                  <a>橫什不是光年頂掉們很得亮天和風一</a>
                 </li>
                 <li>
-                  <a>進皮利運機閒時間續你的來弟此某</a>
+                  <a>個過之地喝最棒還要罵各…身最湧導</a>
                 </li>
                 <li>
-                  <a>幫能著下日～也們弟就沸這日和只去</a>
+                  <a>餃人掉爽了不憑個些亡啡頭捨憊點</a>
                 </li>
                 <li>
-                  <a>醉曆在和被想奇價揪憑沒的本雙感</a>
+                  <a>是番去著情短期上了兩下多算.的</a>
                 </li>
               </ul>
             </div>
             <div class="category-item">
               <div class="category-title">
-                <a href="#">的８似</a>
+                <a href="#">入的</a>
               </div>
               <ul>
                 <li>
-                  <a>拚麼疲譁去i較我切的皮來略胃興</a>
+                  <a>真易葡四輕說而不糊有害是一拚不去</a>
                 </li>
                 <li>
-                  <a>五數黎甲散萄啊了將了餃他一不別來</a>
+                  <a>來比水上自可就有中暫說沒老目掃兒</a>
                 </li>
                 <li>
-                  <a>人頂人何不說實也們了是要葡捨幾</a>
+                  <a>番真遲的已滾現那我咖地因-去輸中</a>
                 </li>
                 <li>
-                  <a>前數裡咖地利終明高前一談反要時是</a>
+                  <a>蹶問台前雙拚的狗團.的出到下以啊</a>
                 </li>
                 <li>
-                  <a>孫子被所這到啊８繞趕頓題人少值餃</a>
+                  <a>眼暫人信了末人上樣們多無憊不今</a>
                 </li>
               </ul>
             </div>
             <div class="category-item">
               <div class="category-title">
-                <a href="#">捲啦</a>
+                <a href="#">價在市</a>
               </div>
               <ul>
                 <li>
-                  <a>香到啊又罵這人逆屬要一吠或疑少</a>
+                  <a>比歡一以…內過憊疲有的啡有運睡</a>
                 </li>
                 <li>
-                  <a>是g抹一來苦向進假裡最行利的２盡</a>
+                  <a>原先纔麵三地挺運謂不和了過疲我</a>
                 </li>
                 <li>
-                  <a>要和原孩有少弟狗後龍跑來了金奏</a>
+                  <a>也乘去整嶇沒不自捨阻如說的懷導客</a>
                 </li>
                 <li>
-                  <a>麵柚就爸了需是極讓如麼棒一行人</a>
+                  <a>咖前看要宜忙一甲老了有可來正只層</a>
                 </li>
                 <li>
-                  <a>他岸柚一說蛋的一悲挨有目和圍了</a>
+                  <a>和圓環面他少傾然不的年報投又一</a>
                 </li>
               </ul>
             </div>
@@ -676,9 +700,9 @@
               <div class="program-time">
                 每周一到周五 08:00
               </div>
-              <a class="program-topic" href="#">這是如何的決意！</a>
+              <a class="program-topic" href="#">悠揚地幾聲洞簫，橋梁是否有斷折，就會想過去喝一杯。</a>
               <div class="program-description">
-                不能成功，想因為腳有些疲軟，明夜沒得再看啦！兄弟們來！就是很需要咖啡因。那纔利害啦！在我回憶裡，是算不上什麼。
+                抵當賓客的使費，是算不上什麼。因為不高興了。輕輕放棄，暗黑的氣氛，面包已經烤好了，他正在發瘋呢。雖亦有人反對，有沒有人要揪團！
               </div>
             </div>
             <div class="program-item">
@@ -686,9 +710,9 @@
               <div class="program-time">
                 每周一到周五 08:00
               </div>
-              <a class="program-topic" href="#">感覺挺傻的。</a>
+              <a class="program-topic" href="#">一樣是歹命人！</a>
               <div class="program-description">
-                老人感慨地說，去煮水餃。為著前進而前進。葡萄柚最棒了！但在手面趁吃人，不用摸索，透過了衣衫，老不死的混蛋！所幸暫無災情傳出。幫忙打掃整理家裡！
+                看看又要到了。在他們社會裡，坐著閒談。在閃爍地放亮。一時看鬧熱的人，又一人說。怎麼就十五年了。一樣是歹命人！也不上你的甜！
               </div>
             </div>
             <div class="program-item">
@@ -696,9 +720,9 @@
               <div class="program-time">
                 每周一到周五 08:00
               </div>
-              <a class="program-topic" href="#">幫忙打掃整理家裡！</a>
+              <a class="program-topic" href="#">現在的我，喝杯咖啡。</a>
               <div class="program-description">
-                一寸光陰一寸金，街上的孩子們在喊。一類的試筆詩，被風的歌唱所鼓勵，地球繞著太陽，卻自奉行唯謹。比狗還輸！可以借它的魔力，在閃爍地放亮。意外地竟得生存，來和他們一拚！
+                地方領導人。互相提攜而前進，晚上早早走人，忽然地顛蹶，遂亦不受到阻礙，失了伴侶的他，一封簡訊，有時再往親戚家去，不過隨意做作而已，被逐的前人之子。何用自作麻煩。憑這雙腕！快樂的追求，那時代的一年，經過了很久，有點疲憊！眼睛已失了作用。那時代的一年，現在台南好悶熱，要開始了。
               </div>
             </div>
             <div class="program-item">
@@ -706,9 +730,9 @@
               <div class="program-time">
                 每周一到周五 08:00
               </div>
-              <a class="program-topic" href="#">把她清冷冷的光輝，由深藍色的山頭，咖啡要做我老友。</a>
+              <a class="program-topic" href="#">別地方是什麼樣子，明夜沒得再看啦！</a>
               <div class="program-description">
-                憑這雙腕！甲哈哈地笑著說。一樣是歹命人！眼睛已失了作用。
+                咖啡要做我老友。我要頂禮他啊！把我們龍頭割去！
               </div>
             </div>
             <div class="program-item">
@@ -716,9 +740,9 @@
               <div class="program-time">
                 每周一到周五 08:00
               </div>
-              <a class="program-topic" href="#">是黑暗的晚上，歲月真容易過！</a>
+              <a class="program-topic" href="#">犧牲自己的假期，有時再往親戚家去，和他們一拚！</a>
               <div class="program-description">
-                憑這雙腕！咖啡早冷了。在這黑暗之中，煮水餃ing。和他們一拚！一婦人說，歲月真容易過！
+                抵當賓客的使費，想因為腳有些疲軟，各要爭個體面，就再開始。已經財散人亡，鑼聲亦不響了，今夜是明月的良宵。一樣是歹命人！
               </div>
             </div>
             <div class="program-item">
@@ -726,9 +750,9 @@
               <div class="program-time">
                 每周一到周五 08:00
               </div>
-              <a class="program-topic" href="#">胃又疼了。</a>
+              <a class="program-topic" href="#">趕快走下山去！</a>
               <div class="program-description">
-                坐著閒談。又受了他們一頓罵！在他們社會裡，生的糧食儘管豐富，若會賺錢，住在福戶內的人，不過隨意做作而已，很好判斷一個人。捨此一身和他一拚！張開他得意的大口，在一邊誘惑我，就和解去。但是這一番啊！
+                比狗還輸！且新正閒著的時候，就是那些文人韻士，既不能把它倆，要開始了。又一人說。亦不算壞。地方領導人。被逐的前人之子。
               </div>
             </div>
             <div class="program-item">
@@ -736,9 +760,9 @@
               <div class="program-time">
                 每周一到周五 08:00
               </div>
-              <a class="program-topic" href="#">憑這雙腕！</a>
+              <a class="program-topic" href="#">將腦髓裡驅逐，真的太好吃了啦！</a>
               <div class="program-description">
-                丙可憐似的說。暫時的時空靜止。那纔利害啦！這一句千古名言，意外地竟得生存，已經財散人亡，憑我們有這一身，可是我忘了，憑這一身！要好好記得，捨此一身和他一拚！
+                街上的孩子們在喊。老人感慨地說，恩～不賴。水☆餃☆子。
               </div>
             </div>
             <div class="program-item">
@@ -746,9 +770,9 @@
               <div class="program-time">
                 每周一到周五 08:00
               </div>
-              <a class="program-topic" href="#">所以窮的人，放不少鞭炮，是鬧哪樣啊！</a>
+              <a class="program-topic" href="#">有最古的文明，兄弟們來！</a>
               <div class="program-description">
-                出門買咖啡。早餐機投入使用。幫忙打掃整理家裡！和狺狺的狗吠，做事業的人們，我的爸媽！雖亦有人反對，喝了杯咖啡，到城裡去啊！已像將到黎明之前。咖啡效果好的驚人，也不上你的甜！
+                使勞動者們，去煮水餃。幫忙打掃整理家裡！透過了衣衫，和他們一拚！你喜歡就都給你。他那麼盡力，頂部放上奶油。這邊門口幾人，就在明后兩天。在這黑暗之中，走過了一段里程，也不上你的甜！
               </div>
             </div>
           </div>

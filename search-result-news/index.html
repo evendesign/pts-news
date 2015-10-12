@@ -43,7 +43,19 @@
         </ul>
         <!--頻道列表 end--><!--搜尋公視-->
         <form class="search-pts">
-          <input placeholder="搜尋公視" type="search"><input type="button">
+          <div id="cse-search-form" style="width: 100%"></div>
+          <script src="//www.google.com/jsapi" type="text/javascript"></script>
+          <script type="text/javascript">
+            google.load('search', '1', { language: 'zh-Hant', style: google.loader.themes.MINIMALIST });
+            google.setOnLoadCallback(function () {
+                var customSearchOptions = {};
+                var customSearchControl = new google.search.CustomSearchControl('015042921252931929020:6zt_aijyxqo', customSearchOptions);
+                customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+                var options = new google.search.DrawOptions();
+                options.enableSearchboxOnly('http://www.pts.org.tw/~search/', 'q');
+                customSearchControl.draw('cse-search-form', options);
+            }, true);
+          </script>
         </form>
         <!--搜尋公視 end--><!--導覽列-->
         <ul class="navigation-list">
@@ -134,7 +146,19 @@
           </div>
           <!--新聞分類列表 end--><!--搜尋公視新聞-->
           <form class="search-news">
-            <button class="ic-search-close" type="reset"></button><input id="search-news" placeholder="搜尋公視新聞" type="search"><label class="ic-search-news"></label>
+            <div id="cse-news-search-form" style="width: 100%"></div>
+            <script src="//www.google.com/jsapi" type="text/javascript"></script>
+            <script type="text/javascript">
+              google.load('search', '1', { language: 'zh-Hant', style: google.loader.themes.MINIMALIST });
+              google.setOnLoadCallback(function () {
+                  var customSearchOptions = {};
+                  var customSearchControl = new google.search.CustomSearchControl('015042921252931929020:6zt_aijyxqo', customSearchOptions);
+                  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+                  var options = new google.search.DrawOptions();
+                  options.enableSearchboxOnly('http://news.pts.org.tw/news_search/', 'q');
+                  customSearchControl.draw('cse-news-search-form', options);
+              }, true);
+            </script>
           </form>
           <!--搜尋公視新聞 end-->
         </div>

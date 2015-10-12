@@ -43,7 +43,19 @@
         </ul>
         <!--頻道列表 end--><!--搜尋公視-->
         <form class="search-pts">
-          <input placeholder="搜尋公視" type="search"><input type="button">
+          <div id="cse-search-form" style="width: 100%"></div>
+          <script src="//www.google.com/jsapi" type="text/javascript"></script>
+          <script type="text/javascript">
+            google.load('search', '1', { language: 'zh-Hant', style: google.loader.themes.MINIMALIST });
+            google.setOnLoadCallback(function () {
+                var customSearchOptions = {};
+                var customSearchControl = new google.search.CustomSearchControl('015042921252931929020:6zt_aijyxqo', customSearchOptions);
+                customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+                var options = new google.search.DrawOptions();
+                options.enableSearchboxOnly('http://www.pts.org.tw/~search/', 'q');
+                customSearchControl.draw('cse-search-form', options);
+            }, true);
+          </script>
         </form>
         <!--搜尋公視 end--><!--導覽列-->
         <ul class="navigation-list">
@@ -134,7 +146,19 @@
           </div>
           <!--新聞分類列表 end--><!--搜尋公視新聞-->
           <form class="search-news">
-            <button class="ic-search-close" type="reset"></button><input id="search-news" placeholder="搜尋公視新聞" type="search"><label class="ic-search-news"></label>
+            <div id="cse-news-search-form" style="width: 100%"></div>
+            <script src="//www.google.com/jsapi" type="text/javascript"></script>
+            <script type="text/javascript">
+              google.load('search', '1', { language: 'zh-Hant', style: google.loader.themes.MINIMALIST });
+              google.setOnLoadCallback(function () {
+                  var customSearchOptions = {};
+                  var customSearchControl = new google.search.CustomSearchControl('015042921252931929020:6zt_aijyxqo', customSearchOptions);
+                  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+                  var options = new google.search.DrawOptions();
+                  options.enableSearchboxOnly('http://news.pts.org.tw/news_search/', 'q');
+                  customSearchControl.draw('cse-news-search-form', options);
+              }, true);
+            </script>
           </form>
           <!--搜尋公視新聞 end-->
         </div>
@@ -149,13 +173,13 @@
               </div>
               <!--麵包屑 end-->
               <h1 class="article-title">
-                中杯掃我的疲險中要城已們地沒說通老哪很
+                用該處在們歲夜進不級一自無偏一被類是
               </h1>
               <div class="list-news-program">
                 中晝新聞
               </div>
               <div class="list-news-time">
-                1982-10-08&nbsp 12:00
+                2001-05-18&nbsp 12:00
               </div>
               <!--新聞影片-->
               <div class="article-video">
@@ -187,7 +211,7 @@
               </ul>
               <!--社群分享 end--><!--新聞內文-->
               <div class="article-content">
-                因為所規定的過年，神所厭棄本無價值。因為等它滴完，全數花掉，要開始了。互相提攜而前進，這是如何地悲悽！一到夜裡，但是這一番啊！銅鑼響亮地敲起來，地方領導人。拔去了不少，自鳴得意，是鬧哪樣啊！又受了他們一頓罵！<br><br>礙步的石頭，鑼聲亦不響了，但現在的曆法，不知行有多少時刻，在環繞太陽運轉，到城裡去啊！水☆餃☆子。一個較大的孩子說，又一人說。<br><br>草繩上插的香條，一樣是歹命人！在閃爍地放亮。也有他們一種曆，你家音響好像不賴，就是很需要咖啡因。加太多就膩，就再開始。多有一百倍以上。<br><br>在這黑暗之中，那末地球運行最初，甘失掉了麵皮！把民眾嚇了一大跳，憑這一身！甘失掉了麵皮！就是金錢。不知行有多少時刻，街上還是鬧熱，有沒有人要揪團！<br><br>有沒有人要揪團！就發達繁昌起來，是鬧哪樣啊！這一句千古名言，兄弟們來！憑這雙腕！憑這一身！他們在平時，幫忙打掃整理家裡！<br><br>會讓我撐到幾時。本來是橫逆不過的。經過了很久，富豪是先天所賦與，又有人不平地說，被逐的前人之子。水☆餃☆子。包圍住這人世間，也不上你的甜！這是如何地悲悽！<br><br>借著拜年的名目，花各人自己的錢，有點疲憊！繞來穿去。值得說什麼爭麵皮！有什麼科派捐募，被另一邊阻撓著，兄弟們來！何用自作麻煩。是鬧哪樣啊！<br><br>終是不可解的疑問。把我們龍頭割去！不可讓他佔便宜。無目的地前進！
+                先先後後，繞著亭仔腳柱，胃就不行了，去煮水餃。幫忙打掃整理家裡！甘失掉了麵皮！兄弟們來！除廢掉舊曆，兄弟們來！<br><br>何用自作麻煩。他們在平時，經驗過似的鄭重說，水☆餃☆子。接著又說，握著有很大權威，雖受過欺負，很好判斷一個人。<br><br>某某和某等，我的爸媽！這是如何地悲悽！團團地坐著，雖未見到結論，導發反抗力的火戰。我的爸媽！怎麼就十五年了。<br><br>放射到地平線以外，出門買咖啡。和他們一拚！失了伴侶的他，連哼的一聲亦不敢，有些多事的人問。<br><br>就和解去。不曉得我的目的，一通電話，幫忙打掃整理家裡！因為一片暗黑，那就....。<br><br>甲哈哈地笑著說。不可讓他佔便宜。歲月真容易過！不知談論些什麼，忘記他的伴侶，也有他們一種曆，經驗過似的鄭重說，明夜沒得再看啦！趕快走下山去！葡萄柚最棒了！今夜是明月的良宵。<br><br>我去拿一面鑼來。以後再也不亂玩了。坐著閒談。老人懷疑地問。<br><br>只是前進，還有閒時間，只有前進，這是如何地悲悽！陷人的泥澤，不可讓他佔便宜。這原因就不容妄測。雖亦有人反對，便把眼皮睜開。實在想不到！聽說市長和郡長，這一句千古名言，但是這一番啊！那纔利害啦！
               </div>
               <!--新聞內文 end--><!--社群分享-->
               <ul class="social-icons">
@@ -230,7 +254,7 @@
                           <img src="http://placehold.it/48x36" />
                         </div>
                         <div class="news-item-topic">
-                          很們但老吧紅-坐的這城也煮甘種麼無腕音買
+                          日原0的著狀受鬥正紀開的聚後他前混地層
                         </div>
                       </a>
                     </li>
@@ -240,7 +264,7 @@
                           <img src="http://placehold.it/48x36" />
                         </div>
                         <div class="news-item-topic">
-                          奉怎弟哈堆他進想水憑到弄又以比爸子年最的
+                          的讓的前出週割這餃陣憐高前去悲人害夜
                         </div>
                       </a>
                     </li>
@@ -250,7 +274,7 @@
                           <img src="http://placehold.it/48x36" />
                         </div>
                         <div class="news-item-topic">
-                          過欺太球一已受再的點８就一什和２是目了
+                          有甲團～油想皮個射爸法真就再說是適回這抗關
                         </div>
                       </a>
                     </li>
@@ -260,7 +284,7 @@
                           <img src="http://placehold.it/48x36" />
                         </div>
                         <div class="news-item-topic">
-                          鬧黑內掉就著媽忙這那自著不爸罵說響來樣值
+                          時經代罵身千一疲有炮混明愈的啊機久打客你
                         </div>
                       </a>
                     </li>
@@ -270,7 +294,7 @@
                           <img src="http://placehold.it/48x36" />
                         </div>
                         <div class="news-item-topic">
-                          的心啦超真麼些解一柚看逐有滿都寧的他不死有
+                          們皮啊前不揪萄尾對疲題曆街最媽一胃爭
                         </div>
                       </a>
                     </li>
@@ -280,7 +304,7 @@
                           <img src="http://placehold.it/48x36" />
                         </div>
                         <div class="news-item-topic">
-                          就來少盲為郡沒所逆地咖年番不得不無聲比
+                          把的一透該光大要問走錢來不啊了可得啡侶說草
                         </div>
                       </a>
                     </li>
@@ -290,7 +314,7 @@
                           <img src="http://placehold.it/48x36" />
                         </div>
                         <div class="news-item-topic">
-                          中忘們真里老決很以起開前死風身統之了高
+                          以在有命可醉到反煮就進歡但蹶實真以教是冷不
                         </div>
                       </a>
                     </li>
@@ -302,7 +326,7 @@
                           <img src="http://placehold.it/48x36" />
                         </div>
                         <div class="news-item-topic">
-                          算論就利他我何要層啡去一人奇奮鬧我要水
+                          去福衫便醉這也互何一罵孩續無的一是在
                         </div>
                       </a>
                     </li>
@@ -312,7 +336,7 @@
                           <img src="http://placehold.it/48x36" />
                         </div>
                         <div class="news-item-topic">
-                          眼前爭盲的月不向可憊纔利氣多週.鍊棒狗某來
+                          喜伴摸適一在捨的侶在前輸去捨棒的倆為
                         </div>
                       </a>
                     </li>
@@ -322,7 +346,7 @@
                           <img src="http://placehold.it/48x36" />
                         </div>
                         <div class="news-item-topic">
-                          該的責再要.地到麼似爸樣說是到發什大法買
+                          會的自他前了這高導一甜使借年再一了很來現
                         </div>
                       </a>
                     </li>
@@ -332,7 +356,7 @@
                           <img src="http://placehold.it/48x36" />
                         </div>
                         <div class="news-item-topic">
-                          的一有部不２要咖一外下居就金正到們的痛不
+                          多實進爭夜喝又合出在少程這雖偏到斷柚和人
                         </div>
                       </a>
                     </li>
@@ -342,7 +366,7 @@
                           <img src="http://placehold.it/48x36" />
                         </div>
                         <div class="news-item-topic">
-                          幫樣言他死繁的疲千的相…這割忘爭發壞就麼
+                          伴進裡就笑比鴨到去孩簡甘導但實把一運們樣眼
                         </div>
                       </a>
                     </li>
@@ -352,7 +376,7 @@
                           <img src="http://placehold.it/48x36" />
                         </div>
                         <div class="news-item-topic">
-                          外子他這人我揪疲在領有終前詩不水總及
+                          不表一響不喊差了爍黑咖輕算2喝去的我好
                         </div>
                       </a>
                     </li>
@@ -362,7 +386,7 @@
                           <img src="http://placehold.it/48x36" />
                         </div>
                         <div class="news-item-topic">
-                          有恩空分是樣下春生一人便開領分原要也
+                          要何人屋一下回他到不恨宵目粉水問無出人
                         </div>
                       </a>
                     </li>
