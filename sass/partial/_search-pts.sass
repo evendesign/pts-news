@@ -1,0 +1,112 @@
+.search-pts
+  position: absolute
+  top: 0px
+  margin: 0px
+  padding: 0px
+
+  #cse-search-form
+    padding-left: 24px
+    +adjust-font-size-to(16px, 2)
+    background: $background-color-gray
+
+  .gsc-search-box
+    width: 100%
+    margin: 0px 0px 0px -15px
+    padding: 0px
+    font-size: $base-font-size
+
+  td.gsc-input
+    padding-left: 24px
+    position: relative
+    background: transparent
+
+    &:after
+      @include ellipsis
+      content: "搜尋公視"
+      position: absolute
+      top: 4px
+      left: 24px
+      z-index: 0
+      color: $text-gray
+
+  input.gsc-input
+    +border-box-sizing
+    +border-radius(0)
+    position: relative
+    top: 0
+    left: 0
+    z-index: 2
+    margin: 0 // for ie
+    padding: 21px 0px
+    width: 175px
+    border: none
+    font-size: $base-font-size
+    -webkit-appearance: none
+    +input-placeholder-color($text-black)
+    background-color: transparent !important
+    background-image: none !important
+
+    &:focus
+      outline: none
+      background: $background-color-gray !important
+
+  input.gsc-search-button
+    position: absolute
+    top: 18px
+    right: -40px
+    border: none
+    background: transparent
+    +replace-text-with-svg("ic-search-blue-large")
+
+    &:focus
+      outline: none
+
+  .gsc-clear-button, .gsc-branding
+    display: none
+
+  +at-breakpoint($desktop)
+    position: relative
+    float: left
+    margin-left: -16px
+
+    #cse-search-form
+      padding-left: 24px
+      background: transparent
+
+    td.gsc-input
+
+      &:after
+        top: -12px
+        left: 36px
+
+    input.gsc-input
+      float: left
+      width: 326px
+      height: 16px
+      padding: 3px 0px 3px 10px
+      border: $line-color-gray-light 1px solid
+      +border-radius(2px 0 0 2px)
+      font-size: $base-font-size - 2
+      +input-placeholder-color($text-gray)
+
+      &:focus
+        background: #fff !important
+
+    td.gsc-search-button
+      float: left
+
+    input.gsc-search-button
+      float: left
+      position: relative
+      top: 0px
+      left: -14px
+      padding: 12px 0px
+      +border-radius(0 2px 2px 0)
+      background-color: $color-blue-pts
+      +replace-text-with-svg("ic-search-white-small")
+      width: 76px
+
+  +at-breakpoint($wide-desktop)
+
+    input.gsc-input
+      width: 408px

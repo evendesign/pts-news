@@ -20,8 +20,10 @@ $breakpoint-ie-output: false;
 // ==== partial ====
 @import "partial/_background";
 @import "partial/_header-family";
+@import "partial/_search-pts";
 @import "partial/_tv-program";
 @import "partial/_header-news";
+@import "partial/_search-news";
 @import "partial/_hero";
 @import "partial/_latest-news";
 @import "partial/_category-news";

@@ -31,8 +31,17 @@
   /! 新聞分類列表 end
   /! 搜尋公視新聞
   form.search-news
-    button.ic-search-close type="reset"
-    input type="search" placeholder="搜尋公視新聞" id="search-news"
-    label.ic-search-news
+    #cse-news-search-form style="width: 100%"
+    script src="//www.google.com/jsapi" type="text/javascript"
+    javascript:
+        google.load('search', '1', { language: 'zh-Hant', style: google.loader.themes.MINIMALIST });
+        google.setOnLoadCallback(function () {
+            var customSearchOptions = {};
+            var customSearchControl = new google.search.CustomSearchControl('015042921252931929020:6zt_aijyxqo', customSearchOptions);
+            customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+            var options = new google.search.DrawOptions();
+            options.enableSearchboxOnly('http://news.pts.org.tw/news_search/', 'q');
+            customSearchControl.draw('cse-news-search-form', options);
+        }, true);
   /! 搜尋公視新聞 end
 /! 新聞網 header end

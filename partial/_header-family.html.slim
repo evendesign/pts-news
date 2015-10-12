@@ -15,8 +15,18 @@
   /! 頻道列表 end
   /! 搜尋公視
   form.search-pts
-    input placeholder="搜尋公視" type="search"
-    input type="button"
+    #cse-search-form style="width: 100%"
+    script src="//www.google.com/jsapi" type="text/javascript"
+    javascript:
+        google.load('search', '1', { language: 'zh-Hant', style: google.loader.themes.MINIMALIST });
+        google.setOnLoadCallback(function () {
+            var customSearchOptions = {};
+            var customSearchControl = new google.search.CustomSearchControl('015042921252931929020:6zt_aijyxqo', customSearchOptions);
+            customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+            var options = new google.search.DrawOptions();
+            options.enableSearchboxOnly('http://www.pts.org.tw/~search/', 'q');
+            customSearchControl.draw('cse-search-form', options);
+        }, true);
   /! 搜尋公視 end
   /! 導覽列
   ul.navigation-list

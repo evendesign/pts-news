@@ -98,32 +98,6 @@
       a
         color: #fff
 
-  .search-pts
-    position: absolute
-    top: 0px
-
-    input:focus
-      outline: none
-
-    input[type=search]
-      float: left
-      width: 184px
-      height: 60px
-      padding: 0px 0px 0px rhythm(1)
-      border: none
-      -webkit-appearance: none
-      font-size: $base-font-size
-      background: transparent
-      +input-placeholder-color($text-black)
-
-    input[type=button]
-      position: absolute
-      top: 18px
-      right: -40px
-      border: none
-      background: transparent
-      +replace-text-with-svg("ic-search-blue-large")
-
   +at-breakpoint($desktop)
     position: static
     width: auto
@@ -198,39 +172,9 @@
             border-right: 10px solid transparent
             border-bottom: 10px solid $color-blue-pts
 
-    .search-pts
-      position: relative
-      margin-top: 0px
-
-      input[type=search]
-        float: left
-        width: 345px
-        height: 16px
-        padding: 3px 0px 3px 10px
-        border: $line-color-gray-light 1px solid
-        +border-radius(2px 0 0 2px)
-        font-size: $base-font-size - 2
-        +input-placeholder-color($text-gray)
-
-      input[type=button]
-        position: relative
-        top: 0px
-        right: 0px
-        float: left
-        padding: 12px 0px
-        +border-radius(0 2px 2px 0)
-        background-color: $color-blue-pts
-        +replace-text-with-svg("ic-search-white-small")
-        width: 76px
-
   +at-breakpoint($wide-desktop)
     .navigation-list
       margin: 16px 0px 0px 10px
 
       a
         padding: 0 13px 0 13px
-
-    .search-pts
-
-      input[type=search]
-        width: 424px

@@ -46,15 +46,53 @@ body
 
   .header-family
     .search-pts
+      position: relative
       float: right
-      margin-right: 50px
+      margin-right: 40px
+
+      #cse-search-form
+        padding-left: 24px
+        background: transparent
+
+      td.gsc-input
+
+        &:after
+          display: none
+
+      input.gsc-input
+        position: relative
+        float: left
+        width: 460px
+        height: 16px
+        padding: 3px 0px 3px 10px
+        border: $line-color-gray-light 1px solid
+        +border-radius(2px 0 0 2px)
+        font-size: $base-font-size - 2
+        +input-placeholder-color($text-gray)
+        background-color: #fff !important
+        background-image: none !important
+        z-index: 2 !important
+
+      td.gsc-search-button
+        float: left
+
+      input.gsc-search-button
+        float: left
+        position: relative
+        top: 0px
+        left: -14px
+        padding: 12px 0px
+        +border-radius(0 2px 2px 0)
+        background-color: $color-blue-pts
+        +replace-text-with-svg("ic-search-white-small")
+        width: 76px
 
     .nav-item
       display: block
       float: left
-      margin-right: 24px
+      margin-right: 26px
 
-  .clock, .ic-search-close
+  .clock
     display: none
 
   .header-news
@@ -62,10 +100,19 @@ body
       min-width: 815px
 
     .search-news
-      #search-news
-        width: 240px
-        padding: 0px 0px 0px 12px
+      td.gsc-input
+        &:after
+          display: none
+
+      input.gsc-input
+        opacity: 1
+        width: 200px
         border: 1px solid $line-color-gray-light
+        +input-placeholder-color($text-gray)
+
+      input.gsc-search-button
+        top: 10px
+        left: -30px
 
   .hero
     .program-item.is-active
