@@ -18,7 +18,7 @@ var TVprogram_show = function (){
 
 // hero video select //
 var video_select = function (){
-  $(".program-item").each(function(){
+  $("li.program-item").each(function(){
     var li = $(this);
     li.on("click", function(event){
       li.addClass("is-active");
