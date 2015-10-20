@@ -17,15 +17,11 @@ body
     background-color: $background-color-gray-light
 
   .main
-    float: left
+    +pie-clearfix
     width: 90%
     margin: 40px 24px
     background-color: #fff
     padding: 0px 32px
-
-    &:after
-      content: ""
-      +pie-clearfix
 
   .content
     +box-sizing(border-box)
@@ -119,7 +115,7 @@ body
       background-color: $color-blue-pts
 
     .video-list.is-active
-      margin-right: -24px
+      margin-right: 36px
 
   .ad-news
     float: left

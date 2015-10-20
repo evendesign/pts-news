@@ -138,16 +138,14 @@
   +at-breakpoint($desktop)
     +pie-clearfix
     position: relative
-    width: 100%
-    margin-left: -32px
-    padding-right: 64px
+    width: auto
+    margin: 0 -32px 40px -32px
     +padding-leader(0)
     background: #000
 
     .frame
       position: relative
       width: 100%
-      padding-right: 64px
 
       &:after
         content: ''
@@ -231,8 +229,6 @@
       overflow: hidden
 
   +at-breakpoint($wide-desktop)
-    padding-right: 64px
-
     .frame
       float: left
       width: 110px
@@ -264,4 +260,3 @@
       top: 0px
       left: 0px
       float: right
-      margin-right: -64px
