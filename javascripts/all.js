@@ -66,12 +66,14 @@ $(".select").on('click', function () {
 
 // add sly //
 var add_sly = function (){
-  var $frame = $('.frame'); window.frr = $frame;
+  var $frame = $('#header-news');
+  var $slidee = $frame.children('ul').eq(0);
+  window.frr = $frame;
   var sly = new Sly($frame, {
     horizontal: 1,
     itemNav: 'centered',
     activateMiddle: 1,
-    smart: 1,
+    smart: false,
     activateOn: 'mouseenter',
     mouseDragging: 1,
     touchDragging: 1,
@@ -83,6 +85,8 @@ var add_sly = function (){
     dragHandle: 1,
     dynamicHandle: 1,
     clickBar: 1,
+    scrollBar: null,
+    size: 20,
   }).init();
 
   var $frame_hero = $('.hero').find(".frame"); window.frr = $frame_hero;
@@ -90,7 +94,7 @@ var add_sly = function (){
     horizontal: 1,
     itemNav: 'centered',
     activateMiddle: 1,
-    smart: 1,
+    smart: false,
     activateOn: 'mouseenter',
     mouseDragging: 1,
     touchDragging: 1,
@@ -101,7 +105,6 @@ var add_sly = function (){
     elasticBounds: 1,
     dragHandle: 1,
     dynamicHandle: 1,
-    clickBar: 1,
   }).init();
 };
 
