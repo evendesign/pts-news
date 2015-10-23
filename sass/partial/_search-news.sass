@@ -1,9 +1,31 @@
 .search-news
+  +border-box-sizing
   position: absolute
+  top: 14px
   right: 12px
-  margin-top: 8px
+  width: 30px
+  height: 34px
+  padding-left: 20px
   white-space: nowrap
+  -webkit-appearance: none
+  appearance: none
+  border: 1px solid transparent
+  +border-radius(2px)
   transform: translate(0,0)
+  transition: width .55s ease
+  background-color: transparent
+  background-image: none
+  color: transparent
+  z-index: 2
+
+  &:hover
+    width: 270px
+    padding-left: 12px
+    outline: none
+    opacity: 1
+    border: 1px solid $line-color-gray-light
+    background-color: #fff !important
+    color: $text-black
 
   td.gsc-input
     position: relative
@@ -12,39 +34,24 @@
   input.gsc-input
     +border-box-sizing
     +border-radius(0)
-    position: absolute
-    top: -4px
-    right: 0px
+    width: 220px
+    margin-top: -6px
+    padding-left: 0px
     -webkit-appearance: none
     appearance: none
-    width: 30px
-    height: 34px
-    padding-left: 20px
     border: 1px solid #fff
     +border-radius(2px)
-    opacity: 0.05
-    transition: width .55s ease
     font-size: $base-font-size
-    -webkit-appearance: none
     +input-placeholder-color($text-black)
     background-color: transparent !important
     background-image: none !important
-    z-index: 2
-
-    &:hover, &:focus, &:active
-      width: 270px
-      padding-left: 20px
-      outline: none
-      opacity: 1
-      border: 1px solid $line-color-gray-light
-      +input-placeholder-color($text-gray)
-      background-color: #fff !important
 
   input.gsc-search-button
     position: absolute
+    top: 3px
     right: 0px
-    border: none
     margin: 3px 0px 0px 0px
+    border: none
     background: transparent
     +replace-text-with-svg("ic-search-blue-large")
 
@@ -55,7 +62,7 @@
     display: none
 
   +at-breakpoint($desktop)
-    margin-top: -2px
+    margin-top: 12px
 
     input.gsc-input
       border: none
@@ -64,19 +71,19 @@
       z-index: 3
 
   +at-breakpoint($wide-desktop)
-    td.gsc-input
+    width: 160px
+    opacity: 1
 
+    &:after
+      @include ellipsis
+      content: "搜尋公視新聞"
+      position: absolute
+      top: 5px
+      left: 12px
+      font-size: $base-font-size
+      color: $text-gray
+      z-index: 0
+
+    &:hover
       &:after
-        @include ellipsis
-        content: "搜尋公視新聞"
-        position: absolute
-        top: 2px
-        right: 60px
-        font-size: $base-font-size
-        color: $text-gray
-        z-index: 0
-
-    input.gsc-input
-      width: 140px
-      opacity: 1
-      +input-placeholder-color($text-gray)
+        display: none
