@@ -1,18 +1,13 @@
 .search-news
   +border-box-sizing
   position: absolute
-  top: 14px
+  top: 13px
   right: 12px
-  width: 30px
-  height: 34px
-  padding-left: 20px
   white-space: nowrap
   -webkit-appearance: none
   appearance: none
   border: 1px solid transparent
   +border-radius(2px)
-  transform: translate(0,0)
-  transition: width .55s ease
   background-color: transparent
   background-image: none
   color: transparent
@@ -20,13 +15,16 @@
   z-index: 2
 
   &:hover
-    width: 270px
-    padding-left: 12px
-    outline: none
-    opacity: 1
-    border: 1px solid $line-color-gray-light
-    background-color: #fff !important
-    color: $text-black
+
+    input.gsc-input
+      width: 270px
+      padding-left: 12px
+      outline: none
+      opacity: 1
+      border: 1px solid $line-color-gray-light
+      background-color: #fff !important
+      color: $text-black
+      background-image: none
 
   td.gsc-input
     position: relative
@@ -34,9 +32,10 @@
 
   input.gsc-input
     +border-box-sizing
-    +border-radius(0)
-    width: 220px
-    margin-top: -6px
+    width: 30px
+    height: 34px
+    margin-top: -8px
+    margin-right: -14px
     padding-left: 0px
     -webkit-appearance: none
     appearance: none
@@ -46,6 +45,19 @@
     +input-placeholder-color($text-black)
     background-color: transparent !important
     background-image: none !important
+    transform: translate(0,0)
+    transition: all .55s ease
+
+    &:hover, &:focus, &:active
+      width: 270px
+      padding-left: 12px
+      padding-right: 48px
+      outline: none
+      opacity: 1
+      border: 1px solid $line-color-gray-light
+      background-color: #fff !important
+      color: $text-black
+      background-image: none
 
   input.gsc-search-button
     position: absolute
@@ -64,27 +76,3 @@
 
   +at-breakpoint($desktop)
     margin-top: 12px
-
-    input.gsc-input
-      border: none
-
-    input.gsc-search-button
-      z-index: 3
-
-  +at-breakpoint($wide-desktop)
-    width: 160px
-    opacity: 1
-
-    &:after
-      @include ellipsis
-      content: "搜尋公視新聞"
-      position: absolute
-      top: 5px
-      left: 12px
-      font-size: $base-font-size
-      color: $text-gray
-      z-index: 0
-
-    &:hover
-      &:after
-        display: none
