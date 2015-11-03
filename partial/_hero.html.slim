@@ -37,34 +37,91 @@
         span.video-name 日澳潛艦
       li.video-topic-item data-value='video_6'
         span.screen-shot = image_tag(lorem_image("128x96"))
-        span.video-name = zh_lorem_words(18+rand(4))
+        span.video-name 公視中晝新聞
 
   .select data-value='program_2'
     ul
       li.video-topic-item.init 請選擇影片 program_2
-      li.video-topic-item data-value='video_1'
+      li.video-topic-item.is-active data-value='video_1'
         span.screen-shot = image_tag(lorem_image("128x96"))
         span.video-name this is program_2
       li.video-topic-item data-value='video_2'
         span.screen-shot = image_tag(lorem_image("128x96"))
         span.video-name 古蹟可以買賣嗎？從文萌樓談起
+      li.video-topic-item data-value='video_3'
+        span.screen-shot = image_tag(lorem_image("128x96"))
+        span.video-name 這是第三支影片
+      li.video-topic-item data-value='video_4'
+        span.screen-shot = image_tag(lorem_image("128x96"))
+        span.video-name 所以這是第五支影片
 
   .select data-value='program_3'
     ul
       li.video-topic-item.init 請選擇影片 program_3
-      li.video-topic-item data-value='video_1'
+      li.video-topic-item.is-active data-value='video_1'
         span.screen-shot = image_tag(lorem_image("128x96"))
         span.video-name 有話好說：700噸氰化鈉大爆炸！毒氣毒水四處擴散？
       li.video-topic-item data-value='video_2'
         span.screen-shot = image_tag(lorem_image("128x96"))
         span.video-name this is program_3
+      li.video-topic-item data-value='video_3'
+        span.screen-shot = image_tag(lorem_image("128x96"))
+        span.video-name PNN網路直播
+      li.video-topic-item data-value='video_4'
+        span.screen-shot = image_tag(lorem_image("128x96"))
+        span.video-name PNN網路直播測試
+      li.video-topic-item data-value='video_5'
+        span.screen-shot = image_tag(lorem_image("128x96"))
+        span.video-name PNN網路直播測試測試
 
   .select data-value='program_4'
     ul
       li.video-topic-item.init 請選擇影片 program_4
-      li.video-topic-item data-value='video_1'
+      li.video-topic-item.is-active data-value='video_1'
         span.screen-shot = image_tag(lorem_image("128x96"))
         span.video-name this is program_4
+      li.video-topic-item data-value='video_2'
+        span.screen-shot = image_tag(lorem_image("128x96"))
+        span.video-name  影片名稱好長
+      li.video-topic-item data-value='video_3'
+        span.screen-shot = image_tag(lorem_image("128x96"))
+        span.video-name 再一個影片名稱
+      li.video-topic-item data-value='video_4'
+        span.screen-shot = image_tag(lorem_image("128x96"))
+        span.video-name 最後一個影片名稱
+
+  .select data-value='program_5'
+    ul
+      li.video-topic-item.init 請選擇影片 program_5
+      li.video-topic-item.is-active data-value='video_1'
+        span.screen-shot = image_tag(lorem_image("128x96"))
+        span.video-name this is program_5
+      li.video-topic-item data-value='video_2'
+        span.screen-shot = image_tag(lorem_image("128x96"))
+        span.video-name  PNN網路直播
+      li.video-topic-item data-value='video_3'
+        span.screen-shot = image_tag(lorem_image("128x96"))
+        span.video-name 放影片供測試用
+
+  .select data-value='program_6'
+    ul
+      li.video-topic-item.init 請選擇影片 program_6
+      li.video-topic-item.is-active data-value='video_1'
+        span.screen-shot = image_tag(lorem_image("128x96"))
+        span.video-name this is program_6
+      li.video-topic-item data-value='video_2'
+        span.screen-shot = image_tag(lorem_image("128x96"))
+        span.video-name  新聞專題
+      li.video-topic-item data-value='video_3'
+        span.screen-shot = image_tag(lorem_image("128x96"))
+        span.video-name 政治專題
+      li.video-topic-item data-value='video_4'
+        span.screen-shot = image_tag(lorem_image("128x96"))
+        span.video-name 體育專題
+      li.video-topic-item data-value='video_5'
+        span.screen-shot = image_tag(lorem_image("128x96"))
+        span.video-name 科技專題
+
   /! hero 影片選單 end
   /! hero 影片
   ul.video-list.is-active data-value='program_1'
@@ -73,33 +130,87 @@
       <iframe width="640" height="475" src="https://www.youtube.com/embed/I7FJakVCyZM" frameborder="0" allowfullscreen></iframe>
     li.video-item data-value='video_2'
       img.placehold src="/images/placehold.png"
-      <iframe width="640" height="475" src="https://www.youtube.com/embed/videoseries?list=PL5D45BC9B70943593" frameborder="0" allowfullscreen></iframe>
+      <iframe class="lazy" width="640" height="475" src="https://www.youtube.com/embed/videoseries?list=PL5D45BC9B70943593" frameborder="0" allowfullscreen></iframe>
     li.video-item data-value='video_3'
       img.placehold src="/images/placehold.png"
-      <iframe width="640" height="475" src="https://livehouse.in/embed/channel/PNNPTS/video/mute" frameborder="0" allowfullscreen=""></iframe>
+      <iframe class="lazy" width="640" height="475" src="https://livehouse.in/embed/channel/PNNPTS/video/mute" frameborder="0" allowfullscreen=""></iframe>
     li.video-item data-value='video_4'
       img.placehold src="/images/placehold.png"
-      <iframe id="__CCDNPlayer" width="640" height="475" border="0" cellspacing="0" frameborder="0" allowfullscreen="" src="http://crs.ccdntech.com/rds/playerh5?vod119/news/0912_01_euro.mpg.mp4&th=http%3A%2F%2Fcsw1.ccdntech.com%2Fimage%2Fvod119%2Fnews%2F0912_01_euro.mpg_1.jpg"></iframe>
+      <iframe class="lazy" id="__CCDNPlayer" width="640" height="475" border="0" cellspacing="0" frameborder="0" allowfullscreen="" src="http://crs.ccdntech.com/rds/playerh5?vod119/news/0912_01_euro.mpg.mp4&th=http%3A%2F%2Fcsw1.ccdntech.com%2Fimage%2Fvod119%2Fnews%2F0912_01_euro.mpg_1.jpg"></iframe>
     li.video-item data-value='video_5'
       img.placehold src="/images/placehold.png"
-      <iframe src="//www.slideshare.net/slideshow/embed_code/key/kJtiOY1YZqC7V2" width="640" height="475" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+      <iframe class="lazy" src="//www.slideshare.net/slideshow/embed_code/key/kJtiOY1YZqC7V2" width="640" height="475" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
     li.video-item data-value='video_6'
       img.placehold src="/images/placehold.png"
-      | this is video_6
+      <iframe class="lazy" width="640" height="475" src="https://www.youtube.com/embed/LlflfrEm4qo" frameborder="0" allowfullscreen></iframe>
 
   ul.video-list data-value='program_2'
     li.video-item.is-active data-value='video_1'
       img.placehold src="/images/placehold.png"
-      |this ia program_2
-
+      <iframe width="640" height="475" src="https://livehouse.in/embed/channel/PNNPTS/video/mute" frameborder="0" allowfullscreen=""></iframe>
+    li.video-item data-value='video_2'
+      img.placehold src="/images/placehold.png"
+      <iframe class="lazy" width="640" height="475" src="https://www.youtube.com/embed/videoseries?list=PL5D45BC9B70943593" frameborder="0" allowfullscreen></iframe>
+    li.video-item data-value='video_3'
+      img.placehold src="/images/placehold.png"
+      <iframe class="lazy" width="640" height="475" src="https://livehouse.in/embed/channel/PNNPTS/video/mute" frameborder="0" allowfullscreen=""></iframe>
+    li.video-item data-value='video_4'
+      img.placehold src="/images/placehold.png"
+      <iframe class="lazy" id="__CCDNPlayer" width="640" height="475" border="0" cellspacing="0" frameborder="0" allowfullscreen="" src="http://crs.ccdntech.com/rds/playerh5?vod119/news/0912_01_euro.mpg.mp4&th=http%3A%2F%2Fcsw1.ccdntech.com%2Fimage%2Fvod119%2Fnews%2F0912_01_euro.mpg_1.jpg"></iframe>
   ul.video-list data-value='program_3'
     li.video-item.is-active data-value='video_1'
       img.placehold src="/images/placehold.png"
-      |this ia program_3
-
+      <iframe width="650" height="210" src="https://livehouse.in/embed/channel/PNNPTS" frameborder="0" allowfullscreen></iframe>
+    li.video-item data-value='video_2'
+      img.placehold src="/images/placehold.png"
+      <iframe class="lazy" src="//www.slideshare.net/slideshow/embed_code/key/eiqfURP2JHvr14" width="640" height="475" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    li.video-item data-value='video_3'
+      img.placehold src="/images/placehold.png"
+      <iframe class="lazy" src="http://www.slideshare.net/slideshow/embed_code/30579339?rel=0" width="640" height="475" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    li.video-item data-value='video_4'
+      img.placehold src="/images/placehold.png"
+      <iframe class="lazy" src="http://www.slideshare.net/slideshow/embed_code/13876684" width="640" height="475" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    li.video-item data-value='video_5'
+      img.placehold src="/images/placehold.png"
+      <iframe class="lazy" src="http://www.slideshare.net/slideshow/embed_code/31618745?rel=0" width="640" height="475" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
   ul.video-list data-value='program_4'
     li.video-item.is-active data-value='video_1'
       img.placehold src="/images/placehold.png"
-      |this ia program_4
+      <iframe width="640" height="475" src="https://www.youtube.com/embed/zpBdnKnr4mE" frameborder="0" allowfullscreen=""></iframe>
+    li.video-item data-value='video_2'
+      img.placehold src="/images/placehold.png"
+      <iframe class="lazy" width="640" height="475" src="https://www.youtube.com/embed/sc8tFfhXUZY" frameborder="0" allowfullscreen=""></iframe>
+    li.video-item data-value='video_3'
+      img.placehold src="/images/placehold.png"
+      <iframe class="lazy" src="http://www.slideshare.net/slideshow/embed_code/31618745?rel=0" width="640" height="475" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    li.video-item data-value='video_4'
+      img.placehold src="/images/placehold.png"
+      <iframe class="lazy" id="__CCDNPlayer" width="640" height="475" border="0" cellspacing="0" frameborder="0" allowfullscreen="" src="http://crs.ccdntech.com/rds/playerh5?vod119/news/Export20151011-001.mpg.mp4&amp;th=http%3A%2F%2Fcsw1.ccdntech.com%2Fimage%2Fvod119%2Fnews%2FExport20151011-001.mpg_1.jpg"></iframe>
+  ul.video-list data-value='program_5'
+    li.video-item.is-active data-value='video_1'
+      img.placehold src="/images/placehold.png"
+      <iframe id="__CCDNPlayer" width="640" height="475" border="0" cellspacing="0" frameborder="0" allowfullscreen="" src="http://crs.ccdntech.com/rds/playerh5?vod119/news/Export20151011-001.mpg.mp4&amp;th=http%3A%2F%2Fcsw1.ccdntech.com%2Fimage%2Fvod119%2Fnews%2FExport20151011-001.mpg_1.jpg"></iframe>
+    li.video-item data-value='video_2'
+      img.placehold src="/images/placehold.png"
+      <iframe class="lazy" width="640" height="475" src="https://www.youtube.com/embed/sc8tFfhXUZY" frameborder="0" allowfullscreen=""></iframe>
+    li.video-item data-value='video_3'
+      img.placehold src="/images/placehold.png"
+      <iframe class="lazy" src="http://www.slideshare.net/slideshow/embed_code/31618745?rel=0" width="640" height="475" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+  ul.video-list data-value='program_6'
+    li.video-item.is-active data-value='video_1'
+      img.placehold src="/images/placehold.png"
+      <iframe src="http://www.slideshare.net/slideshow/embed_code/13876684" width="640" height="475" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    li.video-item data-value='video_2'
+      img.placehold src="/images/placehold.png"
+      <iframe class="lazy" src="//www.slideshare.net/slideshow/embed_code/key/eiqfURP2JHvr14" width="640" height="475" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    li.video-item data-value='video_3'
+      img.placehold src="/images/placehold.png"
+      <iframe class="lazy" src="http://www.slideshare.net/slideshow/embed_code/30579339?rel=0" width="640" height="475" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    li.video-item data-value='video_4'
+      img.placehold src="/images/placehold.png"
+      <iframe class="lazy" width="650" height="210" src="https://livehouse.in/embed/channel/PNNPTS" frameborder="0" allowfullscreen></iframe>
+    li.video-item data-value='video_5'
+      img.placehold src="/images/placehold.png"
+      <iframe class="lazy" src="http://www.slideshare.net/slideshow/embed_code/31618745?rel=0" width="640" height="475" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
   /! hero 影片 end
 /! hero end
