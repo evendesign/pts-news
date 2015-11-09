@@ -65,25 +65,28 @@ $(".select").on('click', function () {
 });
 
 // hero iframe lazy load //
-var iframes = $('iframe.lazy');
 
-$(".video-topic-item").each(function(){
-  var item = $(this);
-  item.on("click", function(event){
-    var this_video = item.attr("data-value");
-    var video_show = $(".video-item[data-value="+ this_video +"]");
-    $(video_show).find("iframe").attr('src', function() {
-      return $(this).data('src');
-    });
-    event.preventDefault();
+if ( $(window).width() > 1024 ) {
+  var iframes = $('iframe.lazy');
+
+  $(".video-topic-item").each(function(){
+    var item = $(this);
+    item.on("click", function(event){
+      var this_video = item.attr("data-value");
+      var video_show = $(".video-item[data-value="+ this_video +"]");
+      $(video_show).find("iframe").attr('src', function() {
+        return $(this).data('src');
+      });
+      event.preventDefault();
+    })
   })
-})
 
-iframes.attr('data-src', function() {
-  var src = $(this).attr('src');
-  $(this).removeAttr('src');
-  return src;
-});
+  iframes.attr('data-src', function() {
+    var src = $(this).attr('src');
+    $(this).removeAttr('src');
+    return src;
+  });
+};
 
 // add sly //
 var add_sly = function (){
