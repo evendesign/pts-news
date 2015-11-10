@@ -76,7 +76,6 @@ $(".video-topic-item").each(function(){
     $(video_show).find("iframe").attr('src', function() {
       return $(this).data('src');
     });
-    event.preventDefault();
   })
 })
 
@@ -88,7 +87,6 @@ $(".program-item").each(function(){
     $(video_show).find("iframe").attr('src', function() {
       return $(this).data('src');
     });
-    event.preventDefault();
   })
 })
 
